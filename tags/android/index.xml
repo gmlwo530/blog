@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>android on Call Me Maru</title>
+    <link>https://gmlwo530.github.io/blog2/tags/android/</link>
+    <description>Recent content in android on Call Me Maru</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 14 May 2020 13:45:11 +0900</lastBuildDate><atom:link href="https://gmlwo530.github.io/blog2/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Glide Error - You cannot start a load for a destroyed activity</title>
+      <link>https://gmlwo530.github.io/blog2/posts/glide-error-you-cannot-start-a-load-for-a-destroyed-activity/</link>
+      <pubDate>Thu, 14 May 2020 13:45:11 +0900</pubDate>
+      
+      <guid>https://gmlwo530.github.io/blog2/posts/glide-error-you-cannot-start-a-load-for-a-destroyed-activity/</guid>
+      <description>Glide 관련 된 처음보는 오류가 발생했다.
+You cannot start a load for a destroyed activity
+다행히(?) 예전에 이슈가 된 에러였다.(https://github.com/bumptech/glide/issues/803)
+이런 에러가 발생한 이유는 with() 함수가 lifecycle을 따르기 때문이다. 즉 Glide가 이미지가 로드 중 Glide.with()의 with()에 들어간 인자가 &amp;ldquo;activity 또는 fragment가 destroyed&amp;quot;되면서 영향을 받게 되고 위의 에러가 발생한 것으로 보입니다.
+스택오버플로우에서 제안하는 방법으로는
+아래와 같이 RequestManager를 변수에 담아주고 사용하는 것이다.
+class MyAdapter extends WhichEveryOneYouUse { private final RequestManager glide; MyAdapter(RequestManager glide, .</description>
+    </item>
+    
+  </channel>
+</rss>

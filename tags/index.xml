@@ -4,6 +4,52 @@
     <title>Tags on Call Me Maru</title>
     <link>https://gmlwo530.github.io/blog2/tags/</link>
     <description>Recent content in Tags on Call Me Maru</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://gmlwo530.github.io/blog2/tags/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 14 May 2020 13:45:11 +0900</lastBuildDate><atom:link href="https://gmlwo530.github.io/blog2/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>android</title>
+      <link>https://gmlwo530.github.io/blog2/tags/android/</link>
+      <pubDate>Thu, 14 May 2020 13:45:11 +0900</pubDate>
+      
+      <guid>https://gmlwo530.github.io/blog2/tags/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kotlin</title>
+      <link>https://gmlwo530.github.io/blog2/tags/kotlin/</link>
+      <pubDate>Wed, 05 Feb 2020 00:28:44 +0900</pubDate>
+      
+      <guid>https://gmlwo530.github.io/blog2/tags/kotlin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>article</title>
+      <link>https://gmlwo530.github.io/blog2/tags/article/</link>
+      <pubDate>Sun, 02 Feb 2020 17:28:36 +0900</pubDate>
+      
+      <guid>https://gmlwo530.github.io/blog2/tags/article/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>flutter</title>
+      <link>https://gmlwo530.github.io/blog2/tags/flutter/</link>
+      <pubDate>Sun, 12 Jan 2020 17:33:13 +0900</pubDate>
+      
+      <guid>https://gmlwo530.github.io/blog2/tags/flutter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>글</title>
+      <link>https://gmlwo530.github.io/blog2/tags/%EA%B8%80/</link>
+      <pubDate>Sat, 06 Apr 2019 02:02:59 +0900</pubDate>
+      
+      <guid>https://gmlwo530.github.io/blog2/tags/%EA%B8%80/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

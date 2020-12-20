@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>article on Call Me Maru</title>
+    <link>https://gmlwo530.github.io/blog2/tags/article/</link>
+    <description>Recent content in article on Call Me Maru</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 02 Feb 2020 17:28:36 +0900</lastBuildDate><atom:link href="https://gmlwo530.github.io/blog2/tags/article/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Maru의 Kotlin Tour] Prologue</title>
+      <link>https://gmlwo530.github.io/blog2/posts/maru%EC%9D%98-kotlin-tour-prologue/</link>
+      <pubDate>Sun, 02 Feb 2020 17:28:36 +0900</pubDate>
+      
+      <guid>https://gmlwo530.github.io/blog2/posts/maru%EC%9D%98-kotlin-tour-prologue/</guid>
+      <description>Kotlin이라는 언어를 공부 해보겠습니다.
+참고하는 자료에 따라 시리즈로 진행 할 계획입니다.
+시리즈  공식 문서 편  </description>
+    </item>
+    
+  </channel>
+</rss>
