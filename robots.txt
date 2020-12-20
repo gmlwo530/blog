@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: https://gmlwo530.github.io/blog2/sitemap.xml
+Sitemap: https://callmemaru.com/sitemap.xml

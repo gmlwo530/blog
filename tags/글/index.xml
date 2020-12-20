@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>글 on Call Me Maru</title>
-    <link>https://gmlwo530.github.io/blog2/tags/%EA%B8%80/</link>
+    <link>https://callmemaru.com/tags/%EA%B8%80/</link>
     <description>Recent content in 글 on Call Me Maru</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 06 Apr 2019 02:02:59 +0900</lastBuildDate><atom:link href="https://gmlwo530.github.io/blog2/tags/%EA%B8%80/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Apr 2019 02:02:59 +0900</lastBuildDate><atom:link href="https://callmemaru.com/tags/%EA%B8%80/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>블로그의 목적</title>
-      <link>https://gmlwo530.github.io/blog2/posts/purpose-of-blog/</link>
+      <link>https://callmemaru.com/posts/purpose-of-blog/</link>
       <pubDate>Sat, 06 Apr 2019 02:02:59 +0900</pubDate>
       
-      <guid>https://gmlwo530.github.io/blog2/posts/purpose-of-blog/</guid>
+      <guid>https://callmemaru.com/posts/purpose-of-blog/</guid>
       <description>이전에 개발 블로그를 만들기 위한 두 번의 시도가 있었습니다.
 두 번 다 글을 성실하게 이어가지 못 했던 이유를 생각 해보니, 블로그의 목적을 정하지 않고 시작해서 실패 했다는 결론을 내렸습니다.
 그래서 이번 블로그에서는 목적을 정하기로 했습니다. 목적은 글을 써야할 주제들을 선정할 때 큰 도움을 줄 것이라고 생각했습니다.

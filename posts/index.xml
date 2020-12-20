@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Call Me Maru</title>
-    <link>https://gmlwo530.github.io/blog2/posts/</link>
+    <link>https://callmemaru.com/posts/</link>
     <description>Recent content in Posts on Call Me Maru</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 14 May 2020 13:45:11 +0900</lastBuildDate><atom:link href="https://gmlwo530.github.io/blog2/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 14 May 2020 13:45:11 +0900</lastBuildDate><atom:link href="https://callmemaru.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Glide Error - You cannot start a load for a destroyed activity</title>
-      <link>https://gmlwo530.github.io/blog2/posts/glide-error-you-cannot-start-a-load-for-a-destroyed-activity/</link>
+      <link>https://callmemaru.com/posts/glide-error-you-cannot-start-a-load-for-a-destroyed-activity/</link>
       <pubDate>Thu, 14 May 2020 13:45:11 +0900</pubDate>
       
-      <guid>https://gmlwo530.github.io/blog2/posts/glide-error-you-cannot-start-a-load-for-a-destroyed-activity/</guid>
+      <guid>https://callmemaru.com/posts/glide-error-you-cannot-start-a-load-for-a-destroyed-activity/</guid>
       <description>Glide 관련 된 처음보는 오류가 발생했다.
 You cannot start a load for a destroyed activity
 다행히(?) 예전에 이슈가 된 에러였다.(https://github.com/bumptech/glide/issues/803)
@@ -23,10 +23,10 @@ class MyAdapter extends WhichEveryOneYouUse { private final RequestManager glide
     
     <item>
       <title>[Maru의 Kotlin Tour - 공식 문서 편] #3 Returns and Jumps</title>
-      <link>https://gmlwo530.github.io/blog2/posts/maru%EC%9D%98-kotlin-tour-official-doc-3-returns-and-jumps/</link>
+      <link>https://callmemaru.com/posts/maru%EC%9D%98-kotlin-tour-official-doc-3-returns-and-jumps/</link>
       <pubDate>Wed, 05 Feb 2020 00:28:44 +0900</pubDate>
       
-      <guid>https://gmlwo530.github.io/blog2/posts/maru%EC%9D%98-kotlin-tour-official-doc-3-returns-and-jumps/</guid>
+      <guid>https://callmemaru.com/posts/maru%EC%9D%98-kotlin-tour-official-doc-3-returns-and-jumps/</guid>
       <description>kotlin에는 3가지 jump 표현식이 있다.
  return : 제일 가까운 enclosing function으로 부터 return 합니다. break : 제일 가까운 enclosing loop를 종료합니다. continue : 제일 가까운 enclosing loop의 다음 단계(step)를 진행합니다.  Break and Continue Labels Kotlin의 어떤 표현이든 label을 붙일 수 있다. @을 붙여서 라벨을 만들 수 있는데, 아래와 같이 쓰인다.
 loop@ for (i in 1..100){ // ... } 이제, break에 label을 붙이면 아래와 같이 쓸 수 있는데
@@ -35,10 +35,10 @@ loop@ for (i in 1.</description>
     
     <item>
       <title>[Maru의 Kotlin Tour - 공식 문서 편] #2 Control Flow </title>
-      <link>https://gmlwo530.github.io/blog2/posts/maru%EC%9D%98-kotlin-tour-official-doc-2-control-flow/</link>
+      <link>https://callmemaru.com/posts/maru%EC%9D%98-kotlin-tour-official-doc-2-control-flow/</link>
       <pubDate>Sun, 02 Feb 2020 23:23:53 +0900</pubDate>
       
-      <guid>https://gmlwo530.github.io/blog2/posts/maru%EC%9D%98-kotlin-tour-official-doc-2-control-flow/</guid>
+      <guid>https://callmemaru.com/posts/maru%EC%9D%98-kotlin-tour-official-doc-2-control-flow/</guid>
       <description>If Expression if는 expression, 즉 값을 return 하므로 tenary operator(condition ? then : else)가 없다고 한다.(난 tenary operator 좋은데..)
 그럼 if 표현식을 보자
 // Traditional usage var max = a if (a &amp;lt; b) max = b // With else var max: Int if (a &amp;gt; b) { max = a } else { max = b } // As expression val max = if (a &amp;gt; b) a else b 마지막 코드인 val max = if (a &amp;gt; b) a else b가 tenary operator와 비슷해보인다.</description>
@@ -46,10 +46,10 @@ loop@ for (i in 1.</description>
     
     <item>
       <title>[Maru의 Kotlin Tour - 공식 문서 편] #1 Basic Types</title>
-      <link>https://gmlwo530.github.io/blog2/posts/maru%EC%9D%98-kotlin-tour-official-doc-1-basic-types/</link>
+      <link>https://callmemaru.com/posts/maru%EC%9D%98-kotlin-tour-official-doc-1-basic-types/</link>
       <pubDate>Sun, 02 Feb 2020 23:23:40 +0900</pubDate>
       
-      <guid>https://gmlwo530.github.io/blog2/posts/maru%EC%9D%98-kotlin-tour-official-doc-1-basic-types/</guid>
+      <guid>https://callmemaru.com/posts/maru%EC%9D%98-kotlin-tour-official-doc-1-basic-types/</guid>
       <description>해당 문서 첫 문장에 참 친근한 문장이 있다.
  In Kotlin, everything is an object
  그래서 모든 변수에서 member function과 properties를 부를 수 있다고 한다.
@@ -59,10 +59,10 @@ Numbers Kotlin에서 integer는 총 4가지, floating은 총 2가지 타입을 �
     
     <item>
       <title>[Maru의 Kotlin Tour - 공식 문서 편] #0 Intro</title>
-      <link>https://gmlwo530.github.io/blog2/posts/maru%EC%9D%98-kotlin-tour-official-doc-0-intro/</link>
+      <link>https://callmemaru.com/posts/maru%EC%9D%98-kotlin-tour-official-doc-0-intro/</link>
       <pubDate>Sun, 02 Feb 2020 17:30:14 +0900</pubDate>
       
-      <guid>https://gmlwo530.github.io/blog2/posts/maru%EC%9D%98-kotlin-tour-official-doc-0-intro/</guid>
+      <guid>https://callmemaru.com/posts/maru%EC%9D%98-kotlin-tour-official-doc-0-intro/</guid>
       <description>들어가기 앞서 코틀린의 정의와 Command Line Compiler를 설치하는 법을 알아보겠습니다.
 코틀린의 정의 코틀린(Kotlin)은 JVM에서 동작하는 프로그래밍 언어이다. 2011년 7월, 젯브레인사가 공개하였다.
 캇린으로 읽어야 한다. (캇린으로 읽어야 하는 것은 처음 알았습니다;;) Install Command Line Compiler Kotlin으로 작성한 파일을 실행하기 위해서는 몇 가지 방법을 Tutorial Getting Start에서 제안합니다. 저는 여기서 Working with the Command Line Compiler 방법을 선택 했습니다.
@@ -72,10 +72,10 @@ Numbers Kotlin에서 integer는 총 4가지, floating은 총 2가지 타입을 �
     
     <item>
       <title>[Maru의 Kotlin Tour] Prologue</title>
-      <link>https://gmlwo530.github.io/blog2/posts/maru%EC%9D%98-kotlin-tour-prologue/</link>
+      <link>https://callmemaru.com/posts/maru%EC%9D%98-kotlin-tour-prologue/</link>
       <pubDate>Sun, 02 Feb 2020 17:28:36 +0900</pubDate>
       
-      <guid>https://gmlwo530.github.io/blog2/posts/maru%EC%9D%98-kotlin-tour-prologue/</guid>
+      <guid>https://callmemaru.com/posts/maru%EC%9D%98-kotlin-tour-prologue/</guid>
       <description>Kotlin이라는 언어를 공부 해보겠습니다.
 참고하는 자료에 따라 시리즈로 진행 할 계획입니다.
 시리즈  공식 문서 편  </description>
@@ -83,10 +83,10 @@ Numbers Kotlin에서 integer는 총 4가지, floating은 총 2가지 타입을 �
     
     <item>
       <title>Flutter State Management - Provider</title>
-      <link>https://gmlwo530.github.io/blog2/posts/flutter-statement-manager-provider/</link>
+      <link>https://callmemaru.com/posts/flutter-statement-manager-provider/</link>
       <pubDate>Sun, 12 Jan 2020 17:33:13 +0900</pubDate>
       
-      <guid>https://gmlwo530.github.io/blog2/posts/flutter-statement-manager-provider/</guid>
+      <guid>https://callmemaru.com/posts/flutter-statement-manager-provider/</guid>
       <description>Flutter에는 State가 있다. 사용자에 의해 이벤트가 발생 했을 때 state를 이용하여 UI를 업데이트 해준다.
 예를 들자면, 우리가 Flutter Project를 처음 생성 했을 때 기본으로 있는 count 앱을 들 수 있다. 사용자가 Floating Button인 + 버튼을 누르면 화면 중앙에 있는 숫자가 1씩 증가한다. 아래 코드와 같이 state를 이용하여 _counter 변수를 업데이트하고 UI를 업데이틑 하는 것을 확인 할 수 있다.
 int _counter = 0; void _increment(){ setState( () { _counter++; }); } </description>
@@ -94,10 +94,10 @@ int _counter = 0; void _increment(){ setState( () { _counter++; }); } </descript
     
     <item>
       <title>[Flutter] 토이 프로젝트 후기 - (1)</title>
-      <link>https://gmlwo530.github.io/blog2/posts/flutter-toy-project-review-1/</link>
+      <link>https://callmemaru.com/posts/flutter-toy-project-review-1/</link>
       <pubDate>Fri, 17 May 2019 10:42:36 +0900</pubDate>
       
-      <guid>https://gmlwo530.github.io/blog2/posts/flutter-toy-project-review-1/</guid>
+      <guid>https://callmemaru.com/posts/flutter-toy-project-review-1/</guid>
       <description>react-native가 출시 된 지 4년이 지났습니다.
 모바일 애플리케이션 개발에서 크로스 플랫폼 동시 개발을 가능하게 해준 react-native는 굉장히 파워풀한 기술인 거 같습니다.
 그렇게 2년이라는 시간이 지나 react-native와 마찬가지로 iOS와 Android를 동시에 개발할 수 있는 프레임워크인 flutter가 처음 등장했습니다.
@@ -109,10 +109,10 @@ int _counter = 0; void _increment(){ setState( () { _counter++; }); } </descript
     
     <item>
       <title>[Flutter] 토이 프로젝트 후기 - (2)</title>
-      <link>https://gmlwo530.github.io/blog2/posts/flutter-toy-project-review-2/</link>
+      <link>https://callmemaru.com/posts/flutter-toy-project-review-2/</link>
       <pubDate>Fri, 17 May 2019 10:42:36 +0900</pubDate>
       
-      <guid>https://gmlwo530.github.io/blog2/posts/flutter-toy-project-review-2/</guid>
+      <guid>https://callmemaru.com/posts/flutter-toy-project-review-2/</guid>
       <description>1편에서 이어서 2편은 프로젝트를 진행 과정을 소개하고 후기를 마무리 하겠습니다.
 🗂 Flutter  Widget  Flutter에서 대부분의 UI들은 Widget Class에 속해 있습니다. 예를 들어, AlertDialog 문서를 보면 AlertDialog가 어디에 속해있는지 확인 할 수 있습니다.
 StatelessWidget &amp;amp; StatefulWidget  React를 사용해보신 개발자 분들에게는 친숙한 개념일 수도 있습니다. Flutter의 모든 UI 즉 Widget은 상태(state)를 가집니다.
@@ -122,10 +122,10 @@ Widget이 StatefullWidget을 상속 할 때는 상태가 변하는 UI로 그려�
     
     <item>
       <title>[Kotlin] 범위 지정 함수</title>
-      <link>https://gmlwo530.github.io/blog2/posts/kotlin-scoping-functions/</link>
+      <link>https://callmemaru.com/posts/kotlin-scoping-functions/</link>
       <pubDate>Fri, 12 Apr 2019 14:02:23 +0900</pubDate>
       
-      <guid>https://gmlwo530.github.io/blog2/posts/kotlin-scoping-functions/</guid>
+      <guid>https://callmemaru.com/posts/kotlin-scoping-functions/</guid>
       <description>Kotlin에서 사용되는 함수 중에 범위 지정 함수라는게 있습니다. 이 함수들은 비슷한 모습을 하고 있어서, 약간의 혼란을 불러 일으키는 것 같습니다. 그러므로 이번 글에서는 이 범위 지정 함수들을 정리해보겠습니다.
 apply, with, let, also, run은 전달받는 인자와 작동 방식, 결과가 매우 비슷하다. 이 5개는 범위 지정 함수라고 명칭한다.
 이 함수들은 공통적으로 두가지 구성 요소를 가진다.
@@ -137,10 +137,10 @@ val sum: Int.</description>
     
     <item>
       <title>블로그의 목적</title>
-      <link>https://gmlwo530.github.io/blog2/posts/purpose-of-blog/</link>
+      <link>https://callmemaru.com/posts/purpose-of-blog/</link>
       <pubDate>Sat, 06 Apr 2019 02:02:59 +0900</pubDate>
       
-      <guid>https://gmlwo530.github.io/blog2/posts/purpose-of-blog/</guid>
+      <guid>https://callmemaru.com/posts/purpose-of-blog/</guid>
       <description>이전에 개발 블로그를 만들기 위한 두 번의 시도가 있었습니다.
 두 번 다 글을 성실하게 이어가지 못 했던 이유를 생각 해보니, 블로그의 목적을 정하지 않고 시작해서 실패 했다는 결론을 내렸습니다.
 그래서 이번 블로그에서는 목적을 정하기로 했습니다. 목적은 글을 써야할 주제들을 선정할 때 큰 도움을 줄 것이라고 생각했습니다.

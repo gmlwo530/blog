@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>flutter on Call Me Maru</title>
-    <link>https://gmlwo530.github.io/blog2/tags/flutter/</link>
+    <link>https://callmemaru.com/tags/flutter/</link>
     <description>Recent content in flutter on Call Me Maru</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 12 Jan 2020 17:33:13 +0900</lastBuildDate><atom:link href="https://gmlwo530.github.io/blog2/tags/flutter/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Jan 2020 17:33:13 +0900</lastBuildDate><atom:link href="https://callmemaru.com/tags/flutter/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Flutter State Management - Provider</title>
-      <link>https://gmlwo530.github.io/blog2/posts/flutter-statement-manager-provider/</link>
+      <link>https://callmemaru.com/posts/flutter-statement-manager-provider/</link>
       <pubDate>Sun, 12 Jan 2020 17:33:13 +0900</pubDate>
       
-      <guid>https://gmlwo530.github.io/blog2/posts/flutter-statement-manager-provider/</guid>
+      <guid>https://callmemaru.com/posts/flutter-statement-manager-provider/</guid>
       <description>Flutter에는 State가 있다. 사용자에 의해 이벤트가 발생 했을 때 state를 이용하여 UI를 업데이트 해준다.
 예를 들자면, 우리가 Flutter Project를 처음 생성 했을 때 기본으로 있는 count 앱을 들 수 있다. 사용자가 Floating Button인 + 버튼을 누르면 화면 중앙에 있는 숫자가 1씩 증가한다. 아래 코드와 같이 state를 이용하여 _counter 변수를 업데이트하고 UI를 업데이틑 하는 것을 확인 할 수 있다.
 int _counter = 0; void _increment(){ setState( () { _counter++; }); } </description>
@@ -19,10 +19,10 @@ int _counter = 0; void _increment(){ setState( () { _counter++; }); } </descript
     
     <item>
       <title>[Flutter] 토이 프로젝트 후기 - (1)</title>
-      <link>https://gmlwo530.github.io/blog2/posts/flutter-toy-project-review-1/</link>
+      <link>https://callmemaru.com/posts/flutter-toy-project-review-1/</link>
       <pubDate>Fri, 17 May 2019 10:42:36 +0900</pubDate>
       
-      <guid>https://gmlwo530.github.io/blog2/posts/flutter-toy-project-review-1/</guid>
+      <guid>https://callmemaru.com/posts/flutter-toy-project-review-1/</guid>
       <description>react-native가 출시 된 지 4년이 지났습니다.
 모바일 애플리케이션 개발에서 크로스 플랫폼 동시 개발을 가능하게 해준 react-native는 굉장히 파워풀한 기술인 거 같습니다.
 그렇게 2년이라는 시간이 지나 react-native와 마찬가지로 iOS와 Android를 동시에 개발할 수 있는 프레임워크인 flutter가 처음 등장했습니다.
@@ -34,10 +34,10 @@ int _counter = 0; void _increment(){ setState( () { _counter++; }); } </descript
     
     <item>
       <title>[Flutter] 토이 프로젝트 후기 - (2)</title>
-      <link>https://gmlwo530.github.io/blog2/posts/flutter-toy-project-review-2/</link>
+      <link>https://callmemaru.com/posts/flutter-toy-project-review-2/</link>
       <pubDate>Fri, 17 May 2019 10:42:36 +0900</pubDate>
       
-      <guid>https://gmlwo530.github.io/blog2/posts/flutter-toy-project-review-2/</guid>
+      <guid>https://callmemaru.com/posts/flutter-toy-project-review-2/</guid>
       <description>1편에서 이어서 2편은 프로젝트를 진행 과정을 소개하고 후기를 마무리 하겠습니다.
 🗂 Flutter  Widget  Flutter에서 대부분의 UI들은 Widget Class에 속해 있습니다. 예를 들어, AlertDialog 문서를 보면 AlertDialog가 어디에 속해있는지 확인 할 수 있습니다.
 StatelessWidget &amp;amp; StatefulWidget  React를 사용해보신 개발자 분들에게는 친숙한 개념일 수도 있습니다. Flutter의 모든 UI 즉 Widget은 상태(state)를 가집니다.
