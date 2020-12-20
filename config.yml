@@ -9,7 +9,9 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
-# googleAnalytics: UA-123-45
+googleAnalytics: UA-113083768-3
+permalinks:
+  posts: /:section/:filename/
 
 languages:
   ko:
@@ -30,12 +32,12 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: ExampleSite
-  description: "ExampleSite description"
-  author: Me
-  # author: ["Me", "You"] # multiple authors
+  title: Call me maru
+  description: "Maru's dev blog"
+  author: Maru
 
-  images: "<link or path of image for opengraph, twitter-cards>"
+  images:
+    - og_image.png
 
   ShowReadingTime: true
   ShowShareButtons: true
@@ -45,26 +47,16 @@ params:
   disableSpecial1stPost: false
 
   assets:
-    favicon: "<link / abs url>"
-    favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
-    apple_touch_icon: "<link / abs url>"
-    safari_pinned_tab: "<link / abs url>"
+    favicon: "/favicon.ico"
+    favicon16x16: "/favicon-16x16.png"
+    favicon32x32: "/favicon-32x32.png"
+    apple_touch_icon: "/favicon-32x32.png"
+    safari_pinned_tab: "/favicon-32x32.png"
 
   label:
     text: "Call Me Maru"
     # icon: /apple-touch-icon.png
     # iconHeight: 35
-
-  # profile-mode
-  profileMode:
-    enabled: false # needs to be explicitly set
-    title: ExampleSite
-    buttons:
-      - name: Posts
-        url: posts
-      - name: Tags
-        url: tags
 
   # home-info mode
   homeInfoParams:
