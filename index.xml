@@ -5,7 +5,17 @@
     <link>https://callmemaru.com/</link>
     <description>Recent content on Call Me Maru</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 14 May 2020 13:45:11 +0900</lastBuildDate><atom:link href="https://callmemaru.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Dec 2020 21:28:42 +0900</lastBuildDate><atom:link href="https://callmemaru.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2020 회고</title>
+      <link>https://callmemaru.com/posts/2020-retrospective/</link>
+      <pubDate>Mon, 28 Dec 2020 21:28:42 +0900</pubDate>
+      
+      <guid>https://callmemaru.com/posts/2020-retrospective/</guid>
+      <description>태어나서 처음으로 &amp;ldquo;나도 회고 글 써서 블로그에 포스팅 해야지&amp;quot;라는 다짐을 한게 2017년 12월이였다. 그리고 3년이 지난 지금 2017년의 다짐을 실천하고 있다. 이 글이 올라갈지는 2021년 1월 1일이 되어봐야지 알겠지만&amp;hellip;
+사실 2017년 12월 24일에 회고를 목표한 양 60%로 정도 쓰긴 했었다. 개인적으로 좋아하는 카페에서 맥북 13인치 2015년 형을 열어놓고 열심히 썼지만 밤에 약속이 잡혀 있어서 중간에 멈춰야 했다. 마침 25일 오전에 중국 청도에 갈 일정이 잡혀 있어서, 비행기에서 끝낼 생각으로 약속에 갔다.</description>
+    </item>
+    
     <item>
       <title>Glide Error - You cannot start a load for a destroyed activity</title>
       <link>https://callmemaru.com/posts/glide-error-you-cannot-start-a-load-for-a-destroyed-activity/</link>
@@ -23,10 +33,10 @@ class MyAdapter extends WhichEveryOneYouUse { private final RequestManager glide
     
     <item>
       <title>[Maru의 Kotlin Tour - 공식 문서 편] #3 Returns and Jumps</title>
-      <link>https://callmemaru.com/posts/maru%EC%9D%98-kotlin-tour-official-doc-3-returns-and-jumps/</link>
+      <link>https://callmemaru.com/posts/maru-kotlin-tour-official-doc-3-returns-and-jumps/</link>
       <pubDate>Wed, 05 Feb 2020 00:28:44 +0900</pubDate>
       
-      <guid>https://callmemaru.com/posts/maru%EC%9D%98-kotlin-tour-official-doc-3-returns-and-jumps/</guid>
+      <guid>https://callmemaru.com/posts/maru-kotlin-tour-official-doc-3-returns-and-jumps/</guid>
       <description>kotlin에는 3가지 jump 표현식이 있다.
  return : 제일 가까운 enclosing function으로 부터 return 합니다. break : 제일 가까운 enclosing loop를 종료합니다. continue : 제일 가까운 enclosing loop의 다음 단계(step)를 진행합니다.  Break and Continue Labels Kotlin의 어떤 표현이든 label을 붙일 수 있다. @을 붙여서 라벨을 만들 수 있는데, 아래와 같이 쓰인다.
 loop@ for (i in 1..100){ // ... } 이제, break에 label을 붙이면 아래와 같이 쓸 수 있는데
@@ -35,10 +45,10 @@ loop@ for (i in 1.</description>
     
     <item>
       <title>[Maru의 Kotlin Tour - 공식 문서 편] #2 Control Flow </title>
-      <link>https://callmemaru.com/posts/maru%EC%9D%98-kotlin-tour-official-doc-2-control-flow/</link>
+      <link>https://callmemaru.com/posts/maru-kotlin-tour-official-doc-2-control-flow/</link>
       <pubDate>Sun, 02 Feb 2020 23:23:53 +0900</pubDate>
       
-      <guid>https://callmemaru.com/posts/maru%EC%9D%98-kotlin-tour-official-doc-2-control-flow/</guid>
+      <guid>https://callmemaru.com/posts/maru-kotlin-tour-official-doc-2-control-flow/</guid>
       <description>If Expression if는 expression, 즉 값을 return 하므로 tenary operator(condition ? then : else)가 없다고 한다.(난 tenary operator 좋은데..)
 그럼 if 표현식을 보자
 // Traditional usage var max = a if (a &amp;lt; b) max = b // With else var max: Int if (a &amp;gt; b) { max = a } else { max = b } // As expression val max = if (a &amp;gt; b) a else b 마지막 코드인 val max = if (a &amp;gt; b) a else b가 tenary operator와 비슷해보인다.</description>
@@ -46,10 +56,10 @@ loop@ for (i in 1.</description>
     
     <item>
       <title>[Maru의 Kotlin Tour - 공식 문서 편] #1 Basic Types</title>
-      <link>https://callmemaru.com/posts/maru%EC%9D%98-kotlin-tour-official-doc-1-basic-types/</link>
+      <link>https://callmemaru.com/posts/maru-kotlin-tour-official-doc-1-basic-types/</link>
       <pubDate>Sun, 02 Feb 2020 23:23:40 +0900</pubDate>
       
-      <guid>https://callmemaru.com/posts/maru%EC%9D%98-kotlin-tour-official-doc-1-basic-types/</guid>
+      <guid>https://callmemaru.com/posts/maru-kotlin-tour-official-doc-1-basic-types/</guid>
       <description>해당 문서 첫 문장에 참 친근한 문장이 있다.
  In Kotlin, everything is an object
  그래서 모든 변수에서 member function과 properties를 부를 수 있다고 한다.
@@ -59,10 +69,10 @@ Numbers Kotlin에서 integer는 총 4가지, floating은 총 2가지 타입을 �
     
     <item>
       <title>[Maru의 Kotlin Tour - 공식 문서 편] #0 Intro</title>
-      <link>https://callmemaru.com/posts/maru%EC%9D%98-kotlin-tour-official-doc-0-intro/</link>
+      <link>https://callmemaru.com/posts/maru-kotlin-tour-official-doc-0-intro/</link>
       <pubDate>Sun, 02 Feb 2020 17:30:14 +0900</pubDate>
       
-      <guid>https://callmemaru.com/posts/maru%EC%9D%98-kotlin-tour-official-doc-0-intro/</guid>
+      <guid>https://callmemaru.com/posts/maru-kotlin-tour-official-doc-0-intro/</guid>
       <description>들어가기 앞서 코틀린의 정의와 Command Line Compiler를 설치하는 법을 알아보겠습니다.
 코틀린의 정의 코틀린(Kotlin)은 JVM에서 동작하는 프로그래밍 언어이다. 2011년 7월, 젯브레인사가 공개하였다.
 캇린으로 읽어야 한다. (캇린으로 읽어야 하는 것은 처음 알았습니다;;) Install Command Line Compiler Kotlin으로 작성한 파일을 실행하기 위해서는 몇 가지 방법을 Tutorial Getting Start에서 제안합니다. 저는 여기서 Working with the Command Line Compiler 방법을 선택 했습니다.
@@ -72,10 +82,10 @@ Numbers Kotlin에서 integer는 총 4가지, floating은 총 2가지 타입을 �
     
     <item>
       <title>[Maru의 Kotlin Tour] Prologue</title>
-      <link>https://callmemaru.com/posts/maru%EC%9D%98-kotlin-tour-prologue/</link>
+      <link>https://callmemaru.com/posts/maru-kotlin-tour-prologue/</link>
       <pubDate>Sun, 02 Feb 2020 17:28:36 +0900</pubDate>
       
-      <guid>https://callmemaru.com/posts/maru%EC%9D%98-kotlin-tour-prologue/</guid>
+      <guid>https://callmemaru.com/posts/maru-kotlin-tour-prologue/</guid>
       <description>Kotlin이라는 언어를 공부 해보겠습니다.
 참고하는 자료에 따라 시리즈로 진행 할 계획입니다.
 시리즈  공식 문서 편  </description>
