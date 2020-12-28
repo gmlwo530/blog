@@ -10,11 +10,6 @@ TocOpen: true
 draft: false
 hidemeta: false
 disableShare: false
-# cover:
-#   image: "<image path/url>"
-#   alt: "<alt text>"
-#   caption: "<text>"
-#   relative: false
 comments: false
 ---
 
@@ -82,7 +77,7 @@ Airbnb에서 9월 쯤에 [visx](https://github.com/airbnb/visx)라는 visualizat
 
 21년에는 꼭 추가 개발을 할테니 리스트에서 내 프로젝트를 빼지만 않았으면 좋겠다.
 
-(만약 이 프로젝트에 관심이 있으면 메일 주세요. 같이 재밌게 해요 ㅎㅎ)
+(만약 이 프로젝트에 관심이 있으면 메일(gmlwo530@gmail.com) 주세요. 같이 재밌게 해요 ㅎㅎ)
 
 Project github url: [https://github.com/gmlwo530/dollar-to-food-emoji](https://github.com/gmlwo530/dollar-to-food-emoji)
 
@@ -165,6 +160,8 @@ Project github url: [https://github.com/ultimate-go-korean/translation](https://
 
 이 문제를 해결하기 위해서 이 프로젝트를 시작했다. 프로젝트의 컨셉은 [https://carbon.now.sh/](https://carbon.now.sh/)에서 가져오기로 했다. 아직 v0.0.1이지만 좋은 프로젝트로 계속 개발하고 싶다
 
+(만약 이 프로젝트에 관심이 있으면 메일(gmlwo530@gmail.com) 주세요. 같이 재밌게 해요 ㅎㅎ)
+
 Project github url: [https://github.com/gmlwo530/code-process-generator](https://github.com/gmlwo530/code-process-generator)
 
 ## 컨트리뷰트톤
@@ -185,7 +182,7 @@ Project github url: [https://github.com/gmlwo530/code-process-generator](https:/
 
 - 자세가 너무 안 좋아서 요가를 배워볼까 한다.
 - 오픈 소스와 수익형 서비스(기획 단계와 개발 단계에 있는 프로젝트 2개가 있다)를 사이드 프로젝트로 계속 진행 할 예정이다. 느려도 멈추지만 말자.
-- 한국의 웹 서버 개발을 장악한 Sprint framework에 대해 공부를 해보고 싶다.
+- 한국의 웹 서버 개발을 장악한 Spring framework에 대해 공부를 해보고 싶다.
 - 17년 때 개발을 하루에 14시간은 했었다. 그 이후로 게을러진 내 자신을 보며 반성하고, 21년에는 하루 개발 시간을 늘려볼까 한다. 공부하자!
 - 웹/앱 개발 외적으로 다음과 같은 항목들을 공부하고 싶다.
   - 부동산
