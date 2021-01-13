@@ -60,8 +60,8 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "Hi there \U0001F44B"
-    Content: Welcome to my blog
+    Title: "안녕하세요 \U0001F44B"
+    Content: 마루라고 불러주세요!
 
   socialIcons:
     - name: github
