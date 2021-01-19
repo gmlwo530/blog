@@ -3,7 +3,7 @@ title: "[GitHub Action Learning] #1 GitHub Actions 소개"
 date: 2021-01-10T01:58:03+09:00
 weight: 1
 aliases: []
-tags: ["CI/CD"]
+tags: ["CI/CD", "GitHub"]
 author: ["Maru"]
 showToc: true
 TocOpen: true
@@ -86,7 +86,7 @@ Runner는 한 번에 하나의 job을 실행시키며 과정, 로그, 결과를 
 
 {{< figure src="/2021/GitHub-Actions-Learning-1/overview-actions-design.png" caption=" " >}}
 
-다음 글에서는 예제를 만들어보겠다.
+[다음 글]({{< relref "/posts/2021/GitHub-Actions-Learning-2.md" >}} "Next Post")에서는 예제를 만들어보겠다.
 
 ---
 
