@@ -10,7 +10,7 @@ TocOpen: true
 draft: false
 hidemeta: false
 disableShare: false
-comments: false
+comments: true
 ---
 
 [react-native](https://facebook.github.io/react-native/)가 출시 된 지 [4년](https://en.wikipedia.org/wiki/React_Native)이 지났습니다.

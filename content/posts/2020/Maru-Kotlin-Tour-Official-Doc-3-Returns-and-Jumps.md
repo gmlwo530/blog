@@ -10,7 +10,7 @@ TocOpen: true
 draft: false
 hidemeta: false
 disableShare: false
-comments: false
+comments: true
 ---
 
 kotlin에는 3가지 jump 표현식이 있다.

@@ -10,7 +10,7 @@ TocOpen: true
 draft: true
 hidemeta: false
 disableShare: false
-comments: false
+comments: true
 ---
 
 최근에 개인 프로젝트를 여러 개 시작 했다. 배포에 대한 걱정을 좀 줄여보고자 처음으로 CI/CD를 공부해보자 마음 먹었다.

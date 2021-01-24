@@ -10,7 +10,7 @@ TocOpen: true
 draft: false
 hidemeta: false
 disableShare: false
-comments: false
+comments: true
 ---
 
 1편에서 이어서 2편은 프로젝트를 진행 과정을 소개하고 후기를 마무리 하겠습니다.

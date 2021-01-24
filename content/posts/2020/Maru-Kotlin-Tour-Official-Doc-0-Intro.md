@@ -10,7 +10,7 @@ TocOpen: true
 draft: false
 hidemeta: false
 disableShare: false
-comments: false
+comments: true
 ---
 
 들어가기 앞서 코틀린의 정의와 Command Line Compiler를 설치하는 법을 알아보겠습니다.

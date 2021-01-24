@@ -10,7 +10,7 @@ TocOpen: true
 draft: false
 hidemeta: false
 disableShare: false
-comments: false
+comments: true
 ---
 
 태어나서 처음으로 "나도 회고 글 써서 블로그에 포스팅 해야지"라는 다짐을 한게 2017년 12월이였다. 그리고 3년이 지난 지금 2017년의 다짐을 실천하고 있다. 이 글이 올라갈지는 2021년 1월 1일이 되어봐야지 알겠지만...

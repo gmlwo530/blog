@@ -10,7 +10,7 @@ TocOpen: true
 draft: false
 hidemeta: false
 disableShare: false
-comments: false
+comments: true
 ---
 
 이전에 개발 블로그를 만들기 위한 두 번의 시도가 있었습니다.

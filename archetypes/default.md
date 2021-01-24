@@ -15,5 +15,5 @@ cover:
   alt: "<alt text>"
   caption: "<text>"
   relative: false
-comments: false
+comments: true
 ---

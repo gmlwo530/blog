@@ -10,7 +10,7 @@ TocOpen: true
 draft: true
 hidemeta: false
 disableShare: false
-comments: false
+comments: true
 ---
 
 GitHub Actions는 YAML로 events, jobs, 그리고 steps를 정의한다. 그리고 YAML 파일은 레포지토리의 `.github/workflows`에 저장된다. 이 YAML을 직접 작성하고 Actions를 실행 시켜보자.
