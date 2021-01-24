@@ -2,3 +2,4 @@ disqusShortname: callmemaru
 
 params:
   env: production
+  comments: true
