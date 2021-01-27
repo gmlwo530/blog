@@ -3,7 +3,7 @@ title: "[GitHub Action Learning] #2 GitHub Actions 예제"
 date: 2021-01-19T23:52:15+09:00
 weight: 1
 aliases: []
-tags: ["CI/CD", "GitHub"]
+tags: ["CI/CD", "GitHub", "GitHub Actions"]
 author: ["Maru"]
 showToc: true
 TocOpen: true
@@ -41,7 +41,7 @@ jobs:
       - run: bats -v
 ```
 
-편의상 GitHubs에서 바로 작성 했다.
+편의상 GitHub에서 바로 작성 했다.
 
 {{< figure src="/2021/GitHub-Actions-Learning-2/example_pic_2.png" caption=" " >}}
 
@@ -95,8 +95,6 @@ GitHub에서 actions이 실행 되는 과정과 steps 별로 활동을 깔끔한
 
 **`- run: bats -v`** => 명령어를 실행한다.
 
-간단한 workflow는 이정도만 알아도 만들 수 있을 것 같다.
-
 정리하는 느낌으로 전체 과정을 이미지로 보고 넘어가자
 
 {{< figure src="/2021/GitHub-Actions-Learning-2/workflow-image.png" caption=" " >}}
@@ -104,7 +102,7 @@ GitHub에서 actions이 실행 되는 과정과 steps 별로 활동을 깔끔한
 {{< line_break >}}
 {{< line_break >}}
 
-다음 글에서는 workflow 파일을 개발자 입맛에 맞게 작성할 수 있는 방법에 대해 알아보겠다.
+[다음 글]({{< relref "/posts/2021/GitHub-Actions-Learning-3.md" >}} "Next Post")에서는 workflow 파일에서 변수를 사용하는 방법에 대해 알아보겠다.
 
 ---
 

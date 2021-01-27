@@ -3,11 +3,11 @@ title: "[GitHub Action Learning] #1 GitHub Actions 소개"
 date: 2021-01-10T01:58:03+09:00
 weight: 1
 aliases: []
-tags: ["CI/CD", "GitHub"]
+tags: ["CI/CD", "GitHub", "GitHub Actions"]
 author: ["Maru"]
 showToc: true
 TocOpen: true
-draft: true
+draft: false
 hidemeta: false
 disableShare: false
 comments: true
@@ -80,7 +80,7 @@ Action은 step에서 job을 만드는 독립적인 명령어다.
 
 Runner는 [GitHub Actions runner application](https://github.com/actions/runner)가 설치 된 서버다.
 GitHub Actions runner application는 GitHub Actions workflow으로부터 job을 실행시켜주는 어플리케이션이다.
-Runner는 한 번에 하나의 job을 실행시키며 과정, 로그, 결과를 기록해서 GitHub에게 돌려준다. 이후 예제에서 GitHub Actions를 GitHub Actions에 실행시키면 로그들이 보일 것이다.
+Runner는 한 번에 하나의 job을 실행시키며 과정, 로그, 결과를 기록해서 GitHub에게 돌려준다. 이후 예제에서 GitHub Actions를 실행시키면 GitHub에서 로그들이 보일 것이다.
 
 이렇게 나무들을 알아보았다. 마지막으로 숲을 보며 스스로 정리해보자.
 
