@@ -7,7 +7,7 @@ tags: ["CI/CD", "GitHub", "GitHub Actions"]
 author: ["Maru"]
 showToc: true
 TocOpen: true
-draft: true
+draft: false
 hidemeta: false
 disableShare: false
 comments: true
