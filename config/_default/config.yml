@@ -66,6 +66,14 @@ params:
   socialIcons:
     - name: github
       url: "https://github.com/gmlwo530/"
+    - name: email
+      url: "mailto:gmlwo530@gmail.com"
+    - name: instagram
+      url: "https://www.instagram.com/shaq_choi/"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/hee-jae-5771bb188/"
+    - name: RsS
+      url: "index.xml"
 
   # analytics:
   #   google:
