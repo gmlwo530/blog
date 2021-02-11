@@ -5,11 +5,11 @@
     <link>https://callmemaru.com/tags/</link>
     <description>Recent content in Tags on Call Me Maru</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 27 Jan 2021 00:10:06 +0900</lastBuildDate><atom:link href="https://callmemaru.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Feb 2021 14:07:16 +0900</lastBuildDate><atom:link href="https://callmemaru.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GitHub</title>
       <link>https://callmemaru.com/tags/github/</link>
-      <pubDate>Wed, 27 Jan 2021 00:10:06 +0900</pubDate>
+      <pubDate>Sat, 06 Feb 2021 14:07:16 +0900</pubDate>
       
       <guid>https://callmemaru.com/tags/github/</guid>
       <description></description>
@@ -18,9 +18,18 @@
     <item>
       <title>GitHub Actions</title>
       <link>https://callmemaru.com/tags/github-actions/</link>
-      <pubDate>Wed, 27 Jan 2021 00:10:06 +0900</pubDate>
+      <pubDate>Sat, 06 Feb 2021 14:07:16 +0900</pubDate>
       
       <guid>https://callmemaru.com/tags/github-actions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>React</title>
+      <link>https://callmemaru.com/tags/react/</link>
+      <pubDate>Sat, 06 Feb 2021 14:07:16 +0900</pubDate>
+      
+      <guid>https://callmemaru.com/tags/react/</guid>
       <description></description>
     </item>
     

@@ -5,7 +5,19 @@
     <link>https://callmemaru.com/</link>
     <description>Recent content on Call Me Maru</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 27 Jan 2021 00:10:06 +0900</lastBuildDate><atom:link href="https://callmemaru.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Feb 2021 14:07:16 +0900</lastBuildDate><atom:link href="https://callmemaru.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[GitHub Actions] React Deploy</title>
+      <link>https://callmemaru.com/posts/github-actions-react-deploy/</link>
+      <pubDate>Sat, 06 Feb 2021 14:07:16 +0900</pubDate>
+      
+      <guid>https://callmemaru.com/posts/github-actions-react-deploy/</guid>
+      <description>React 프로젝트를 GitHub Actions와 GitHub Page를 이용해서 배포해보자.
+나는 기존에 오픈 소스로 개발 중인 프로젝트를 사용했다.
+ 이 글은 GitHub Actions를 이해하고 있다는 가정하에 작성한다. 만약 GitHub Actions에 관해 공부해보고 싶다면 블로그에 정리해놓은 글 또는 공식 문서를 보자.  전체 코드 전체 코드를 먼저 보고 하나씩 의미를 알아 가보자.
+name: Deploy on: push: branches: - master jobs: deploy: runs-on: ubuntu-18.04 steps: - uses: actions/checkout@v2 - name: Setup Node uses: actions/setup-node@v2.1.2 with: node-version: &amp;#34;12.</description>
+    </item>
+    
     <item>
       <title>[GitHub Action Learning] #3 Workflows에서 변수 사용하기</title>
       <link>https://callmemaru.com/posts/github-actions-learning-3/</link>
