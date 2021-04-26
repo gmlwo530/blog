@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://callmemaru.com/posts/summary-the-architecture-behind-a-one-person-tech-startup/</loc>
+    <lastmod>2021-04-24T14:34:02+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://callmemaru.com/posts/speeding-up-my-shell/</loc>
     <lastmod>2021-03-06T23:00:18+09:00</lastmod>
   </url>
@@ -89,7 +94,32 @@
   
   <url>
     <loc>https://callmemaru.com/</loc>
-    <lastmod>2021-03-06T23:00:18+09:00</lastmod>
+    <lastmod>2021-04-24T14:34:02+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://callmemaru.com/posts/</loc>
+    <lastmod>2021-04-24T14:34:02+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://callmemaru.com/tags/</loc>
+    <lastmod>2021-04-24T14:34:02+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://callmemaru.com/tags/%EA%B8%80/</loc>
+    <lastmod>2021-04-24T14:34:02+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://callmemaru.com/tags/%EB%B2%88%EC%97%AD/</loc>
+    <lastmod>2021-04-24T14:34:02+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://callmemaru.com/tags/%EC%9A%94%EC%95%BD/</loc>
+    <lastmod>2021-04-24T14:34:02+09:00</lastmod>
   </url>
   
   <url>
@@ -98,17 +128,7 @@
   </url>
   
   <url>
-    <loc>https://callmemaru.com/posts/</loc>
-    <lastmod>2021-03-06T23:00:18+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://callmemaru.com/tags/shell/</loc>
-    <lastmod>2021-03-06T23:00:18+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://callmemaru.com/tags/</loc>
     <lastmod>2021-03-06T23:00:18+09:00</lastmod>
   </url>
   
@@ -155,11 +175,6 @@
   <url>
     <loc>https://callmemaru.com/tags/flutter/</loc>
     <lastmod>2020-01-12T17:33:13+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://callmemaru.com/tags/%EA%B8%80/</loc>
-    <lastmod>2019-04-06T02:02:59+09:00</lastmod>
   </url>
   
   <url>

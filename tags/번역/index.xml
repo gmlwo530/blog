@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>글 on Call Me Maru</title>
-    <link>https://callmemaru.com/tags/%EA%B8%80/</link>
-    <description>Recent content in 글 on Call Me Maru</description>
+    <title>번역 on Call Me Maru</title>
+    <link>https://callmemaru.com/tags/%EB%B2%88%EC%97%AD/</link>
+    <description>Recent content in 번역 on Call Me Maru</description>
     <image>
       <url>https://callmemaru.com/og_image.png</url>
       <link>https://callmemaru.com/og_image.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 24 Apr 2021 14:34:02 +0900</lastBuildDate><atom:link href="https://callmemaru.com/tags/%EA%B8%80/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 24 Apr 2021 14:34:02 +0900</lastBuildDate><atom:link href="https://callmemaru.com/tags/%EB%B2%88%EC%97%AD/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[정리] 1인 기술 스타트업의 아키텍처 스택</title>
       <link>https://callmemaru.com/posts/summary-the-architecture-behind-a-one-person-tech-startup/</link>
@@ -20,19 +20,6 @@
 참고로 본인이 1인 기술 스타트업을 만들 생각이 없어도 개발자라면 한 번쯤 읽어보면 도움이 되는 글이라고 생각한다.
 원문 글: https://anthonynsimon.com/blog/one-man-saas-architecture/
 서론   원문 글의 필자는 독일에서 1인 기업을 운영하고 있고 스트레스 없이 자기 자본으로만 천천히 운영하고 있다고 한다.</description>
-    </item>
-    
-    <item>
-      <title>블로그의 목적</title>
-      <link>https://callmemaru.com/posts/purpose-of-blog/</link>
-      <pubDate>Sat, 06 Apr 2019 02:02:59 +0900</pubDate>
-      
-      <guid>https://callmemaru.com/posts/purpose-of-blog/</guid>
-      <description>이전에 개발 블로그를 만들기 위한 두 번의 시도가 있었습니다.
-두 번 다 글을 성실하게 이어가지 못 했던 이유를 생각 해보니, 블로그의 목적을 정하지 않고 시작해서 실패 했다는 결론을 내렸습니다.
-그래서 이번 블로그에서는 목적을 정하기로 했습니다. 목적은 글을 써야할 주제들을 선정할 때 큰 도움을 줄 것이라고 생각했습니다.
-목적을 정하기에 있어 임백준님의 칼럼의 도움을 많이 받았습니다. 칼럼의 내용 중 목적 설정에 도움이 된 문장을 적어보겠습니다.
- 어떤 일이 일어나지 알 수 없는 미래에 대한 두려움을 해소하자.</description>
     </item>
     
   </channel>
