@@ -7,7 +7,7 @@ tags: ["글", "요약", "번역"]
 author: ["Maru"]
 showToc: true
 TocOpen: true
-draft: true
+draft: false
 hidemeta: false
 disableShare: false
 comments: true
