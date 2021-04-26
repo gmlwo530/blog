@@ -4,6 +4,10 @@
     <title>회고 on Call Me Maru</title>
     <link>https://callmemaru.com/tags/%ED%9A%8C%EA%B3%A0/</link>
     <description>Recent content in 회고 on Call Me Maru</description>
+    <image>
+      <url>https://callmemaru.com/og_image.png</url>
+      <link>https://callmemaru.com/og_image.png</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 28 Dec 2020 21:28:42 +0900</lastBuildDate><atom:link href="https://callmemaru.com/tags/%ED%9A%8C%EA%B3%A0/index.xml" rel="self" type="application/rss+xml" />
     <item>

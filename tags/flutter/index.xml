@@ -4,6 +4,10 @@
     <title>flutter on Call Me Maru</title>
     <link>https://callmemaru.com/tags/flutter/</link>
     <description>Recent content in flutter on Call Me Maru</description>
+    <image>
+      <url>https://callmemaru.com/og_image.png</url>
+      <link>https://callmemaru.com/og_image.png</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 12 Jan 2020 17:33:13 +0900</lastBuildDate><atom:link href="https://callmemaru.com/tags/flutter/index.xml" rel="self" type="application/rss+xml" />
     <item>
