@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://callmemaru.com/posts/create-django-template-using-cookiecutter/</loc>
+    <lastmod>2021-06-27T01:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://callmemaru.com/posts/summary-the-architecture-behind-a-one-person-tech-startup/</loc>
     <lastmod>2021-04-24T14:34:02+09:00</lastmod>
   </url>
@@ -94,17 +99,27 @@
   
   <url>
     <loc>https://callmemaru.com/</loc>
-    <lastmod>2021-04-24T14:34:02+09:00</lastmod>
+    <lastmod>2021-06-27T01:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://callmemaru.com/tags/cli/</loc>
+    <lastmod>2021-06-27T01:00:00+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://callmemaru.com/posts/</loc>
-    <lastmod>2021-04-24T14:34:02+09:00</lastmod>
+    <lastmod>2021-06-27T01:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://callmemaru.com/tags/python/</loc>
+    <lastmod>2021-06-27T01:00:00+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://callmemaru.com/tags/</loc>
-    <lastmod>2021-04-24T14:34:02+09:00</lastmod>
+    <lastmod>2021-06-27T01:00:00+09:00</lastmod>
   </url>
   
   <url>
