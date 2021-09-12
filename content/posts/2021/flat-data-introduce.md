@@ -13,6 +13,8 @@ disableShare: false
 comments: true
 ---
 
+# 소개
+
 [Flat Data](https://octo.github.com/projects/flat-data)는 [GitHub CTO](https://octo.github.com/)라는 팀에서 만든 프로젝트다.
 
 [Simon Willison이라는 개발자가 작년 캘리포니아 산불을 추적하려고 정부 웹사이트의 변경사항을 Git에 수집](https://simonwillison.net/2020/Oct/9/git-scraping/)한 것에 아이디어를 얻어 프로젝트를 만들었다고 한다.
@@ -40,6 +42,12 @@ Visual Studio Code의 Extension이다. 이 프로젝트 보고 flat-data라는 �
 React로 만들어진 웹사이트다. flat-data repository 이름과 그 소유자 정보를 입력하면 flat-data로 수집한 데이터를 굉장히 깔끔한 테이블로 보여준다.
 
 {{< figure src="/2021/flat-data-introduce/flat-view-img.png" caption="[https://github.com/githubocto/flat-viewer](https://github.com/githubocto/flat-viewer)" align=center >}}
+
+# 직접 만들어보자.
+
+홈페이지에는 튜토리얼이 굉장히 잘 되어 있다.
+
+예제가 몇 개 있지만 대표적인 예제인 비트코인 정보를 가져오는 예제를 만들어보자.
 
 ---
 
