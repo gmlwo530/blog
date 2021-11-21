@@ -9,7 +9,43 @@
       <link>https://callmemaru.com/og_image.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 27 Jun 2021 01:00:00 +0900</lastBuildDate><atom:link href="https://callmemaru.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 21 Nov 2021 16:47:01 +0900</lastBuildDate><atom:link href="https://callmemaru.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GitHub</title>
+      <link>https://callmemaru.com/tags/github/</link>
+      <pubDate>Sun, 21 Nov 2021 16:47:01 +0900</pubDate>
+      
+      <guid>https://callmemaru.com/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GitHub Actions</title>
+      <link>https://callmemaru.com/tags/github-actions/</link>
+      <pubDate>Sun, 21 Nov 2021 16:47:01 +0900</pubDate>
+      
+      <guid>https://callmemaru.com/tags/github-actions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GitHub Packages</title>
+      <link>https://callmemaru.com/tags/github-packages/</link>
+      <pubDate>Sun, 21 Nov 2021 16:47:01 +0900</pubDate>
+      
+      <guid>https://callmemaru.com/tags/github-packages/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Permission</title>
+      <link>https://callmemaru.com/tags/permission/</link>
+      <pubDate>Sun, 21 Nov 2021 16:47:01 +0900</pubDate>
+      
+      <guid>https://callmemaru.com/tags/permission/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>CLI</title>
       <link>https://callmemaru.com/tags/cli/</link>
@@ -79,24 +115,6 @@
       <pubDate>Sat, 06 Mar 2021 23:00:18 +0900</pubDate>
       
       <guid>https://callmemaru.com/tags/zsh/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>GitHub</title>
-      <link>https://callmemaru.com/tags/github/</link>
-      <pubDate>Sat, 06 Feb 2021 14:07:16 +0900</pubDate>
-      
-      <guid>https://callmemaru.com/tags/github/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>GitHub Actions</title>
-      <link>https://callmemaru.com/tags/github-actions/</link>
-      <pubDate>Sat, 06 Feb 2021 14:07:16 +0900</pubDate>
-      
-      <guid>https://callmemaru.com/tags/github-actions/</guid>
       <description></description>
     </item>
     
