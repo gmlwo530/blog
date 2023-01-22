@@ -1,156 +1,22 @@
-<!doctype html><html lang=ko dir=auto>
-<head><meta charset=utf-8>
-<meta http-equiv=x-ua-compatible content="IE=edge">
-<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
-<meta name=robots content="index, follow">
-<title>Posts | Call Me Maru</title>
-<meta name=keywords content>
-<meta name=description content="Posts - Call Me Maru">
-<meta name=author content="Maru">
-<link rel=canonical href=https://callmemaru.com/posts/>
-<link crossorigin=anonymous href=/assets/css/stylesheet.min.b6da5ba13da618501ac634d35cd978d5132d511e714c745360a4b2cf68987ece.css integrity="sha256-ttpboT2mGFAaxjTTXNl41RMtUR5xTHRTYKSyz2iYfs4=" rel="preload stylesheet" as=style>
-<link rel=icon href=https://callmemaru.com/favicon.ico>
-<link rel=icon type=image/png sizes=16x16 href=https://callmemaru.com/favicon-16x16.png>
-<link rel=icon type=image/png sizes=32x32 href=https://callmemaru.com/favicon-32x32.png>
-<link rel=apple-touch-icon href=https://callmemaru.com/favicon-32x32.png>
-<link rel=mask-icon href=https://callmemaru.com/favicon-32x32.png>
-<meta name=theme-color content="#2e2e33">
-<meta name=msapplication-TileColor content="#2e2e33">
-<link rel=alternate type=application/rss+xml href=https://callmemaru.com/posts/index.xml>
-<noscript>
-<style>#theme-toggle,.top-link{display:none}</style>
-<style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style>
-</noscript>
-<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-113083768-3','auto'),ga('send','pageview'))</script><meta property="og:title" content="Posts">
-<meta property="og:description" content="Maru's dev blog">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://callmemaru.com/posts/"><meta property="og:image" content="https://callmemaru.com/og_image.png"><meta property="og:site_name" content="Call me maru">
-<meta name=twitter:card content="summary_large_image">
-<meta name=twitter:image content="https://callmemaru.com/og_image.png">
-<meta name=twitter:title content="Posts">
-<meta name=twitter:description content="Maru's dev blog">
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://callmemaru.com/posts/"}]}</script>
-</head>
-<body class=list id=top>
-<script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
-<header class=header>
-<nav class=nav>
-<div class=logo>
-<a href=https://callmemaru.com/ accesskey=h title="Call Me Maru (Alt + H)">Call Me Maru</a>
-<span class=logo-switches>
-<button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-</button>
-</span>
-</div>
-<ul id=menu>
-<li>
-<a href=https://callmemaru.com/about/ title=About>
-<span>About</span>
-</a>
-</li>
-<li>
-<a href=https://callmemaru.com/tags/ title=Tags>
-<span>Tags</span>
-</a>
-</li>
-</ul>
-</nav>
-</header>
-<main class=main>
-<header class=page-header>
-<h1>Posts</h1>
-</header>
-<article class=post-entry>
-<header class=entry-header>
-<h2>[GitHub Action Learning] #3 Workflows에서 변수 사용하기
-</h2>
-</header>
-<section class=entry-content>
-<p>개발을 하다보면 세팅이 불가피한 기능 또는 프로그램을 사용할 때가 있다. 예를 들어 PostgreSQL 같은 데이터베이스에 연결 할 때 HOST, PORT, USERNAME, PASSWORD 같은 환경 변수를 세팅해야 할 때가 있다. 또는 job을 이용해서 어플리케이션을 빌드한 다음에 내가 작성한 script를 돌리고 싶을 때도 있다.
+<!doctype html><html lang=ko dir=auto><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Posts | Call Me Maru</title><meta name=keywords content><meta name=description content="Posts - Call Me Maru"><meta name=author content="Maru"><link rel=canonical href=https://callmemaru.com/posts/><link crossorigin=anonymous href=/assets/css/stylesheet.5c6fd7240554c81c432cb8ae63859819fdc3cfaca5febd2e5ef2e79eaf7d2a42.css integrity="sha256-XG/XJAVUyBxDLLiuY4WYGf3Dz6yl/r0uXvLnnq99KkI=" rel="preload stylesheet" as=style><link rel=icon href=https://callmemaru.com/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://callmemaru.com/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://callmemaru.com/favicon-32x32.png><link rel=apple-touch-icon href=https://callmemaru.com/favicon-32x32.png><link rel=mask-icon href=https://callmemaru.com/favicon-32x32.png><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate type=application/rss+xml href=https://callmemaru.com/posts/index.xml><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(e,t,n,s,o,i,a){e.GoogleAnalyticsObject=o,e[o]=e[o]||function(){(e[o].q=e[o].q||[]).push(arguments)},e[o].l=1*new Date,i=t.createElement(n),a=t.getElementsByTagName(n)[0],i.async=1,i.src=s,a.parentNode.insertBefore(i,a)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-113083768-3","auto"),ga("send","pageview"))</script><meta property="og:title" content="Posts"><meta property="og:description" content="Maru's dev blog"><meta property="og:type" content="website"><meta property="og:url" content="https://callmemaru.com/posts/"><meta property="og:image" content="https://callmemaru.com/og_image.png"><meta property="og:site_name" content="Call me maru"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://callmemaru.com/og_image.png"><meta name=twitter:title content="Posts"><meta name=twitter:description content="Maru's dev blog"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://callmemaru.com/posts/"}]}</script></head><body class=list id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://callmemaru.com/ accesskey=h title="Call Me Maru (Alt + H)">Call Me Maru</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://callmemaru.com/about/ title=About><span>About</span></a></li><li><a href=https://callmemaru.com/tags/ title=Tags><span>Tags</span></a></li></ul></nav></header><main class=main><header class=page-header><h1>Posts</h1></header><article class=post-entry><header class=entry-header><h2>[GitHub Action Learning] #3 Workflows에서 변수 사용하기</h2></header><div class=entry-content><p>개발을 하다보면 세팅이 불가피한 기능 또는 프로그램을 사용할 때가 있다. 예를 들어 PostgreSQL 같은 데이터베이스에 연결 할 때 HOST, PORT, USERNAME, PASSWORD 같은 환경 변수를 세팅해야 할 때가 있다. 또는 job을 이용해서 어플리케이션을 빌드한 다음에 내가 작성한 script를 돌리고 싶을 때도 있다.
 이렇게 커스텀하게 GitHub Actions를 다뤄보는 방법에 대해 알아보도록 하자.
 환경 변수 일단 각 workflows가 실행 될때 마다 GitHub Actions가 가지고 있는 기본 환경 변수가 제공 된다.
-물론 개발자가 원하는 환경 변수를 설정 할 수도 있다....</p>
-</section>
-<footer class=entry-footer><span title="2021-01-27 00:10:06 +0900 +0900">1월 27, 2021</span>&nbsp;·&nbsp;2 분&nbsp;·&nbsp;Maru</footer>
-<a class=entry-link aria-label="post link to [GitHub Action Learning] #3 Workflows에서 변수 사용하기" href=https://callmemaru.com/posts/github-actions-learning-3/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>[GitHub Action Learning] #2 GitHub Actions 예제
-</h2>
-</header>
-<section class=entry-content>
-<p>GitHub Actions는 YAML로 events, jobs, 그리고 steps를 정의한다. 그리고 YAML 파일은 레포지토리의 .github/workflows에 저장된다. 이 YAML을 직접 작성하고 Actions를 실행 시켜보자.
+물론 개발자가 원하는 환경 변수를 설정 할 수도 있다....</p></div><footer class=entry-footer><span title='2021-01-27 00:10:06 +0900 +0900'>1월 27, 2021</span>&nbsp;·&nbsp;2 분&nbsp;·&nbsp;Maru</footer><a class=entry-link aria-label="post link to [GitHub Action Learning] #3 Workflows에서 변수 사용하기" href=https://callmemaru.com/posts/github-actions-learning-3/></a></article><article class=post-entry><header class=entry-header><h2>[GitHub Action Learning] #2 GitHub Actions 예제</h2></header><div class=entry-content><p>GitHub Actions는 YAML로 events, jobs, 그리고 steps를 정의한다. 그리고 YAML 파일은 레포지토리의 .github/workflows에 저장된다. 이 YAML을 직접 작성하고 Actions를 실행 시켜보자.
 만들 예제는 npm으로 bats를 설치하고 bats -v를 실행하는 간단한 액션이다.
 예제 만들기 1. 레포지토리 생성 및 YAML 파일 작성 GitHub에서 레포지토리를 새로 만들고 .github/workflows에 YAML 파일을 작성한다.
-# https://docs.github.com/en/actions/learn-github-actions/introduction-to-github-actions#create-an-example-workflow name: learn-github-actions on: [push] jobs: check-bats-version: runs-on: ubuntu-latest steps: - uses: actions/checkout@v2 - uses: actions/setup-node@v1 - run: npm install -g bats - run: bats -v 편의상 GitHub에서 바로 작성 했다....</p>
-</section>
-<footer class=entry-footer><span title="2021-01-19 23:52:15 +0900 +0900">1월 19, 2021</span>&nbsp;·&nbsp;2 분&nbsp;·&nbsp;Maru</footer>
-<a class=entry-link aria-label="post link to [GitHub Action Learning] #2 GitHub Actions 예제" href=https://callmemaru.com/posts/github-actions-learning-2/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>[GitHub Action Learning] #1 GitHub Actions 소개
-</h2>
-</header>
-<section class=entry-content>
-<p>최근에 개인 프로젝트를 여러 개 시작 했다. 배포에 대한 걱정을 좀 줄여보고자 처음으로 CI/CD를 공부해보자 마음 먹었다.
+# https://docs.github.com/en/actions/learn-github-actions/introduction-to-github-actions#create-an-example-workflow name: learn-github-actions on: [push] jobs: check-bats-version: runs-on: ubuntu-latest steps: - uses: actions/checkout@v2 - uses: actions/setup-node@v1 - run: npm install -g bats - run: bats -v 편의상 GitHub에서 바로 작성 했다....</p></div><footer class=entry-footer><span title='2021-01-19 23:52:15 +0900 +0900'>1월 19, 2021</span>&nbsp;·&nbsp;2 분&nbsp;·&nbsp;Maru</footer><a class=entry-link aria-label="post link to [GitHub Action Learning] #2 GitHub Actions 예제" href=https://callmemaru.com/posts/github-actions-learning-2/></a></article><article class=post-entry><header class=entry-header><h2>[GitHub Action Learning] #1 GitHub Actions 소개</h2></header><div class=entry-content><p>최근에 개인 프로젝트를 여러 개 시작 했다. 배포에 대한 걱정을 좀 줄여보고자 처음으로 CI/CD를 공부해보자 마음 먹었다.
 CI/CD에 대해서 아는게 하나도 없어서, 서칭을 하다가 그저 탭으로만 마주한 GitHub Actions이 CI/CD 툴인걸 알게 되었다. 굉장히 많은 툴들이 있었는데, GitHub Actions은 GitHub에서 CI/CD에 대한 고민도 바로 해결 해주는 느낌이였다.
 이렇게 툴은 결정했고 GihHub Actions Learning 문서를 보면서 공부한 내용을 블로그에 정리했다.
 문서의 내용이 많으니 블로그 글은 나눠서 게시하겠다.
-CI/CD 란? CI/CD에 대한 개념은 굉장히 많은 자료가 있다....</p>
-</section>
-<footer class=entry-footer><span title="2021-01-10 01:58:03 +0900 +0900">1월 10, 2021</span>&nbsp;·&nbsp;3 분&nbsp;·&nbsp;Maru</footer>
-<a class=entry-link aria-label="post link to [GitHub Action Learning] #1 GitHub Actions 소개" href=https://callmemaru.com/posts/github-actions-learning-1/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>2020 회고
-</h2>
-</header>
-<section class=entry-content>
-<p>태어나서 처음으로 “나도 회고 글 써서 블로그에 포스팅 해야지"라는 다짐을 한게 2017년 12월이였다. 그리고 3년이 지난 지금 2017년의 다짐을 실천하고 있다. 이 글이 올라갈지는 2021년 1월 1일이 되어봐야지 알겠지만…
-사실 2017년 12월 24일에 회고를 목표한 양 60%로 정도 쓰긴 했었다. 개인적으로 좋아하는 카페에서 맥북 13인치 2015년 형을 열어놓고 열심히 썼지만 밤에 약속이 잡혀 있어서 중간에 멈춰야 했다. 마침 25일 오전에 중국 청도에 갈 일정이 잡혀 있어서, 비행기에서 끝낼 생각으로 약속에 갔다....</p>
-</section>
-<footer class=entry-footer><span title="2020-12-28 21:28:42 +0900 +0900">12월 28, 2020</span>&nbsp;·&nbsp;10 분&nbsp;·&nbsp;Maru</footer>
-<a class=entry-link aria-label="post link to 2020 회고" href=https://callmemaru.com/posts/2020-retrospective/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Glide Error - You cannot start a load for a destroyed activity
-</h2>
-</header>
-<section class=entry-content>
-<p>Glide 관련 된 처음보는 오류가 발생했다.
+CI/CD 란? CI/CD에 대한 개념은 굉장히 많은 자료가 있다....</p></div><footer class=entry-footer><span title='2021-01-10 01:58:03 +0900 +0900'>1월 10, 2021</span>&nbsp;·&nbsp;3 분&nbsp;·&nbsp;Maru</footer><a class=entry-link aria-label="post link to [GitHub Action Learning] #1 GitHub Actions 소개" href=https://callmemaru.com/posts/github-actions-learning-1/></a></article><article class=post-entry><header class=entry-header><h2>2020 회고</h2></header><div class=entry-content><p>태어나서 처음으로 “나도 회고 글 써서 블로그에 포스팅 해야지"라는 다짐을 한게 2017년 12월이였다. 그리고 3년이 지난 지금 2017년의 다짐을 실천하고 있다. 이 글이 올라갈지는 2021년 1월 1일이 되어봐야지 알겠지만…
+사실 2017년 12월 24일에 회고를 목표한 양 60%로 정도 쓰긴 했었다. 개인적으로 좋아하는 카페에서 맥북 13인치 2015년 형을 열어놓고 열심히 썼지만 밤에 약속이 잡혀 있어서 중간에 멈춰야 했다. 마침 25일 오전에 중국 청도에 갈 일정이 잡혀 있어서, 비행기에서 끝낼 생각으로 약속에 갔다....</p></div><footer class=entry-footer><span title='2020-12-28 21:28:42 +0900 +0900'>12월 28, 2020</span>&nbsp;·&nbsp;10 분&nbsp;·&nbsp;Maru</footer><a class=entry-link aria-label="post link to 2020 회고" href=https://callmemaru.com/posts/2020-retrospective/></a></article><article class=post-entry><header class=entry-header><h2>Glide Error - You cannot start a load for a destroyed activity</h2></header><div class=entry-content><p>Glide 관련 된 처음보는 오류가 발생했다.
 You cannot start a load for a destroyed activity
 다행히(?) 예전에 이슈가 된 에러였다.(https://github.com/bumptech/glide/issues/803)
 이런 에러가 발생한 이유는 with() 함수가 lifecycle을 따르기 때문이다. 즉 Glide가 이미지가 로드 중 Glide.with()의 with()에 들어간 인자가 “activity 또는 fragment가 destroyed"되면서 영향을 받게 되고 위의 에러가 발생한 것으로 보입니다.
 스택오버플로우에서 제안하는 방법으로는
 아래와 같이 RequestManager를 변수에 담아주고 사용하는 것이다.
-class MyAdapter extends WhichEveryOneYouUse { private final RequestManager glide; MyAdapter(RequestManager glide, ....</p>
-</section>
-<footer class=entry-footer><span title="2020-05-14 13:45:11 +0900 +0900">5월 14, 2020</span>&nbsp;·&nbsp;1 분&nbsp;·&nbsp;Maru</footer>
-<a class=entry-link aria-label="post link to Glide Error - You cannot start a load for a destroyed activity" href=https://callmemaru.com/posts/glide-error-you-cannot-start-a-load-for-a-destroyed-activity/></a>
-</article>
-<footer class=page-footer>
-<nav class=pagination>
-<a class=prev href=https://callmemaru.com/posts/>« 이전 페이지</a>
-<a class=next href=https://callmemaru.com/posts/page/3/>다음 페이지 »</a>
-</nav>
-</footer>
-</main>
-<footer class=footer>
-<span>&copy; 2022 <a href=https://callmemaru.com/>Call Me Maru</a></span>
-<span>
-Powered by
+class MyAdapter extends WhichEveryOneYouUse { private final RequestManager glide; MyAdapter(RequestManager glide, ....</p></div><footer class=entry-footer><span title='2020-05-14 13:45:11 +0900 +0900'>5월 14, 2020</span>&nbsp;·&nbsp;1 분&nbsp;·&nbsp;Maru</footer><a class=entry-link aria-label="post link to Glide Error - You cannot start a load for a destroyed activity" href=https://callmemaru.com/posts/glide-error-you-cannot-start-a-load-for-a-destroyed-activity/></a></article><footer class=page-footer><nav class=pagination><a class=prev href=https://callmemaru.com/posts/>«&nbsp;이전 페이지&nbsp;</a>
+<a class=next href=https://callmemaru.com/posts/page/3/>다음 페이지&nbsp;&nbsp;»</a></nav></footer></main><footer class=footer><span>&copy; 2023 <a href=https://callmemaru.com/>Call Me Maru</a></span>
+<span>Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
-        <a href=https://git.io/hugopapermod rel=noopener target=_blank>PaperMod</a>
-</span>
-</footer>
-<a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
-</a>
-<script>let menu=document.getElementById('menu');menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);window.matchMedia('(prefers-reduced-motion: reduce)').matches?document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${a}`)})})</script>
-<script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script>
-<script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove('dark'),localStorage.setItem("pref-theme",'light')):(document.body.classList.add('dark'),localStorage.setItem("pref-theme",'dark'))})</script>
-</body>
-</html>
+        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg></a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>

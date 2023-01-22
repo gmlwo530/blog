@@ -1,302 +1,96 @@
-<!doctype html><html lang=ko dir=auto>
-<head><meta charset=utf-8>
-<meta http-equiv=x-ua-compatible content="IE=edge">
-<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
-<meta name=robots content="index, follow">
-<title>[GitHub Actions] React Deploy | Call Me Maru</title>
-<meta name=keywords content="CI/CD,GitHub,GitHub Actions,React">
-<meta name=description content="React 프로젝트를 GitHub Actions와 GitHub Page를 이용해서 배포해보자.
+<!doctype html><html lang=ko dir=auto><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>[GitHub Actions] React Deploy | Call Me Maru</title><meta name=keywords content="CI/CD,GitHub,GitHub Actions,React"><meta name=description content="React 프로젝트를 GitHub Actions와 GitHub Page를 이용해서 배포해보자.
 나는 기존에 오픈 소스로 개발 중인 프로젝트를 사용했다.
- 이 글은 GitHub Actions를 이해하고 있다는 가정하에 작성한다. 만약 GitHub Actions에 관해 공부해보고 싶다면 블로그에 정리해놓은 글 또는 공식 문서를 보자.  전체 코드 전체 코드를 먼저 보고 하나씩 의미를 알아 가보자.
-name: Deploy on: push: branches: - master jobs: deploy: runs-on: ubuntu-18.04 steps: - uses: actions/checkout@v2 - name: Setup Node uses: actions/setup-node@v2.1.2 with: node-version: &#34;12.">
-<meta name=author content="Maru">
-<link rel=canonical href=https://callmemaru.com/posts/github-actions-react-deploy/>
-<link crossorigin=anonymous href=/assets/css/stylesheet.min.b6da5ba13da618501ac634d35cd978d5132d511e714c745360a4b2cf68987ece.css integrity="sha256-ttpboT2mGFAaxjTTXNl41RMtUR5xTHRTYKSyz2iYfs4=" rel="preload stylesheet" as=style>
-<script defer crossorigin=anonymous src=/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5+kdJvBz5iKbt6B5PJI=" onload=hljs.initHighlightingOnLoad()></script>
-<link rel=icon href=https://callmemaru.com/favicon.ico>
-<link rel=icon type=image/png sizes=16x16 href=https://callmemaru.com/favicon-16x16.png>
-<link rel=icon type=image/png sizes=32x32 href=https://callmemaru.com/favicon-32x32.png>
-<link rel=apple-touch-icon href=https://callmemaru.com/favicon-32x32.png>
-<link rel=mask-icon href=https://callmemaru.com/favicon-32x32.png>
-<meta name=theme-color content="#2e2e33">
-<meta name=msapplication-TileColor content="#2e2e33">
-<noscript>
-<style>#theme-toggle,.top-link{display:none}</style>
-<style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style>
-</noscript>
-<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-113083768-3','auto'),ga('send','pageview'))</script><meta property="og:title" content="[GitHub Actions] React Deploy">
-<meta property="og:description" content="React 프로젝트를 GitHub Actions와 GitHub Page를 이용해서 배포해보자.
+이 글은 GitHub Actions를 이해하고 있다는 가정하에 작성한다. 만약 GitHub Actions에 관해 공부해보고 싶다면 블로그에 정리해놓은 글 또는 공식 문서를 보자. 전체 코드 전체 코드를 먼저 보고 하나씩 의미를 알아 가보자.
+name: Deploy on: push: branches: - master jobs: deploy: runs-on: ubuntu-18.04 steps: - uses: actions/checkout@v2 - name: Setup Node uses: actions/setup-node@v2.1.2 with: node-version: &#34;12."><meta name=author content="Maru"><link rel=canonical href=https://callmemaru.com/posts/github-actions-react-deploy/><link crossorigin=anonymous href=/assets/css/stylesheet.5c6fd7240554c81c432cb8ae63859819fdc3cfaca5febd2e5ef2e79eaf7d2a42.css integrity="sha256-XG/XJAVUyBxDLLiuY4WYGf3Dz6yl/r0uXvLnnq99KkI=" rel="preload stylesheet" as=style><script defer crossorigin=anonymous src=/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG+9vmJ0cTS+ovo0FeA=" onload=hljs.initHighlightingOnLoad()></script>
+<link rel=icon href=https://callmemaru.com/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://callmemaru.com/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://callmemaru.com/favicon-32x32.png><link rel=apple-touch-icon href=https://callmemaru.com/favicon-32x32.png><link rel=mask-icon href=https://callmemaru.com/favicon-32x32.png><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(e,t,n,s,o,i,a){e.GoogleAnalyticsObject=o,e[o]=e[o]||function(){(e[o].q=e[o].q||[]).push(arguments)},e[o].l=1*new Date,i=t.createElement(n),a=t.getElementsByTagName(n)[0],i.async=1,i.src=s,a.parentNode.insertBefore(i,a)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-113083768-3","auto"),ga("send","pageview"))</script><meta property="og:title" content="[GitHub Actions] React Deploy"><meta property="og:description" content="React 프로젝트를 GitHub Actions와 GitHub Page를 이용해서 배포해보자.
 나는 기존에 오픈 소스로 개발 중인 프로젝트를 사용했다.
- 이 글은 GitHub Actions를 이해하고 있다는 가정하에 작성한다. 만약 GitHub Actions에 관해 공부해보고 싶다면 블로그에 정리해놓은 글 또는 공식 문서를 보자.  전체 코드 전체 코드를 먼저 보고 하나씩 의미를 알아 가보자.
-name: Deploy on: push: branches: - master jobs: deploy: runs-on: ubuntu-18.04 steps: - uses: actions/checkout@v2 - name: Setup Node uses: actions/setup-node@v2.1.2 with: node-version: &#34;12.">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://callmemaru.com/posts/github-actions-react-deploy/"><meta property="og:image" content="https://callmemaru.com/og_image.png"><meta property="article:section" content="posts">
-<meta property="article:published_time" content="2021-02-06T14:07:16+09:00">
-<meta property="article:modified_time" content="2021-02-06T14:07:16+09:00"><meta property="og:site_name" content="Call me maru">
-<meta name=twitter:card content="summary_large_image">
-<meta name=twitter:image content="https://callmemaru.com/og_image.png">
-<meta name=twitter:title content="[GitHub Actions] React Deploy">
-<meta name=twitter:description content="React 프로젝트를 GitHub Actions와 GitHub Page를 이용해서 배포해보자.
+이 글은 GitHub Actions를 이해하고 있다는 가정하에 작성한다. 만약 GitHub Actions에 관해 공부해보고 싶다면 블로그에 정리해놓은 글 또는 공식 문서를 보자. 전체 코드 전체 코드를 먼저 보고 하나씩 의미를 알아 가보자.
+name: Deploy on: push: branches: - master jobs: deploy: runs-on: ubuntu-18.04 steps: - uses: actions/checkout@v2 - name: Setup Node uses: actions/setup-node@v2.1.2 with: node-version: &#34;12."><meta property="og:type" content="article"><meta property="og:url" content="https://callmemaru.com/posts/github-actions-react-deploy/"><meta property="og:image" content="https://callmemaru.com/og_image.png"><meta property="article:section" content="posts"><meta property="article:published_time" content="2021-02-06T14:07:16+09:00"><meta property="article:modified_time" content="2021-02-06T14:07:16+09:00"><meta property="og:site_name" content="Call me maru"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://callmemaru.com/og_image.png"><meta name=twitter:title content="[GitHub Actions] React Deploy"><meta name=twitter:description content="React 프로젝트를 GitHub Actions와 GitHub Page를 이용해서 배포해보자.
 나는 기존에 오픈 소스로 개발 중인 프로젝트를 사용했다.
- 이 글은 GitHub Actions를 이해하고 있다는 가정하에 작성한다. 만약 GitHub Actions에 관해 공부해보고 싶다면 블로그에 정리해놓은 글 또는 공식 문서를 보자.  전체 코드 전체 코드를 먼저 보고 하나씩 의미를 알아 가보자.
-name: Deploy on: push: branches: - master jobs: deploy: runs-on: ubuntu-18.04 steps: - uses: actions/checkout@v2 - name: Setup Node uses: actions/setup-node@v2.1.2 with: node-version: &#34;12.">
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://callmemaru.com/posts/"},{"@type":"ListItem","position":2,"name":"[GitHub Actions] React Deploy","item":"https://callmemaru.com/posts/github-actions-react-deploy/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"[GitHub Actions] React Deploy","name":"[GitHub Actions] React Deploy","description":"React 프로젝트를 GitHub Actions와 GitHub Page를 이용해서 배포해보자.\n나는 기존에 오픈 소스로 개발 중인 프로젝트를 사용했다.\n 이 글은 GitHub Actions를 이해하고 있다는 가정하에 작성한다. 만약 GitHub Actions에 관해 공부해보고 싶다면 블로그에 정리해놓은 글 또는 공식 문서를 보자.  전체 코드 전체 코드를 먼저 보고 하나씩 의미를 알아 가보자.\nname: Deploy on: push: branches: - master jobs: deploy: runs-on: ubuntu-18.04 steps: - uses: actions/checkout@v2 - name: Setup Node uses: actions/setup-node@v2.1.2 with: node-version: \u0026#34;12.","keywords":["CI/CD","GitHub","GitHub Actions","React"],"articleBody":"React 프로젝트를 GitHub Actions와 GitHub Page를 이용해서 배포해보자.\n나는 기존에 오픈 소스로 개발 중인 프로젝트를 사용했다.\n 이 글은 GitHub Actions를 이해하고 있다는 가정하에 작성한다. 만약 GitHub Actions에 관해 공부해보고 싶다면 블로그에 정리해놓은 글 또는 공식 문서를 보자.  전체 코드 전체 코드를 먼저 보고 하나씩 의미를 알아 가보자.\nname: Deploy on: push: branches: - master jobs: deploy: runs-on: ubuntu-18.04 steps: - uses: actions/checkout@v2 - name: Setup Node uses: actions/setup-node@v2.1.2 with: node-version: \"12.x\" - name: Cache dependencies uses: actions/cache@v2 with: path: ~/.npm key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }} restore-keys: | ${{ runner.os }}-node- - name: Install dependencies run: npm install - name: Make env file run: |touch .env echo REACT_APP_MODE=prod  .env echo REACT_APP_GA_ID=${{ secrets.REACT_APP_GA_ID }}  .env - name: Build app run: npm run build - name: Deploy uses: peaceiris/actions-gh-pages@v3 with: github_token: ${{ secrets.GITHUB_TOKEN }} publish_dir: ./build workflow 이름 및 이벤트 정의 name: Deploy on: push: branches: - master workflow의 이름은 Deploy로 정의하고, 이벤트는 master 브랜치로 푸시하는 것으로 정의하였다.\njob 정의 jobs: deploy-job: runs-on: ubuntu-18.04 job의 이름은 deploy-job으로 정의하고, runner의 os는 ubuntu-18.04로 정의한다.\nstep 정의 checkout actions - uses: actions/checkout@v2 이 액션은 GitHub Actions의 workflow가 레포지토리에 접근 할 수 있도록 $GITHUB_WORKSPACE에 레포지토리를 복사해 주는 일을 해준다. 예를 들어, /home/runner/work/my-repo-name/my-repo-name 경로로 레포지토리를 복사해준다. (기본 변수 참고)\nsetup-node actions - name: Setup Node uses: actions/setup-node@v2.1.2 with: node-version: \"12.x\" 이 액션은 노드 환경을 세팅해준다. Actions를 실행하면 아래와 같이 log가 찍힌다.\n  \n  with으로 사용된 변수들에 대해 알아보자.\n node-version: node 버전을 정의해주는 변수다. 이 변수는 옵션이다. (README에서 이 변수가 만약 정의되어 있지 않다면 PATH를 사용한다고 되어있는데 이미 정의되어있는 node 버전을 사용하는 것으로 보인다) always-auth: npmrc의 always-auth 변수의 값을 세팅하는 변수이다. check-latest: 이 변수의 기본값은 false인데, false로 두면 local에 캐시 된 노드 버전을 사용한다. 만약 true로 세팅하면 캐시 된 노드 버전을 확인하고 최근에 업데이트되지 않았으면, 새로 다운로드한다. token: node-versions에 요청할 때 쓰이는 값인데, 이미 기본값으로 ${{ github.token }}이 세팅되어 있어서 사용자(이 액션을 쓰는 개발자)는 신경 쓸 필요 없다.  cache actions - name: Cache dependencies uses: actions/cache@v2 with: path: ~/.npm key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }} restore-keys: | ${{ runner.os }}-node- 이 액션은 의존성과 빌드된 결과를 캐싱하여 workflow의 실행 시간을 향상해준다.\n일반적으로 Runner에서 실행되는 Job은 새로운 가상 환경에서 실행되서, 실행될 때마다 의존성을 다운로드 해야 한다. 그렇기 때문에 시간과 비용이 많이 소모된다,\n  path: 캐싱하고 저장할 파일, 디렉터리를 지정한다. wildcard patterns(@actions/glob에서 더 자세히 알아볼 수 있다.)으로 표현 할 수 있다.\n  key: 캐시를 저장하고 보관하기 위한 키다.\n  restore-keys: 키에 대한 캐시가 발생하지 않을 때, 캐시를 복원하기 위해 사용될 키의 순서가 정의된 목록이다.\n  Node의 npm 의존성 관리 툴에 대한 구성은 문서에 잘 정리되어 있다. 각 의존성 툴별로 각자의 방법이 있으니 문서에서 확인하면 된다.\n나의 프로젝트에서는 캐싱 되기 전에 의존성 설치가 49s가 걸렸다. 캐싱 된 후에는 41s로 줄었다.(응?) 뭔가 비약적으로 줄진 않았는데, 로그를 보니 캐싱이 되었으니 아무튼 성공이다.\n❗️ 캐싱되기 전에 워크플로우를 실행하면 캐싱 관련 로그가 Cache not found for input keys: ~로 찍혀 있다. 나는 처음에 액션이 동작 자체가 안되는 것인 줄 알고 헷갈렸는데, 알고 보니 두 번째부터 캐싱 된 것을 잘 가져왔다.(아니 그러면 캐싱 되었다는 메시지를 띄워주는 게 더 좋지 않았을까?)\nBuild app - name: Install dependencies run: npm install - name: Make env file run: |touch .env echo REACT_APP_MODE=prod  .env echo REACT_APP_GA_ID=${{ secrets.REACT_APP_GA_ID }}  .env - name: Build app run: npm run build app을 빌드하기 위해 의존성 들을 설치한다.\nMake env file step은 아직 좋은 방법을 못 찾은 케이스다. React에 사용할 환경 변수를 .env에 정의했는데, 적용하는 방법으로 위와 같이 파일을 만드는 방법밖에 생각을 못 해봤다.(좋은 방법이 있으면 소개 부탁드립니다.)\nDeploy to GitHub Page - name: Deploy uses: peaceiris/actions-gh-pages@v3 with: github_token: ${{ secrets.GITHUB_TOKEN }} publish_dir: ./build 이 액션은 정적 파일들을 GiHub Pages에 배포해준다. 위의 예제는 ./build 디렉터리를 gh-pages 브랜치에 배포하는 의미다.\n❗️ 예제에 사용된 GITHUB_TOKEN은 GitHub Actions runner가 자동으로 생성해주기 때문에, 유저가 따로 설정할 필요 없다.\nGitHub Actions 실행 이제 push를 하면 Github Actions가 실행되고 배포가 끝난다.\n  \n   Reference\n actions/checkout actions/setup-node actions/cache peaceiris/actions-gh-pages@v3 About caching workflow dependecies  ","wordCount":"626","inLanguage":"ko","datePublished":"2021-02-06T14:07:16+09:00","dateModified":"2021-02-06T14:07:16+09:00","author":[{"@type":"Person","name":"Maru"}],"mainEntityOfPage":{"@type":"WebPage","@id":"https://callmemaru.com/posts/github-actions-react-deploy/"},"publisher":{"@type":"Organization","name":"Call Me Maru","logo":{"@type":"ImageObject","url":"https://callmemaru.com/favicon.ico"}}}</script>
-</head>
-<body id=top>
-<script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
-<header class=header>
-<nav class=nav>
-<div class=logo>
-<a href=https://callmemaru.com/ accesskey=h title="Call Me Maru (Alt + H)">Call Me Maru</a>
-<span class=logo-switches>
-<button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-</button>
-</span>
-</div>
-<ul id=menu>
-<li>
-<a href=https://callmemaru.com/about/ title=About>
-<span>About</span>
-</a>
-</li>
-<li>
-<a href=https://callmemaru.com/tags/ title=Tags>
-<span>Tags</span>
-</a>
-</li>
-</ul>
-</nav>
-</header>
-<main class=main>
-<article class=post-single>
-<header class=post-header>
-<h1 class=post-title>
-[GitHub Actions] React Deploy
-</h1>
-<div class=post-meta><span title="2021-02-06 14:07:16 +0900 +0900">2월 6, 2021</span>&nbsp;·&nbsp;3 분&nbsp;·&nbsp;Maru
-</div>
-</header> <div class=toc>
-<details open>
-<summary accesskey=c title="(Alt + C)">
-<span class=details>목차</span>
-</summary>
-<div class=inner><ul>
-<li>
-<a href=#%ec%a0%84%ec%b2%b4-%ec%bd%94%eb%93%9c aria-label="전체 코드">전체 코드</a></li>
-<li>
-<a href=#workflow-%ec%9d%b4%eb%a6%84-%eb%b0%8f-%ec%9d%b4%eb%b2%a4%ed%8a%b8-%ec%a0%95%ec%9d%98 aria-label="workflow 이름 및 이벤트 정의">workflow 이름 및 이벤트 정의</a></li>
-<li>
-<a href=#job-%ec%a0%95%ec%9d%98 aria-label="job 정의">job 정의</a></li>
-<li>
-<a href=#step-%ec%a0%95%ec%9d%98 aria-label="step 정의">step 정의</a><ul>
-<li>
-<a href=#checkout-actions aria-label="checkout actions"><code>checkout</code> actions</a></li>
-<li>
-<a href=#setup-node-actions aria-label="setup-node actions"><code>setup-node</code> actions</a></li>
-<li>
-<a href=#cache-actions aria-label="cache actions"><code>cache</code> actions</a></li>
-<li>
-<a href=#build-app aria-label="Build app">Build app</a></li>
-<li>
-<a href=#deploy-to-github-page aria-label="Deploy to GitHub Page">Deploy to GitHub Page</a></li></ul>
-</li>
-<li>
-<a href=#github-actions-%ec%8b%a4%ed%96%89 aria-label="GitHub Actions 실행">GitHub Actions 실행</a>
-</li>
-</ul>
-</div>
-</details>
-</div>
-<div class=post-content><p>React 프로젝트를 GitHub Actions와 GitHub Page를 이용해서 배포해보자.</p>
-<p>나는 기존에 <a href=https://github.com/gmlwo530/code-process-generator target=_blank rel=noopener>오픈 소스로 개발 중인 프로젝트</a>를 사용했다.</p>
-<ul>
-<li>이 글은 GitHub Actions를 이해하고 있다는 가정하에 작성한다. 만약 GitHub Actions에 관해 공부해보고 싶다면 <a href=/posts/github-actions-learning-1/ title="GitHub Actions Learning">블로그에 정리해놓은 글</a> 또는 <a href=https://docs.github.com/en/actions/learn-github-actions target=_blank rel=noopener>공식 문서</a>를 보자.</li>
-</ul>
-<h1 id=전체-코드>전체 코드<a hidden class=anchor aria-hidden=true href=#전체-코드>#</a></h1>
-<p>전체 코드를 먼저 보고 하나씩 의미를 알아 가보자.</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>name</span>: <span style=color:#ae81ff>Deploy</span>
-
-<span style=color:#f92672>on</span>:
-  <span style=color:#f92672>push</span>:
-    <span style=color:#f92672>branches</span>:
-      - <span style=color:#ae81ff>master</span>
-
-<span style=color:#f92672>jobs</span>:
-  <span style=color:#f92672>deploy</span>:
-    <span style=color:#f92672>runs-on</span>: <span style=color:#ae81ff>ubuntu-18.04</span>
-    <span style=color:#f92672>steps</span>:
-      - <span style=color:#f92672>uses</span>: <span style=color:#ae81ff>actions/checkout@v2</span>
-
-      - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Setup Node</span>
-        <span style=color:#f92672>uses</span>: <span style=color:#ae81ff>actions/setup-node@v2.1.2</span>
-        <span style=color:#f92672>with</span>:
-          <span style=color:#f92672>node-version</span>: <span style=color:#e6db74>&#34;12.x&#34;</span>
-
-      - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Cache dependencies</span>
-        <span style=color:#f92672>uses</span>: <span style=color:#ae81ff>actions/cache@v2</span>
-        <span style=color:#f92672>with</span>:
-          <span style=color:#f92672>path</span>: <span style=color:#ae81ff>~/.npm</span>
-          <span style=color:#f92672>key</span>: <span style=color:#ae81ff>${{ runner.os }}-node-${{ hashFiles(&#39;**/package-lock.json&#39;) }}</span>
-          <span style=color:#f92672>restore-keys</span>: |<span style=color:#e6db74>
-</span><span style=color:#e6db74>            </span>            <span style=color:#ae81ff>${{ runner.os }}-node-</span>
-
-      - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Install dependencies</span>
-        <span style=color:#f92672>run</span>: <span style=color:#ae81ff>npm install</span>
-
-      - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Make env file</span>
-        <span style=color:#f92672>run</span>: |<span style=color:#e6db74>
-</span><span style=color:#e6db74>          touch .env
-</span><span style=color:#e6db74>          echo REACT_APP_MODE=prod &gt;&gt; .env
-</span><span style=color:#e6db74>          echo REACT_APP_GA_ID=${{ secrets.REACT_APP_GA_ID }} &gt;&gt; .env</span>          
-
-      - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Build app</span>
-        <span style=color:#f92672>run</span>: <span style=color:#ae81ff>npm run build</span>
-
-      - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Deploy</span>
-        <span style=color:#f92672>uses</span>: <span style=color:#ae81ff>peaceiris/actions-gh-pages@v3</span>
-        <span style=color:#f92672>with</span>:
-          <span style=color:#f92672>github_token</span>: <span style=color:#ae81ff>${{ secrets.GITHUB_TOKEN }}</span>
-          <span style=color:#f92672>publish_dir</span>: <span style=color:#ae81ff>./build</span>
-</code></pre></div><h1 id=workflow-이름-및-이벤트-정의>workflow 이름 및 이벤트 정의<a hidden class=anchor aria-hidden=true href=#workflow-이름-및-이벤트-정의>#</a></h1>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>name</span>: <span style=color:#ae81ff>Deploy</span>
-
-<span style=color:#f92672>on</span>:
-  <span style=color:#f92672>push</span>:
-    <span style=color:#f92672>branches</span>:
-      - <span style=color:#ae81ff>master</span>
-</code></pre></div><p>workflow의 이름은 <code>Deploy</code>로 정의하고, 이벤트는 <code>master</code> 브랜치로 푸시하는 것으로 정의하였다.</p>
-<h1 id=job-정의>job 정의<a hidden class=anchor aria-hidden=true href=#job-정의>#</a></h1>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>jobs</span>:
-  <span style=color:#f92672>deploy-job</span>:
-    <span style=color:#f92672>runs-on</span>: <span style=color:#ae81ff>ubuntu-18.04</span>
-</code></pre></div><p>job의 이름은 <code>deploy-job</code>으로 정의하고, runner의 os는 <code>ubuntu-18.04</code>로 정의한다.</p>
-<h1 id=step-정의>step 정의<a hidden class=anchor aria-hidden=true href=#step-정의>#</a></h1>
-<h2 id=checkout-actions><code>checkout</code> actions<a hidden class=anchor aria-hidden=true href=#checkout-actions>#</a></h2>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml>- <span style=color:#f92672>uses</span>: <span style=color:#ae81ff>actions/checkout@v2</span>
-</code></pre></div><p>이 액션은 GitHub Actions의 workflow가 레포지토리에 접근 할 수 있도록 <code>$GITHUB_WORKSPACE</code>에 레포지토리를 복사해 주는 일을 해준다.
-예를 들어, <code>/home/runner/work/my-repo-name/my-repo-name</code> 경로로 레포지토리를 복사해준다. (<a href=https://docs.github.com/en/actions/reference/environment-variables#default-environment-variables target=_blank rel=noopener>기본 변수 참고</a>)</p>
-<h2 id=setup-node-actions><code>setup-node</code> actions<a hidden class=anchor aria-hidden=true href=#setup-node-actions>#</a></h2>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml>- <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Setup Node</span>
-  <span style=color:#f92672>uses</span>: <span style=color:#ae81ff>actions/setup-node@v2.1.2</span>
-  <span style=color:#f92672>with</span>:
-    <span style=color:#f92672>node-version</span>: <span style=color:#e6db74>&#34;12.x&#34;</span>
-</code></pre></div><p>이 액션은 노드 환경을 세팅해준다. Actions를 실행하면 아래와 같이 log가 찍힌다.</p>
-<figure>
-<img loading=lazy src=/2021/GitHub-Actions-React-Deploy/setup-node-actions-log.png alt> <figcaption>
-<p></p>
-</figcaption>
-</figure>
-<p>with으로 사용된 변수들에 대해 알아보자.</p>
-<ul>
-<li><code>node-version</code>: node 버전을 정의해주는 변수다. 이 변수는 옵션이다. (README에서 이 변수가 만약 정의되어 있지 않다면 <code>PATH</code>를 사용한다고 되어있는데 이미 정의되어있는 node 버전을 사용하는 것으로 보인다)</li>
-<li><code>always-auth</code>: <a href=https://docs.npmjs.com/cli/v6/configuring-npm/npmrc target=_blank rel=noopener>npmrc</a>의 <a href=https://docs.npmjs.com/cli/v6/using-npm/config#always-auth target=_blank rel=noopener><code>always-auth</code></a> 변수의 값을 세팅하는 변수이다.</li>
-<li><code>check-latest</code>: 이 변수의 기본값은 false인데, false로 두면 local에 캐시 된 노드 버전을 사용한다. 만약 true로 세팅하면 캐시 된 노드 버전을 확인하고 최근에 업데이트되지 않았으면, 새로 다운로드한다.</li>
-<li><code>token</code>: <a href=https://github.com/actions/node-versions/releases target=_blank rel=noopener>node-versions</a>에 요청할 때 쓰이는 값인데, 이미 기본값으로 <code>${{ github.token }}</code>이 세팅되어 있어서 사용자(이 액션을 쓰는 개발자)는 신경 쓸 필요 없다.</li>
-</ul>
-<h2 id=cache-actions><code>cache</code> actions<a hidden class=anchor aria-hidden=true href=#cache-actions>#</a></h2>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml>- <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Cache dependencies</span>
-  <span style=color:#f92672>uses</span>: <span style=color:#ae81ff>actions/cache@v2</span>
-  <span style=color:#f92672>with</span>:
-    <span style=color:#f92672>path</span>: <span style=color:#ae81ff>~/.npm</span>
-    <span style=color:#f92672>key</span>: <span style=color:#ae81ff>${{ runner.os }}-node-${{ hashFiles(&#39;**/package-lock.json&#39;) }}</span>
-    <span style=color:#f92672>restore-keys</span>: |<span style=color:#e6db74>
-</span><span style=color:#e6db74>      </span>      <span style=color:#ae81ff>${{ runner.os }}-node-</span>
-</code></pre></div><p>이 액션은 의존성과 빌드된 결과를 캐싱하여 workflow의 실행 시간을 향상해준다.</p>
-<p>일반적으로 Runner에서 실행되는 Job은 새로운 가상 환경에서 실행되서, 실행될 때마다 의존성을 다운로드 해야 한다. 그렇기 때문에 시간과 비용이 많이 소모된다,</p>
-<ul>
-<li>
-<p><code>path</code>: 캐싱하고 저장할 파일, 디렉터리를 지정한다. wildcard patterns(<a href=https://docs.github.com/en/actions/guides/caching-dependencies-to-speed-up-workflows#about-caching-workflow-dependencies target=_blank rel=noopener>@actions/glob</a>에서 더 자세히 알아볼 수 있다.)으로 표현 할 수 있다.</p>
-</li>
-<li>
-<p><code>key</code>: 캐시를 저장하고 보관하기 위한 키다.</p>
-</li>
-<li>
-<p><code>restore-keys</code>: 키에 대한 캐시가 발생하지 않을 때, 캐시를 복원하기 위해 사용될 키의 순서가 정의된 목록이다.</p>
-</li>
-</ul>
-<p>Node의 npm 의존성 관리 툴에 대한 구성은 <a href=https://github.com/actions/cache/blob/main/examples.md#node---npm target=_blank rel=noopener>문서</a>에 잘 정리되어 있다. 각 의존성 툴별로 각자의 방법이 있으니 <a href=https://github.com/actions/cache#implementation-examples target=_blank rel=noopener>문서</a>에서 확인하면 된다.</p>
-<p>나의 프로젝트에서는 캐싱 되기 전에 의존성 설치가 49s가 걸렸다. 캐싱 된 후에는 41s로 줄었다.(응?)
-뭔가 비약적으로 줄진 않았는데, 로그를 보니 캐싱이 되었으니 아무튼 성공이다.</p>
-<p>❗️ 캐싱되기 전에 워크플로우를 실행하면 캐싱 관련 로그가 <code>Cache not found for input keys: ~</code>로 찍혀 있다. 나는 처음에 액션이 동작 자체가 안되는 것인 줄 알고 헷갈렸는데, 알고 보니 두 번째부터 캐싱 된 것을 잘 가져왔다.(아니 그러면 캐싱 되었다는 메시지를 띄워주는 게 더 좋지 않았을까?)</p>
-<h2 id=build-app>Build app<a hidden class=anchor aria-hidden=true href=#build-app>#</a></h2>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml>- <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Install dependencies</span>
-  <span style=color:#f92672>run</span>: <span style=color:#ae81ff>npm install</span>
-
-- <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Make env file</span>
-  <span style=color:#f92672>run</span>: |<span style=color:#e6db74>
-</span><span style=color:#e6db74>    touch .env
-</span><span style=color:#e6db74>    echo REACT_APP_MODE=prod &gt;&gt; .env
-</span><span style=color:#e6db74>    echo REACT_APP_GA_ID=${{ secrets.REACT_APP_GA_ID }} &gt;&gt; .env</span>    
-
-- <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Build app</span>
-  <span style=color:#f92672>run</span>: <span style=color:#ae81ff>npm run build</span>
-</code></pre></div><p>app을 빌드하기 위해 의존성 들을 설치한다.</p>
-<p><code>Make env file</code> step은 아직 좋은 방법을 못 찾은 케이스다. React에 사용할 환경 변수를 <code>.env</code>에 정의했는데, 적용하는 방법으로 위와 같이 파일을 만드는 방법밖에 생각을 못 해봤다.(좋은 방법이 있으면 소개 부탁드립니다.)</p>
-<h2 id=deploy-to-github-page>Deploy to GitHub Page<a hidden class=anchor aria-hidden=true href=#deploy-to-github-page>#</a></h2>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml>- <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Deploy</span>
-  <span style=color:#f92672>uses</span>: <span style=color:#ae81ff>peaceiris/actions-gh-pages@v3</span>
-  <span style=color:#f92672>with</span>:
-    <span style=color:#f92672>github_token</span>: <span style=color:#ae81ff>${{ secrets.GITHUB_TOKEN }}</span>
-    <span style=color:#f92672>publish_dir</span>: <span style=color:#ae81ff>./build</span>
-</code></pre></div><p>이 액션은 정적 파일들을 GiHub Pages에 배포해준다. 위의 예제는 <code>./build</code> 디렉터리를 <code>gh-pages</code> 브랜치에 배포하는 의미다.</p>
-<p>❗️ 예제에 사용된 <code>GITHUB_TOKEN</code>은 GitHub Actions runner가 자동으로 생성해주기 때문에, 유저가 따로 설정할 필요 없다.</p>
-<h1 id=github-actions-실행>GitHub Actions 실행<a hidden class=anchor aria-hidden=true href=#github-actions-실행>#</a></h1>
-<p>이제 push를 하면 Github Actions가 실행되고 배포가 끝난다.</p>
-<figure>
-<img loading=lazy src=/2021/GitHub-Actions-React-Deploy/github-actions-deploy-log.png alt> <figcaption>
-<p></p>
-</figcaption>
-</figure>
-<hr>
-<p><strong>Reference</strong></p>
-<ul>
-<li><a href=https://github.com/actions/checkout target=_blank rel=noopener>actions/checkout</a></li>
-<li><a href=https://github.com/actions/setup-node target=_blank rel=noopener>actions/setup-node</a></li>
-<li><a href=https://github.com/actions/cache target=_blank rel=noopener>actions/cache</a></li>
-<li><a href=https://github.com/peaceiris/actions-gh-pages target=_blank rel=noopener>peaceiris/actions-gh-pages@v3</a></li>
-<li><a href=https://docs.github.com/en/actions/guides/caching-dependencies-to-speed-up-workflows#about-caching-workflow-dependencies target=_blank rel=noopener>About caching workflow dependecies</a></li>
-</ul>
-</div>
-<footer class=post-footer>
-<ul class=post-tags>
-<li><a href=https://callmemaru.com/tags/ci/cd/>CI/CD</a></li>
-<li><a href=https://callmemaru.com/tags/github/>GitHub</a></li>
-<li><a href=https://callmemaru.com/tags/github-actions/>GitHub Actions</a></li>
-<li><a href=https://callmemaru.com/tags/react/>React</a></li>
-</ul>
-<div class=share-buttons>
-<a target=_blank rel="noopener noreferrer" aria-label="share [GitHub Actions] React Deploy on twitter" href="https://twitter.com/intent/tweet/?text=%5bGitHub%20Actions%5d%20React%20Deploy&url=https%3a%2f%2fcallmemaru.com%2fposts%2fgithub-actions-react-deploy%2f&hashtags=CI%2fCD%2cGitHub%2cGitHubActions%2cReact"><svg viewBox="0 0 512 512"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM195.519 424.544c135.939.0 210.268-112.643 210.268-210.268.0-3.218.0-6.437-.153-9.502 14.406-10.421 26.973-23.448 36.935-38.314-13.18 5.824-27.433 9.809-42.452 11.648 15.326-9.196 26.973-23.602 32.49-40.92-14.252 8.429-30.038 14.56-46.896 17.931-13.487-14.406-32.644-23.295-53.946-23.295-40.767.0-73.87 33.104-73.87 73.87.0 5.824.613 11.494 1.992 16.858-61.456-3.065-115.862-32.49-152.337-77.241-6.284 10.881-9.962 23.601-9.962 37.088.0 25.594 13.027 48.276 32.95 61.456-12.107-.307-23.448-3.678-33.41-9.196v.92c0 35.862 25.441 65.594 59.311 72.49-6.13 1.686-12.72 2.606-19.464 2.606-4.751.0-9.348-.46-13.946-1.38 9.349 29.426 36.628 50.728 68.965 51.341-25.287 19.771-57.164 31.571-91.8 31.571-5.977.0-11.801-.306-17.625-1.073 32.337 21.15 71.264 33.41 112.95 33.41z"/></svg>
-</a>
-<a target=_blank rel="noopener noreferrer" aria-label="share [GitHub Actions] React Deploy on linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fcallmemaru.com%2fposts%2fgithub-actions-react-deploy%2f&title=%5bGitHub%20Actions%5d%20React%20Deploy&summary=%5bGitHub%20Actions%5d%20React%20Deploy&source=https%3a%2f%2fcallmemaru.com%2fposts%2fgithub-actions-react-deploy%2f"><svg viewBox="0 0 512 512"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM160.461 423.278V197.561h-75.04v225.717h75.04zm270.539.0V293.839c0-69.333-37.018-101.586-86.381-101.586-39.804.0-57.634 21.891-67.617 37.266v-31.958h-75.021c.995 21.181.0 225.717.0 225.717h75.02V297.222c0-6.748.486-13.492 2.474-18.315 5.414-13.475 17.767-27.434 38.494-27.434 27.135.0 38.007 20.707 38.007 51.037v120.768H431zM123.448 88.722C97.774 88.722 81 105.601 81 127.724c0 21.658 16.264 39.002 41.455 39.002h.484c26.165.0 42.452-17.344 42.452-39.002-.485-22.092-16.241-38.954-41.943-39.002z"/></svg>
-</a>
-<a target=_blank rel="noopener noreferrer" aria-label="share [GitHub Actions] React Deploy on reddit" href="https://reddit.com/submit?url=https%3a%2f%2fcallmemaru.com%2fposts%2fgithub-actions-react-deploy%2f&title=%5bGitHub%20Actions%5d%20React%20Deploy"><svg viewBox="0 0 512 512"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM446 265.638c0-22.964-18.616-41.58-41.58-41.58-11.211.0-21.361 4.457-28.841 11.666-28.424-20.508-67.586-33.757-111.204-35.278l18.941-89.121 61.884 13.157c.756 15.734 13.642 28.29 29.56 28.29 16.407.0 29.706-13.299 29.706-29.701.0-16.403-13.299-29.702-29.706-29.702-11.666.0-21.657 6.792-26.515 16.578l-69.105-14.69c-1.922-.418-3.939-.042-5.585 1.036-1.658 1.073-2.811 2.761-3.224 4.686l-21.152 99.438c-44.258 1.228-84.046 14.494-112.837 35.232-7.468-7.164-17.589-11.591-28.757-11.591-22.965.0-41.585 18.616-41.585 41.58.0 16.896 10.095 31.41 24.568 37.918-.639 4.135-.99 8.328-.99 12.576.0 63.977 74.469 115.836 166.33 115.836s166.334-51.859 166.334-115.836c0-4.218-.347-8.387-.977-12.493 14.564-6.47 24.735-21.034 24.735-38.001zM326.526 373.831c-20.27 20.241-59.115 21.816-70.534 21.816-11.428.0-50.277-1.575-70.522-21.82-3.007-3.008-3.007-7.882.0-10.889 3.003-2.999 7.882-3.003 10.885.0 12.777 12.781 40.11 17.317 59.637 17.317 19.522.0 46.86-4.536 59.657-17.321 3.016-2.999 7.886-2.995 10.885.008 3.008 3.011 3.003 7.882-.008 10.889zm-5.23-48.781c-16.373.0-29.701-13.324-29.701-29.698.0-16.381 13.328-29.714 29.701-29.714 16.378.0 29.706 13.333 29.706 29.714.0 16.374-13.328 29.698-29.706 29.698zM160.91 295.348c0-16.381 13.328-29.71 29.714-29.71 16.369.0 29.689 13.329 29.689 29.71.0 16.373-13.32 29.693-29.689 29.693-16.386.0-29.714-13.32-29.714-29.693z"/></svg>
-</a>
-<a target=_blank rel="noopener noreferrer" aria-label="share [GitHub Actions] React Deploy on facebook" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fcallmemaru.com%2fposts%2fgithub-actions-react-deploy%2f"><svg viewBox="0 0 512 512"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H342.978V319.085h66.6l12.672-82.621h-79.272v-53.617c0-22.603 11.073-44.636 46.58-44.636H425.6v-70.34s-32.71-5.582-63.982-5.582c-65.288.0-107.96 39.569-107.96 111.204v62.971h-72.573v82.621h72.573V512h-191.104c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892z"/></svg>
-</a>
-<a target=_blank rel="noopener noreferrer" aria-label="share [GitHub Actions] React Deploy on whatsapp" href="https://api.whatsapp.com/send?text=%5bGitHub%20Actions%5d%20React%20Deploy%20-%20https%3a%2f%2fcallmemaru.com%2fposts%2fgithub-actions-react-deploy%2f"><svg viewBox="0 0 512 512"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zm-58.673 127.703c-33.842-33.881-78.847-52.548-126.798-52.568-98.799.0-179.21 80.405-179.249 179.234-.013 31.593 8.241 62.428 23.927 89.612l-25.429 92.884 95.021-24.925c26.181 14.28 55.659 21.807 85.658 21.816h.074c98.789.0 179.206-80.413 179.247-179.243.018-47.895-18.61-92.93-52.451-126.81zM263.976 403.485h-.06c-26.734-.01-52.954-7.193-75.828-20.767l-5.441-3.229-56.386 14.792 15.05-54.977-3.542-5.637c-14.913-23.72-22.791-51.136-22.779-79.287.033-82.142 66.867-148.971 149.046-148.971 39.793.014 77.199 15.531 105.329 43.692 28.128 28.16 43.609 65.592 43.594 105.4-.034 82.149-66.866 148.983-148.983 148.984zm81.721-111.581c-4.479-2.242-26.499-13.075-30.604-14.571-4.105-1.495-7.091-2.241-10.077 2.241-2.986 4.483-11.569 14.572-14.182 17.562-2.612 2.988-5.225 3.364-9.703 1.12-4.479-2.241-18.91-6.97-36.017-22.23C231.8 264.15 222.81 249.484 220.198 245s-.279-6.908 1.963-9.14c2.016-2.007 4.48-5.232 6.719-7.847 2.24-2.615 2.986-4.484 4.479-7.472 1.493-2.99.747-5.604-.374-7.846-1.119-2.241-10.077-24.288-13.809-33.256-3.635-8.733-7.327-7.55-10.077-7.688-2.609-.13-5.598-.158-8.583-.158-2.986.0-7.839 1.121-11.944 5.604-4.105 4.484-15.675 15.32-15.675 37.364.0 22.046 16.048 43.342 18.287 46.332 2.24 2.99 31.582 48.227 76.511 67.627 10.685 4.615 19.028 7.371 25.533 9.434 10.728 3.41 20.492 2.929 28.209 1.775 8.605-1.285 26.499-10.833 30.231-21.295 3.732-10.464 3.732-19.431 2.612-21.298-1.119-1.869-4.105-2.99-8.583-5.232z"/></svg>
-</a>
-<a target=_blank rel="noopener noreferrer" aria-label="share [GitHub Actions] React Deploy on telegram" href="https://telegram.me/share/url?text=%5bGitHub%20Actions%5d%20React%20Deploy&url=https%3a%2f%2fcallmemaru.com%2fposts%2fgithub-actions-react-deploy%2f"><svg viewBox="2 2 28 28"><path d="M26.49 29.86H5.5a3.37 3.37.0 01-2.47-1 3.35 3.35.0 01-1-2.47V5.48A3.36 3.36.0 013 3 3.37 3.37.0 015.5 2h21A3.38 3.38.0 0129 3a3.36 3.36.0 011 2.46V26.37a3.35 3.35.0 01-1 2.47 3.38 3.38.0 01-2.51 1.02zm-5.38-6.71a.79.79.0 00.85-.66L24.73 9.24a.55.55.0 00-.18-.46.62.62.0 00-.41-.17q-.08.0-16.53 6.11a.59.59.0 00-.41.59.57.57.0 00.43.52l4 1.24 1.61 4.83a.62.62.0 00.63.43.56.56.0 00.4-.17L16.54 20l4.09 3A.9.9.0 0021.11 23.15zM13.8 20.71l-1.21-4q8.72-5.55 8.78-5.55c.15.0.23.0.23.16a.18.18.0 010 .06s-2.51 2.3-7.52 6.8z"/></svg>
-</a>
-</div>
-</footer><div id=disqus_thread></div>
-<script type=application/javascript>var disqus_config=function(){};(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return}var b=document,a=b.createElement('script');a.async=!0,a.src='//callmemaru.disqus.com/embed.js',a.setAttribute('data-timestamp',+new Date),(b.head||b.body).appendChild(a)})()</script>
-<noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript>
-<a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a>
-</article>
-</main>
-<footer class=footer>
-<span>&copy; 2022 <a href=https://callmemaru.com/>Call Me Maru</a></span>
-<span>
-Powered by
+이 글은 GitHub Actions를 이해하고 있다는 가정하에 작성한다. 만약 GitHub Actions에 관해 공부해보고 싶다면 블로그에 정리해놓은 글 또는 공식 문서를 보자. 전체 코드 전체 코드를 먼저 보고 하나씩 의미를 알아 가보자.
+name: Deploy on: push: branches: - master jobs: deploy: runs-on: ubuntu-18.04 steps: - uses: actions/checkout@v2 - name: Setup Node uses: actions/setup-node@v2.1.2 with: node-version: &#34;12."><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://callmemaru.com/posts/"},{"@type":"ListItem","position":2,"name":"[GitHub Actions] React Deploy","item":"https://callmemaru.com/posts/github-actions-react-deploy/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"[GitHub Actions] React Deploy","name":"[GitHub Actions] React Deploy","description":"React 프로젝트를 GitHub Actions와 GitHub Page를 이용해서 배포해보자.\n나는 기존에 오픈 소스로 개발 중인 프로젝트를 사용했다.\n이 글은 GitHub Actions를 이해하고 있다는 가정하에 작성한다. 만약 GitHub Actions에 관해 공부해보고 싶다면 블로그에 정리해놓은 글 또는 공식 문서를 보자. 전체 코드 전체 코드를 먼저 보고 하나씩 의미를 알아 가보자.\nname: Deploy on: push: branches: - master jobs: deploy: runs-on: ubuntu-18.04 steps: - uses: actions/checkout@v2 - name: Setup Node uses: actions/setup-node@v2.1.2 with: node-version: \u0026#34;12.","keywords":["CI/CD","GitHub","GitHub Actions","React"],"articleBody":"React 프로젝트를 GitHub Actions와 GitHub Page를 이용해서 배포해보자.\n나는 기존에 오픈 소스로 개발 중인 프로젝트를 사용했다.\n이 글은 GitHub Actions를 이해하고 있다는 가정하에 작성한다. 만약 GitHub Actions에 관해 공부해보고 싶다면 블로그에 정리해놓은 글 또는 공식 문서를 보자. 전체 코드 전체 코드를 먼저 보고 하나씩 의미를 알아 가보자.\nname: Deploy on: push: branches: - master jobs: deploy: runs-on: ubuntu-18.04 steps: - uses: actions/checkout@v2 - name: Setup Node uses: actions/setup-node@v2.1.2 with: node-version: \"12.x\" - name: Cache dependencies uses: actions/cache@v2 with: path: ~/.npm key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }} restore-keys: | ${{ runner.os }}-node- - name: Install dependencies run: npm install - name: Make env file run: | touch .env echo REACT_APP_MODE=prod \u003e\u003e .env echo REACT_APP_GA_ID=${{ secrets.REACT_APP_GA_ID }} \u003e\u003e .env - name: Build app run: npm run build - name: Deploy uses: peaceiris/actions-gh-pages@v3 with: github_token: ${{ secrets.GITHUB_TOKEN }} publish_dir: ./build workflow 이름 및 이벤트 정의 name: Deploy on: push: branches: - master workflow의 이름은 Deploy로 정의하고, 이벤트는 master 브랜치로 푸시하는 것으로 정의하였다.\njob 정의 jobs: deploy-job: runs-on: ubuntu-18.04 job의 이름은 deploy-job으로 정의하고, runner의 os는 ubuntu-18.04로 정의한다.\nstep 정의 checkout actions - uses: actions/checkout@v2 이 액션은 GitHub Actions의 workflow가 레포지토리에 접근 할 수 있도록 $GITHUB_WORKSPACE에 레포지토리를 복사해 주는 일을 해준다. 예를 들어, /home/runner/work/my-repo-name/my-repo-name 경로로 레포지토리를 복사해준다. (기본 변수 참고)\nsetup-node actions - name: Setup Node uses: actions/setup-node@v2.1.2 with: node-version: \"12.x\" 이 액션은 노드 환경을 세팅해준다. Actions를 실행하면 아래와 같이 log가 찍힌다.\nwith으로 사용된 변수들에 대해 알아보자.\nnode-version: node 버전을 정의해주는 변수다. 이 변수는 옵션이다. (README에서 이 변수가 만약 정의되어 있지 않다면 PATH를 사용한다고 되어있는데 이미 정의되어있는 node 버전을 사용하는 것으로 보인다) always-auth: npmrc의 always-auth 변수의 값을 세팅하는 변수이다. check-latest: 이 변수의 기본값은 false인데, false로 두면 local에 캐시 된 노드 버전을 사용한다. 만약 true로 세팅하면 캐시 된 노드 버전을 확인하고 최근에 업데이트되지 않았으면, 새로 다운로드한다. token: node-versions에 요청할 때 쓰이는 값인데, 이미 기본값으로 ${{ github.token }}이 세팅되어 있어서 사용자(이 액션을 쓰는 개발자)는 신경 쓸 필요 없다. cache actions - name: Cache dependencies uses: actions/cache@v2 with: path: ~/.npm key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }} restore-keys: | ${{ runner.os }}-node- 이 액션은 의존성과 빌드된 결과를 캐싱하여 workflow의 실행 시간을 향상해준다.\n일반적으로 Runner에서 실행되는 Job은 새로운 가상 환경에서 실행되서, 실행될 때마다 의존성을 다운로드 해야 한다. 그렇기 때문에 시간과 비용이 많이 소모된다,\npath: 캐싱하고 저장할 파일, 디렉터리를 지정한다. wildcard patterns(@actions/glob에서 더 자세히 알아볼 수 있다.)으로 표현 할 수 있다.\nkey: 캐시를 저장하고 보관하기 위한 키다.\nrestore-keys: 키에 대한 캐시가 발생하지 않을 때, 캐시를 복원하기 위해 사용될 키의 순서가 정의된 목록이다.\nNode의 npm 의존성 관리 툴에 대한 구성은 문서에 잘 정리되어 있다. 각 의존성 툴별로 각자의 방법이 있으니 문서에서 확인하면 된다.\n나의 프로젝트에서는 캐싱 되기 전에 의존성 설치가 49s가 걸렸다. 캐싱 된 후에는 41s로 줄었다.(응?) 뭔가 비약적으로 줄진 않았는데, 로그를 보니 캐싱이 되었으니 아무튼 성공이다.\n❗️ 캐싱되기 전에 워크플로우를 실행하면 캐싱 관련 로그가 Cache not found for input keys: ~로 찍혀 있다. 나는 처음에 액션이 동작 자체가 안되는 것인 줄 알고 헷갈렸는데, 알고 보니 두 번째부터 캐싱 된 것을 잘 가져왔다.(아니 그러면 캐싱 되었다는 메시지를 띄워주는 게 더 좋지 않았을까?)\nBuild app - name: Install dependencies run: npm install - name: Make env file run: | touch .env echo REACT_APP_MODE=prod \u003e\u003e .env echo REACT_APP_GA_ID=${{ secrets.REACT_APP_GA_ID }} \u003e\u003e .env - name: Build app run: npm run build app을 빌드하기 위해 의존성 들을 설치한다.\nMake env file step은 아직 좋은 방법을 못 찾은 케이스다. React에 사용할 환경 변수를 .env에 정의했는데, 적용하는 방법으로 위와 같이 파일을 만드는 방법밖에 생각을 못 해봤다.(좋은 방법이 있으면 소개 부탁드립니다.)\nDeploy to GitHub Page - name: Deploy uses: peaceiris/actions-gh-pages@v3 with: github_token: ${{ secrets.GITHUB_TOKEN }} publish_dir: ./build 이 액션은 정적 파일들을 GiHub Pages에 배포해준다. 위의 예제는 ./build 디렉터리를 gh-pages 브랜치에 배포하는 의미다.\n❗️ 예제에 사용된 GITHUB_TOKEN은 GitHub Actions runner가 자동으로 생성해주기 때문에, 유저가 따로 설정할 필요 없다.\nGitHub Actions 실행 이제 push를 하면 Github Actions가 실행되고 배포가 끝난다.\nReference\nactions/checkout actions/setup-node actions/cache peaceiris/actions-gh-pages@v3 About caching workflow dependecies ","wordCount":"628","inLanguage":"ko","datePublished":"2021-02-06T14:07:16+09:00","dateModified":"2021-02-06T14:07:16+09:00","author":[{"@type":"Person","name":"Maru"}],"mainEntityOfPage":{"@type":"WebPage","@id":"https://callmemaru.com/posts/github-actions-react-deploy/"},"publisher":{"@type":"Organization","name":"Call Me Maru","logo":{"@type":"ImageObject","url":"https://callmemaru.com/favicon.ico"}}}</script></head><body id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://callmemaru.com/ accesskey=h title="Call Me Maru (Alt + H)">Call Me Maru</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://callmemaru.com/about/ title=About><span>About</span></a></li><li><a href=https://callmemaru.com/tags/ title=Tags><span>Tags</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><h1 class=post-title>[GitHub Actions] React Deploy</h1><div class=post-meta><span title='2021-02-06 14:07:16 +0900 +0900'>2월 6, 2021</span>&nbsp;·&nbsp;3 분&nbsp;·&nbsp;Maru</div></header><div class=toc><details open><summary accesskey=c title="(Alt + C)"><span class=details>목차</span></summary><div class=inner><ul><li><a href=#%ec%a0%84%ec%b2%b4-%ec%bd%94%eb%93%9c aria-label="전체 코드">전체 코드</a></li><li><a href=#workflow-%ec%9d%b4%eb%a6%84-%eb%b0%8f-%ec%9d%b4%eb%b2%a4%ed%8a%b8-%ec%a0%95%ec%9d%98 aria-label="workflow 이름 및 이벤트 정의">workflow 이름 및 이벤트 정의</a></li><li><a href=#job-%ec%a0%95%ec%9d%98 aria-label="job 정의">job 정의</a></li><li><a href=#step-%ec%a0%95%ec%9d%98 aria-label="step 정의">step 정의</a><ul><li><a href=#checkout-actions aria-label="checkout actions"><code>checkout</code> actions</a></li><li><a href=#setup-node-actions aria-label="setup-node actions"><code>setup-node</code> actions</a></li><li><a href=#cache-actions aria-label="cache actions"><code>cache</code> actions</a></li><li><a href=#build-app aria-label="Build app">Build app</a></li><li><a href=#deploy-to-github-page aria-label="Deploy to GitHub Page">Deploy to GitHub Page</a></li></ul></li><li><a href=#github-actions-%ec%8b%a4%ed%96%89 aria-label="GitHub Actions 실행">GitHub Actions 실행</a></li></ul></div></details></div><div class=post-content><p>React 프로젝트를 GitHub Actions와 GitHub Page를 이용해서 배포해보자.</p><p>나는 기존에 <a href=https://github.com/gmlwo530/code-process-generator target=_blank rel=noopener>오픈 소스로 개발 중인 프로젝트</a>를 사용했다.</p><ul><li>이 글은 GitHub Actions를 이해하고 있다는 가정하에 작성한다. 만약 GitHub Actions에 관해 공부해보고 싶다면 <a href=/posts/github-actions-learning-1/ title="GitHub Actions Learning">블로그에 정리해놓은 글</a> 또는 <a href=https://docs.github.com/en/actions/learn-github-actions target=_blank rel=noopener>공식 문서</a>를 보자.</li></ul><h1 id=전체-코드>전체 코드<a hidden class=anchor aria-hidden=true href=#전체-코드>#</a></h1><p>전체 코드를 먼저 보고 하나씩 의미를 알아 가보자.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#f92672>name</span>: <span style=color:#ae81ff>Deploy</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#f92672>on</span>:
+</span></span><span style=display:flex><span>  <span style=color:#f92672>push</span>:
+</span></span><span style=display:flex><span>    <span style=color:#f92672>branches</span>:
+</span></span><span style=display:flex><span>      - <span style=color:#ae81ff>master</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#f92672>jobs</span>:
+</span></span><span style=display:flex><span>  <span style=color:#f92672>deploy</span>:
+</span></span><span style=display:flex><span>    <span style=color:#f92672>runs-on</span>: <span style=color:#ae81ff>ubuntu-18.04</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>steps</span>:
+</span></span><span style=display:flex><span>      - <span style=color:#f92672>uses</span>: <span style=color:#ae81ff>actions/checkout@v2</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>      - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Setup Node</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>uses</span>: <span style=color:#ae81ff>actions/setup-node@v2.1.2</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>with</span>:
+</span></span><span style=display:flex><span>          <span style=color:#f92672>node-version</span>: <span style=color:#e6db74>&#34;12.x&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>      - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Cache dependencies</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>uses</span>: <span style=color:#ae81ff>actions/cache@v2</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>with</span>:
+</span></span><span style=display:flex><span>          <span style=color:#f92672>path</span>: <span style=color:#ae81ff>~/.npm</span>
+</span></span><span style=display:flex><span>          <span style=color:#f92672>key</span>: <span style=color:#ae81ff>${{ runner.os }}-node-${{ hashFiles(&#39;**/package-lock.json&#39;) }}</span>
+</span></span><span style=display:flex><span>          <span style=color:#f92672>restore-keys</span>: |<span style=color:#e6db74>
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>            </span>            <span style=color:#ae81ff>${{ runner.os }}-node-</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>      - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Install dependencies</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>run</span>: <span style=color:#ae81ff>npm install</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>      - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Make env file</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>run</span>: |<span style=color:#e6db74>
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>          touch .env
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>          echo REACT_APP_MODE=prod &gt;&gt; .env
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>          echo REACT_APP_GA_ID=${{ secrets.REACT_APP_GA_ID }} &gt;&gt; .env</span>          
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>      - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Build app</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>run</span>: <span style=color:#ae81ff>npm run build</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>      - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Deploy</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>uses</span>: <span style=color:#ae81ff>peaceiris/actions-gh-pages@v3</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>with</span>:
+</span></span><span style=display:flex><span>          <span style=color:#f92672>github_token</span>: <span style=color:#ae81ff>${{ secrets.GITHUB_TOKEN }}</span>
+</span></span><span style=display:flex><span>          <span style=color:#f92672>publish_dir</span>: <span style=color:#ae81ff>./build</span>
+</span></span></code></pre></div><h1 id=workflow-이름-및-이벤트-정의>workflow 이름 및 이벤트 정의<a hidden class=anchor aria-hidden=true href=#workflow-이름-및-이벤트-정의>#</a></h1><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#f92672>name</span>: <span style=color:#ae81ff>Deploy</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#f92672>on</span>:
+</span></span><span style=display:flex><span>  <span style=color:#f92672>push</span>:
+</span></span><span style=display:flex><span>    <span style=color:#f92672>branches</span>:
+</span></span><span style=display:flex><span>      - <span style=color:#ae81ff>master</span>
+</span></span></code></pre></div><p>workflow의 이름은 <code>Deploy</code>로 정의하고, 이벤트는 <code>master</code> 브랜치로 푸시하는 것으로 정의하였다.</p><h1 id=job-정의>job 정의<a hidden class=anchor aria-hidden=true href=#job-정의>#</a></h1><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#f92672>jobs</span>:
+</span></span><span style=display:flex><span>  <span style=color:#f92672>deploy-job</span>:
+</span></span><span style=display:flex><span>    <span style=color:#f92672>runs-on</span>: <span style=color:#ae81ff>ubuntu-18.04</span>
+</span></span></code></pre></div><p>job의 이름은 <code>deploy-job</code>으로 정의하고, runner의 os는 <code>ubuntu-18.04</code>로 정의한다.</p><h1 id=step-정의>step 정의<a hidden class=anchor aria-hidden=true href=#step-정의>#</a></h1><h2 id=checkout-actions><code>checkout</code> actions<a hidden class=anchor aria-hidden=true href=#checkout-actions>#</a></h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span>- <span style=color:#f92672>uses</span>: <span style=color:#ae81ff>actions/checkout@v2</span>
+</span></span></code></pre></div><p>이 액션은 GitHub Actions의 workflow가 레포지토리에 접근 할 수 있도록 <code>$GITHUB_WORKSPACE</code>에 레포지토리를 복사해 주는 일을 해준다.
+예를 들어, <code>/home/runner/work/my-repo-name/my-repo-name</code> 경로로 레포지토리를 복사해준다. (<a href=https://docs.github.com/en/actions/reference/environment-variables#default-environment-variables target=_blank rel=noopener>기본 변수 참고</a>)</p><h2 id=setup-node-actions><code>setup-node</code> actions<a hidden class=anchor aria-hidden=true href=#setup-node-actions>#</a></h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span>- <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Setup Node</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>uses</span>: <span style=color:#ae81ff>actions/setup-node@v2.1.2</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>with</span>:
+</span></span><span style=display:flex><span>    <span style=color:#f92672>node-version</span>: <span style=color:#e6db74>&#34;12.x&#34;</span>
+</span></span></code></pre></div><p>이 액션은 노드 환경을 세팅해준다. Actions를 실행하면 아래와 같이 log가 찍힌다.</p><figure><img loading=lazy src=/2021/GitHub-Actions-React-Deploy/setup-node-actions-log.png alt><figcaption><p></p></figcaption></figure><p>with으로 사용된 변수들에 대해 알아보자.</p><ul><li><code>node-version</code>: node 버전을 정의해주는 변수다. 이 변수는 옵션이다. (README에서 이 변수가 만약 정의되어 있지 않다면 <code>PATH</code>를 사용한다고 되어있는데 이미 정의되어있는 node 버전을 사용하는 것으로 보인다)</li><li><code>always-auth</code>: <a href=https://docs.npmjs.com/cli/v6/configuring-npm/npmrc target=_blank rel=noopener>npmrc</a>의 <a href=https://docs.npmjs.com/cli/v6/using-npm/config#always-auth target=_blank rel=noopener><code>always-auth</code></a> 변수의 값을 세팅하는 변수이다.</li><li><code>check-latest</code>: 이 변수의 기본값은 false인데, false로 두면 local에 캐시 된 노드 버전을 사용한다. 만약 true로 세팅하면 캐시 된 노드 버전을 확인하고 최근에 업데이트되지 않았으면, 새로 다운로드한다.</li><li><code>token</code>: <a href=https://github.com/actions/node-versions/releases target=_blank rel=noopener>node-versions</a>에 요청할 때 쓰이는 값인데, 이미 기본값으로 <code>${{ github.token }}</code>이 세팅되어 있어서 사용자(이 액션을 쓰는 개발자)는 신경 쓸 필요 없다.</li></ul><h2 id=cache-actions><code>cache</code> actions<a hidden class=anchor aria-hidden=true href=#cache-actions>#</a></h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span>- <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Cache dependencies</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>uses</span>: <span style=color:#ae81ff>actions/cache@v2</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>with</span>:
+</span></span><span style=display:flex><span>    <span style=color:#f92672>path</span>: <span style=color:#ae81ff>~/.npm</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>key</span>: <span style=color:#ae81ff>${{ runner.os }}-node-${{ hashFiles(&#39;**/package-lock.json&#39;) }}</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>restore-keys</span>: |<span style=color:#e6db74>
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>      </span>      <span style=color:#ae81ff>${{ runner.os }}-node-</span>
+</span></span></code></pre></div><p>이 액션은 의존성과 빌드된 결과를 캐싱하여 workflow의 실행 시간을 향상해준다.</p><p>일반적으로 Runner에서 실행되는 Job은 새로운 가상 환경에서 실행되서, 실행될 때마다 의존성을 다운로드 해야 한다. 그렇기 때문에 시간과 비용이 많이 소모된다,</p><ul><li><p><code>path</code>: 캐싱하고 저장할 파일, 디렉터리를 지정한다. wildcard patterns(<a href=https://docs.github.com/en/actions/guides/caching-dependencies-to-speed-up-workflows#about-caching-workflow-dependencies target=_blank rel=noopener>@actions/glob</a>에서 더 자세히 알아볼 수 있다.)으로 표현 할 수 있다.</p></li><li><p><code>key</code>: 캐시를 저장하고 보관하기 위한 키다.</p></li><li><p><code>restore-keys</code>: 키에 대한 캐시가 발생하지 않을 때, 캐시를 복원하기 위해 사용될 키의 순서가 정의된 목록이다.</p></li></ul><p>Node의 npm 의존성 관리 툴에 대한 구성은 <a href=https://github.com/actions/cache/blob/main/examples.md#node---npm target=_blank rel=noopener>문서</a>에 잘 정리되어 있다. 각 의존성 툴별로 각자의 방법이 있으니 <a href=https://github.com/actions/cache#implementation-examples target=_blank rel=noopener>문서</a>에서 확인하면 된다.</p><p>나의 프로젝트에서는 캐싱 되기 전에 의존성 설치가 49s가 걸렸다. 캐싱 된 후에는 41s로 줄었다.(응?)
+뭔가 비약적으로 줄진 않았는데, 로그를 보니 캐싱이 되었으니 아무튼 성공이다.</p><p>❗️ 캐싱되기 전에 워크플로우를 실행하면 캐싱 관련 로그가 <code>Cache not found for input keys: ~</code>로 찍혀 있다. 나는 처음에 액션이 동작 자체가 안되는 것인 줄 알고 헷갈렸는데, 알고 보니 두 번째부터 캐싱 된 것을 잘 가져왔다.(아니 그러면 캐싱 되었다는 메시지를 띄워주는 게 더 좋지 않았을까?)</p><h2 id=build-app>Build app<a hidden class=anchor aria-hidden=true href=#build-app>#</a></h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span>- <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Install dependencies</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>run</span>: <span style=color:#ae81ff>npm install</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>- <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Make env file</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>run</span>: |<span style=color:#e6db74>
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    touch .env
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    echo REACT_APP_MODE=prod &gt;&gt; .env
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    echo REACT_APP_GA_ID=${{ secrets.REACT_APP_GA_ID }} &gt;&gt; .env</span>    
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>- <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Build app</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>run</span>: <span style=color:#ae81ff>npm run build</span>
+</span></span></code></pre></div><p>app을 빌드하기 위해 의존성 들을 설치한다.</p><p><code>Make env file</code> step은 아직 좋은 방법을 못 찾은 케이스다. React에 사용할 환경 변수를 <code>.env</code>에 정의했는데, 적용하는 방법으로 위와 같이 파일을 만드는 방법밖에 생각을 못 해봤다.(좋은 방법이 있으면 소개 부탁드립니다.)</p><h2 id=deploy-to-github-page>Deploy to GitHub Page<a hidden class=anchor aria-hidden=true href=#deploy-to-github-page>#</a></h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span>- <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Deploy</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>uses</span>: <span style=color:#ae81ff>peaceiris/actions-gh-pages@v3</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>with</span>:
+</span></span><span style=display:flex><span>    <span style=color:#f92672>github_token</span>: <span style=color:#ae81ff>${{ secrets.GITHUB_TOKEN }}</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>publish_dir</span>: <span style=color:#ae81ff>./build</span>
+</span></span></code></pre></div><p>이 액션은 정적 파일들을 GiHub Pages에 배포해준다. 위의 예제는 <code>./build</code> 디렉터리를 <code>gh-pages</code> 브랜치에 배포하는 의미다.</p><p>❗️ 예제에 사용된 <code>GITHUB_TOKEN</code>은 GitHub Actions runner가 자동으로 생성해주기 때문에, 유저가 따로 설정할 필요 없다.</p><h1 id=github-actions-실행>GitHub Actions 실행<a hidden class=anchor aria-hidden=true href=#github-actions-실행>#</a></h1><p>이제 push를 하면 Github Actions가 실행되고 배포가 끝난다.</p><figure><img loading=lazy src=/2021/GitHub-Actions-React-Deploy/github-actions-deploy-log.png alt><figcaption><p></p></figcaption></figure><hr><p><strong>Reference</strong></p><ul><li><a href=https://github.com/actions/checkout target=_blank rel=noopener>actions/checkout</a></li><li><a href=https://github.com/actions/setup-node target=_blank rel=noopener>actions/setup-node</a></li><li><a href=https://github.com/actions/cache target=_blank rel=noopener>actions/cache</a></li><li><a href=https://github.com/peaceiris/actions-gh-pages target=_blank rel=noopener>peaceiris/actions-gh-pages@v3</a></li><li><a href=https://docs.github.com/en/actions/guides/caching-dependencies-to-speed-up-workflows#about-caching-workflow-dependencies target=_blank rel=noopener>About caching workflow dependecies</a></li></ul></div><footer class=post-footer><ul class=post-tags><li><a href=https://callmemaru.com/tags/ci/cd/>CI/CD</a></li><li><a href=https://callmemaru.com/tags/github/>GitHub</a></li><li><a href=https://callmemaru.com/tags/github-actions/>GitHub Actions</a></li><li><a href=https://callmemaru.com/tags/react/>React</a></li></ul><div class=share-buttons><a target=_blank rel="noopener noreferrer" aria-label="share [GitHub Actions] React Deploy on twitter" href="https://twitter.com/intent/tweet/?text=%5bGitHub%20Actions%5d%20React%20Deploy&url=https%3a%2f%2fcallmemaru.com%2fposts%2fgithub-actions-react-deploy%2f&hashtags=CI%2fCD%2cGitHub%2cGitHubActions%2cReact"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentcolor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM195.519 424.544c135.939.0 210.268-112.643 210.268-210.268.0-3.218.0-6.437-.153-9.502 14.406-10.421 26.973-23.448 36.935-38.314-13.18 5.824-27.433 9.809-42.452 11.648 15.326-9.196 26.973-23.602 32.49-40.92-14.252 8.429-30.038 14.56-46.896 17.931-13.487-14.406-32.644-23.295-53.946-23.295-40.767.0-73.87 33.104-73.87 73.87.0 5.824.613 11.494 1.992 16.858-61.456-3.065-115.862-32.49-152.337-77.241-6.284 10.881-9.962 23.601-9.962 37.088.0 25.594 13.027 48.276 32.95 61.456-12.107-.307-23.448-3.678-33.41-9.196v.92c0 35.862 25.441 65.594 59.311 72.49-6.13 1.686-12.72 2.606-19.464 2.606-4.751.0-9.348-.46-13.946-1.38 9.349 29.426 36.628 50.728 68.965 51.341-25.287 19.771-57.164 31.571-91.8 31.571-5.977.0-11.801-.306-17.625-1.073 32.337 21.15 71.264 33.41 112.95 33.41z"/></svg></a><a target=_blank rel="noopener noreferrer" aria-label="share [GitHub Actions] React Deploy on linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fcallmemaru.com%2fposts%2fgithub-actions-react-deploy%2f&title=%5bGitHub%20Actions%5d%20React%20Deploy&summary=%5bGitHub%20Actions%5d%20React%20Deploy&source=https%3a%2f%2fcallmemaru.com%2fposts%2fgithub-actions-react-deploy%2f"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentcolor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM160.461 423.278V197.561h-75.04v225.717h75.04zm270.539.0V293.839c0-69.333-37.018-101.586-86.381-101.586-39.804.0-57.634 21.891-67.617 37.266v-31.958h-75.021c.995 21.181.0 225.717.0 225.717h75.02V297.222c0-6.748.486-13.492 2.474-18.315 5.414-13.475 17.767-27.434 38.494-27.434 27.135.0 38.007 20.707 38.007 51.037v120.768H431zM123.448 88.722C97.774 88.722 81 105.601 81 127.724c0 21.658 16.264 39.002 41.455 39.002h.484c26.165.0 42.452-17.344 42.452-39.002-.485-22.092-16.241-38.954-41.943-39.002z"/></svg></a><a target=_blank rel="noopener noreferrer" aria-label="share [GitHub Actions] React Deploy on reddit" href="https://reddit.com/submit?url=https%3a%2f%2fcallmemaru.com%2fposts%2fgithub-actions-react-deploy%2f&title=%5bGitHub%20Actions%5d%20React%20Deploy"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentcolor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM446 265.638c0-22.964-18.616-41.58-41.58-41.58-11.211.0-21.361 4.457-28.841 11.666-28.424-20.508-67.586-33.757-111.204-35.278l18.941-89.121 61.884 13.157c.756 15.734 13.642 28.29 29.56 28.29 16.407.0 29.706-13.299 29.706-29.701.0-16.403-13.299-29.702-29.706-29.702-11.666.0-21.657 6.792-26.515 16.578l-69.105-14.69c-1.922-.418-3.939-.042-5.585 1.036-1.658 1.073-2.811 2.761-3.224 4.686l-21.152 99.438c-44.258 1.228-84.046 14.494-112.837 35.232-7.468-7.164-17.589-11.591-28.757-11.591-22.965.0-41.585 18.616-41.585 41.58.0 16.896 10.095 31.41 24.568 37.918-.639 4.135-.99 8.328-.99 12.576.0 63.977 74.469 115.836 166.33 115.836s166.334-51.859 166.334-115.836c0-4.218-.347-8.387-.977-12.493 14.564-6.47 24.735-21.034 24.735-38.001zM326.526 373.831c-20.27 20.241-59.115 21.816-70.534 21.816-11.428.0-50.277-1.575-70.522-21.82-3.007-3.008-3.007-7.882.0-10.889 3.003-2.999 7.882-3.003 10.885.0 12.777 12.781 40.11 17.317 59.637 17.317 19.522.0 46.86-4.536 59.657-17.321 3.016-2.999 7.886-2.995 10.885.008 3.008 3.011 3.003 7.882-.008 10.889zm-5.23-48.781c-16.373.0-29.701-13.324-29.701-29.698.0-16.381 13.328-29.714 29.701-29.714 16.378.0 29.706 13.333 29.706 29.714.0 16.374-13.328 29.698-29.706 29.698zM160.91 295.348c0-16.381 13.328-29.71 29.714-29.71 16.369.0 29.689 13.329 29.689 29.71.0 16.373-13.32 29.693-29.689 29.693-16.386.0-29.714-13.32-29.714-29.693z"/></svg></a><a target=_blank rel="noopener noreferrer" aria-label="share [GitHub Actions] React Deploy on facebook" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fcallmemaru.com%2fposts%2fgithub-actions-react-deploy%2f"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentcolor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H342.978V319.085h66.6l12.672-82.621h-79.272v-53.617c0-22.603 11.073-44.636 46.58-44.636H425.6v-70.34s-32.71-5.582-63.982-5.582c-65.288.0-107.96 39.569-107.96 111.204v62.971h-72.573v82.621h72.573V512h-191.104c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892z"/></svg></a><a target=_blank rel="noopener noreferrer" aria-label="share [GitHub Actions] React Deploy on whatsapp" href="https://api.whatsapp.com/send?text=%5bGitHub%20Actions%5d%20React%20Deploy%20-%20https%3a%2f%2fcallmemaru.com%2fposts%2fgithub-actions-react-deploy%2f"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentcolor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zm-58.673 127.703c-33.842-33.881-78.847-52.548-126.798-52.568-98.799.0-179.21 80.405-179.249 179.234-.013 31.593 8.241 62.428 23.927 89.612l-25.429 92.884 95.021-24.925c26.181 14.28 55.659 21.807 85.658 21.816h.074c98.789.0 179.206-80.413 179.247-179.243.018-47.895-18.61-92.93-52.451-126.81zM263.976 403.485h-.06c-26.734-.01-52.954-7.193-75.828-20.767l-5.441-3.229-56.386 14.792 15.05-54.977-3.542-5.637c-14.913-23.72-22.791-51.136-22.779-79.287.033-82.142 66.867-148.971 149.046-148.971 39.793.014 77.199 15.531 105.329 43.692 28.128 28.16 43.609 65.592 43.594 105.4-.034 82.149-66.866 148.983-148.983 148.984zm81.721-111.581c-4.479-2.242-26.499-13.075-30.604-14.571-4.105-1.495-7.091-2.241-10.077 2.241-2.986 4.483-11.569 14.572-14.182 17.562-2.612 2.988-5.225 3.364-9.703 1.12-4.479-2.241-18.91-6.97-36.017-22.23C231.8 264.15 222.81 249.484 220.198 245s-.279-6.908 1.963-9.14c2.016-2.007 4.48-5.232 6.719-7.847 2.24-2.615 2.986-4.484 4.479-7.472 1.493-2.99.747-5.604-.374-7.846-1.119-2.241-10.077-24.288-13.809-33.256-3.635-8.733-7.327-7.55-10.077-7.688-2.609-.13-5.598-.158-8.583-.158-2.986.0-7.839 1.121-11.944 5.604-4.105 4.484-15.675 15.32-15.675 37.364.0 22.046 16.048 43.342 18.287 46.332 2.24 2.99 31.582 48.227 76.511 67.627 10.685 4.615 19.028 7.371 25.533 9.434 10.728 3.41 20.492 2.929 28.209 1.775 8.605-1.285 26.499-10.833 30.231-21.295 3.732-10.464 3.732-19.431 2.612-21.298-1.119-1.869-4.105-2.99-8.583-5.232z"/></svg></a><a target=_blank rel="noopener noreferrer" aria-label="share [GitHub Actions] React Deploy on telegram" href="https://telegram.me/share/url?text=%5bGitHub%20Actions%5d%20React%20Deploy&url=https%3a%2f%2fcallmemaru.com%2fposts%2fgithub-actions-react-deploy%2f"><svg viewBox="2 2 28 28" height="30" width="30" fill="currentcolor"><path d="M26.49 29.86H5.5a3.37 3.37.0 01-2.47-1 3.35 3.35.0 01-1-2.47V5.48A3.36 3.36.0 013 3 3.37 3.37.0 015.5 2h21A3.38 3.38.0 0129 3a3.36 3.36.0 011 2.46V26.37a3.35 3.35.0 01-1 2.47 3.38 3.38.0 01-2.51 1.02zm-5.38-6.71a.79.79.0 00.85-.66L24.73 9.24a.55.55.0 00-.18-.46.62.62.0 00-.41-.17q-.08.0-16.53 6.11a.59.59.0 00-.41.59.57.57.0 00.43.52l4 1.24 1.61 4.83a.62.62.0 00.63.43.56.56.0 00.4-.17L16.54 20l4.09 3A.9.9.0 0021.11 23.15zM13.8 20.71l-1.21-4q8.72-5.55 8.78-5.55c.15.0.23.0.23.16a.18.18.0 010 .06s-2.51 2.3-7.52 6.8z"/></svg></a></div></footer><div id=disqus_thread></div><script type=application/javascript>window.disqus_config=function(){},function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById("disqus_thread").innerHTML="Disqus comments not available by default when the website is previewed locally.";return}var t=document,e=t.createElement("script");e.async=!0,e.src="//callmemaru.disqus.com/embed.js",e.setAttribute("data-timestamp",+new Date),(t.head||t.body).appendChild(e)}()</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></article></main><footer class=footer><span>&copy; 2023 <a href=https://callmemaru.com/>Call Me Maru</a></span>
+<span>Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
-        <a href=https://git.io/hugopapermod rel=noopener target=_blank>PaperMod</a>
-</span>
-</footer>
-<a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
-</a>
-<script>let menu=document.getElementById('menu');menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);window.matchMedia('(prefers-reduced-motion: reduce)').matches?document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${a}`)})})</script>
-<script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script>
-<script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove('dark'),localStorage.setItem("pref-theme",'light')):(document.body.classList.add('dark'),localStorage.setItem("pref-theme",'dark'))})</script>
-</body>
-</html>
+        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg></a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>

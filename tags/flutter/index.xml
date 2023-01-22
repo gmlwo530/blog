@@ -43,10 +43,10 @@ int _counter = 0; void _increment(){ setState( () { _counter++; }); } </descript
       
       <guid>https://callmemaru.com/posts/flutter-toy-project-review-2/</guid>
       <description>1편에서 이어서 2편은 프로젝트를 진행 과정을 소개하고 후기를 마무리 하겠습니다.
-🗂 Flutter  Widget  Flutter에서 대부분의 UI들은 Widget Class에 속해 있습니다. 예를 들어, AlertDialog 문서를 보면 AlertDialog가 어디에 속해있는지 확인 할 수 있습니다.
-StatelessWidget &amp;amp; StatefulWidget  React를 사용해보신 개발자 분들에게는 친숙한 개념일 수도 있습니다. Flutter의 모든 UI 즉 Widget은 상태(state)를 가집니다.
+🗂 Flutter Widget Flutter에서 대부분의 UI들은 Widget Class에 속해 있습니다. 예를 들어, AlertDialog 문서를 보면 AlertDialog가 어디에 속해있는지 확인 할 수 있습니다.
+StatelessWidget &amp;amp; StatefulWidget React를 사용해보신 개발자 분들에게는 친숙한 개념일 수도 있습니다. Flutter의 모든 UI 즉 Widget은 상태(state)를 가집니다.
 Widget이 StatelessWidget을 상속 할 때는 상태가 변하지 않아도 되는 UI로 그려집니다.
-Widget이 StatefullWidget을 상속 할 때는 상태가 변하는 UI로 그려집니다.</description>
+Widget이 StatefullWidget을 상속 할 때는 상태가 변하는 UI로 그려집니다. Flutter에서 제공하는 setState 함수를 통해서 widget의 상태를 변화 시킬 수 있습니다.</description>
     </item>
     
   </channel>
