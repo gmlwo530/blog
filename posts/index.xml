@@ -5,96 +5,83 @@
     <link>https://callmemaru.com/posts/</link>
     <description>Recent content in Posts on Call Me Maru</description>
     <image>
+      <title>Call Me Maru</title>
       <url>https://callmemaru.com/og_image.png</url>
       <link>https://callmemaru.com/og_image.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.125.7</generator>
     <language>ko</language>
-    <lastBuildDate>Sun, 22 Jan 2023 16:28:42 +0900</lastBuildDate><atom:link href="https://callmemaru.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 21 Nov 2021 16:47:01 +0900</lastBuildDate>
+    <atom:link href="https://callmemaru.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Permission error when push to GitHub Pacakges by GitHub Actions</title>
       <link>https://callmemaru.com/posts/github-actions-pacakges-permission/</link>
       <pubDate>Sun, 21 Nov 2021 16:47:01 +0900</pubDate>
-      
       <guid>https://callmemaru.com/posts/github-actions-pacakges-permission/</guid>
       <description>이 글은 나처럼 공식 문서를 전체적으로 파악하지 않은 상태에서 GitHub Actions으로 GitHub Packages에 push 하는 사람들의 삽질을 방지하기 위한 글이다.
 어떤 테스크를 해결하기 위해 도커라이징 한 파일을 GitHub Packages에 올릴 일이 생겼다.
 매번 이미지를 빌드 할 때 마다 푸시하기 귀찮았고, 이미 GitHub Actions을 CI 용으로 쓰고 있기 때문에 GitHub Actions로 docker 이미지를 푸시 하는 것을 구현하였다.
 GitHub Actions에서 docker 레지스트리에 로그인하고 빌드한 뒤 푸시하는 예제는 공식 문서에 아주 잘 나와 있어 구현하기 편했다.</description>
     </item>
-    
     <item>
       <title>Cookiecutter - 지겨운 프로젝트 세팅은 이제 그만하자..!</title>
       <link>https://callmemaru.com/posts/introduce-cookiecutter/</link>
       <pubDate>Sun, 27 Jun 2021 01:00:00 +0900</pubDate>
-      
       <guid>https://callmemaru.com/posts/introduce-cookiecutter/</guid>
       <description>나는 새로운 프로젝트를 생성할 때마다 똑같은 상황에 부딪히곤 한다. &amp;ldquo;분명히 예전에 해봤던 세팅들인데?&amp;rdquo; 라는 생각과 동시에 기억이 흐릿해져, 결국 예전에 했던 프로젝트들을 뒤적이며 프로젝트 세팅에만 에너지를 다 쏟아 정작 비즈니스 로직은 하나도 못 짜고 내일을 기약하는 경험이 한 두번이 아니였다.
 고통에 몸 부리치던 와중.. react에서 template이라는 기능을 통해 미리 세팅해놓은 프로젝트를 터미널에서 커맨드 한 줄로 바로 생성했던 것이 기억 났다. 요즘은 django나 fastapi 프로젝트를 주로 하고 있어서, 비슷한게 없나 찾아보다 역시나 개발 세상에는 없는게 없드라.</description>
     </item>
-    
     <item>
       <title>[정리] 1인 기술 스타트업의 아키텍처 스택</title>
       <link>https://callmemaru.com/posts/summary-the-architecture-behind-a-one-person-tech-startup/</link>
       <pubDate>Sat, 24 Apr 2021 14:34:02 +0900</pubDate>
-      
       <guid>https://callmemaru.com/posts/summary-the-architecture-behind-a-one-person-tech-startup/</guid>
       <description>최근에 GeekNews에서 재밌는 글을 봤다. SaaS를 운영하는 1인 개발자가 설계한 아키텍처에 대한 설명인데, GeekNews에 공유해주신 분이 요약 해주신 내용만으로도 굉장히 퀄리티 높은 글인 것을 느낄 수 있었다. 그래서 나도 원문을 읽으며 나름대로 정리를 해볼려고 한다.
 참고로 본인이 1인 기술 스타트업을 만들 생각이 없어도 개발자라면 한 번쯤 읽어보면 도움이 되는 글이라고 생각한다.
 원문 글: https://anthonynsimon.com/blog/one-man-saas-architecture/
 서론 원문 글의 필자는 독일에서 1인 기업을 운영하고 있고 스트레스 없이 자기 자본으로만 천천히 운영하고 있다고 한다.</description>
     </item>
-    
     <item>
       <title>쉘 로딩 시간 개선하기</title>
       <link>https://callmemaru.com/posts/speeding-up-my-shell/</link>
       <pubDate>Sat, 06 Mar 2021 23:00:18 +0900</pubDate>
-      
       <guid>https://callmemaru.com/posts/speeding-up-my-shell/</guid>
       <description>어느 순간부터 터미널의 시작 시간이 오래 걸리는 느낌이 들었다. 터미널을 자주 끄고 키고 하는 습관이 있어서, 시작할 때마다 3~4초동안 검은 화면에 비춰지는 내 얼굴을 봐야 했다. 1분 1초가 아까운데 3~4초의 시간을 내 얼굴을 보는데 사용하는 것은 너무 아깝다. 원인을 찾고 해결해서 속도를 개선하고 싶은 니즈로 구글링을 해봤다. 다행히, 나와 같은 니즈를 가지고 있는 사람의 잘 정리한 블로그 글을 발견했다. 방법만 알고 싶으면 해당 글을 봐도 좋지만, 나는 shell에 대한 지식이 하나도 없어서 글에 나오는 shell의 개념들을 이번 글에서 정리하며 노트북에서 3~4초 동안 검은 거울이 생기는 문제를 좀 더 짧게 나오도록 해보고자 한다.</description>
     </item>
-    
     <item>
       <title>[GitHub Actions] React Deploy</title>
       <link>https://callmemaru.com/posts/github-actions-react-deploy/</link>
       <pubDate>Sat, 06 Feb 2021 14:07:16 +0900</pubDate>
-      
       <guid>https://callmemaru.com/posts/github-actions-react-deploy/</guid>
       <description>React 프로젝트를 GitHub Actions와 GitHub Page를 이용해서 배포해보자.
 나는 기존에 오픈 소스로 개발 중인 프로젝트를 사용했다.
 이 글은 GitHub Actions를 이해하고 있다는 가정하에 작성한다. 만약 GitHub Actions에 관해 공부해보고 싶다면 블로그에 정리해놓은 글 또는 공식 문서를 보자. 전체 코드 전체 코드를 먼저 보고 하나씩 의미를 알아 가보자.
 name: Deploy on: push: branches: - master jobs: deploy: runs-on: ubuntu-18.04 steps: - uses: actions/checkout@v2 - name: Setup Node uses: actions/setup-node@v2.1.2 with: node-version: &amp;#34;12.</description>
     </item>
-    
     <item>
       <title>[GitHub Action Learning] #3 Workflows에서 변수 사용하기</title>
       <link>https://callmemaru.com/posts/github-actions-learning-3/</link>
       <pubDate>Wed, 27 Jan 2021 00:10:06 +0900</pubDate>
-      
       <guid>https://callmemaru.com/posts/github-actions-learning-3/</guid>
       <description>개발을 하다보면 세팅이 불가피한 기능 또는 프로그램을 사용할 때가 있다. 예를 들어 PostgreSQL 같은 데이터베이스에 연결 할 때 HOST, PORT, USERNAME, PASSWORD 같은 환경 변수를 세팅해야 할 때가 있다. 또는 job을 이용해서 어플리케이션을 빌드한 다음에 내가 작성한 script를 돌리고 싶을 때도 있다.
 이렇게 커스텀하게 GitHub Actions를 다뤄보는 방법에 대해 알아보도록 하자.
 환경 변수 일단 각 workflows가 실행 될때 마다 GitHub Actions가 가지고 있는 기본 환경 변수가 제공 된다.
 물론 개발자가 원하는 환경 변수를 설정 할 수도 있다.</description>
     </item>
-    
     <item>
       <title>[GitHub Action Learning] #2 GitHub Actions 예제</title>
       <link>https://callmemaru.com/posts/github-actions-learning-2/</link>
       <pubDate>Tue, 19 Jan 2021 23:52:15 +0900</pubDate>
-      
       <guid>https://callmemaru.com/posts/github-actions-learning-2/</guid>
       <description>GitHub Actions는 YAML로 events, jobs, 그리고 steps를 정의한다. 그리고 YAML 파일은 레포지토리의 .github/workflows에 저장된다. 이 YAML을 직접 작성하고 Actions를 실행 시켜보자.
 만들 예제는 npm으로 bats를 설치하고 bats -v를 실행하는 간단한 액션이다.
 예제 만들기 1. 레포지토리 생성 및 YAML 파일 작성 GitHub에서 레포지토리를 새로 만들고 .github/workflows에 YAML 파일을 작성한다.
 # https://docs.github.com/en/actions/learn-github-actions/introduction-to-github-actions#create-an-example-workflow name: learn-github-actions on: [push] jobs: check-bats-version: runs-on: ubuntu-latest steps: - uses: actions/checkout@v2 - uses: actions/setup-node@v1 - run: npm install -g bats - run: bats -v 편의상 GitHub에서 바로 작성 했다.</description>
     </item>
-    
     <item>
       <title>[GitHub Action Learning] #1 GitHub Actions 소개</title>
       <link>https://callmemaru.com/posts/github-actions-learning-1/</link>
       <pubDate>Sun, 10 Jan 2021 01:58:03 +0900</pubDate>
-      
       <guid>https://callmemaru.com/posts/github-actions-learning-1/</guid>
       <description>최근에 개인 프로젝트를 여러 개 시작 했다. 배포에 대한 걱정을 좀 줄여보고자 처음으로 CI/CD를 공부해보자 마음 먹었다.
 CI/CD에 대해서 아는게 하나도 없어서, 서칭을 하다가 그저 탭으로만 마주한 GitHub Actions이 CI/CD 툴인걸 알게 되었다. 굉장히 많은 툴들이 있었는데, GitHub Actions은 GitHub에서 CI/CD에 대한 고민도 바로 해결 해주는 느낌이였다.
@@ -102,22 +89,18 @@ CI/CD에 대해서 아는게 하나도 없어서, 서칭을 하다가 그저 탭
 문서의 내용이 많으니 블로그 글은 나눠서 게시하겠다.
 CI/CD 란? CI/CD에 대한 개념은 굉장히 많은 자료가 있다.</description>
     </item>
-    
     <item>
       <title>2020 회고</title>
       <link>https://callmemaru.com/posts/2020-retrospective/</link>
       <pubDate>Mon, 28 Dec 2020 21:28:42 +0900</pubDate>
-      
       <guid>https://callmemaru.com/posts/2020-retrospective/</guid>
       <description>태어나서 처음으로 &amp;ldquo;나도 회고 글 써서 블로그에 포스팅 해야지&amp;quot;라는 다짐을 한게 2017년 12월이였다. 그리고 3년이 지난 지금 2017년의 다짐을 실천하고 있다. 이 글이 올라갈지는 2021년 1월 1일이 되어봐야지 알겠지만&amp;hellip;
 사실 2017년 12월 24일에 회고를 목표한 양 60%로 정도 쓰긴 했었다. 개인적으로 좋아하는 카페에서 맥북 13인치 2015년 형을 열어놓고 열심히 썼지만 밤에 약속이 잡혀 있어서 중간에 멈춰야 했다. 마침 25일 오전에 중국 청도에 갈 일정이 잡혀 있어서, 비행기에서 끝낼 생각으로 약속에 갔다.</description>
     </item>
-    
     <item>
       <title>Glide Error - You cannot start a load for a destroyed activity</title>
       <link>https://callmemaru.com/posts/glide-error-you-cannot-start-a-load-for-a-destroyed-activity/</link>
       <pubDate>Thu, 14 May 2020 13:45:11 +0900</pubDate>
-      
       <guid>https://callmemaru.com/posts/glide-error-you-cannot-start-a-load-for-a-destroyed-activity/</guid>
       <description>Glide 관련 된 처음보는 오류가 발생했다.
 You cannot start a load for a destroyed activity
@@ -127,35 +110,29 @@ You cannot start a load for a destroyed activity
 아래와 같이 RequestManager를 변수에 담아주고 사용하는 것이다.
 class MyAdapter extends WhichEveryOneYouUse { private final RequestManager glide; MyAdapter(RequestManager glide, .</description>
     </item>
-    
     <item>
       <title>[Maru의 Kotlin Tour - 공식 문서 편] #3 Returns and Jumps</title>
       <link>https://callmemaru.com/posts/maru-kotlin-tour-official-doc-3-returns-and-jumps/</link>
       <pubDate>Wed, 05 Feb 2020 00:28:44 +0900</pubDate>
-      
       <guid>https://callmemaru.com/posts/maru-kotlin-tour-official-doc-3-returns-and-jumps/</guid>
       <description>kotlin에는 3가지 jump 표현식이 있다.
 return : 제일 가까운 enclosing function으로 부터 return 합니다. break : 제일 가까운 enclosing loop를 종료합니다. continue : 제일 가까운 enclosing loop의 다음 단계(step)를 진행합니다. Break and Continue Labels Kotlin의 어떤 표현이든 label을 붙일 수 있다. @을 붙여서 라벨을 만들 수 있는데, 아래와 같이 쓰인다.
 loop@ for (i in 1..100){ // ... } 이제, break에 label을 붙이면 아래와 같이 쓸 수 있는데
 loop@ for (i in 1.</description>
     </item>
-    
     <item>
       <title>[Maru의 Kotlin Tour - 공식 문서 편] #2 Control Flow </title>
       <link>https://callmemaru.com/posts/maru-kotlin-tour-official-doc-2-control-flow/</link>
       <pubDate>Sun, 02 Feb 2020 23:23:53 +0900</pubDate>
-      
       <guid>https://callmemaru.com/posts/maru-kotlin-tour-official-doc-2-control-flow/</guid>
       <description>If Expression if는 expression, 즉 값을 return 하므로 tenary operator(condition ? then : else)가 없다고 한다.(난 tenary operator 좋은데..)
 그럼 if 표현식을 보자
 // Traditional usage var max = a if (a &amp;lt; b) max = b // With else var max: Int if (a &amp;gt; b) { max = a } else { max = b } // As expression val max = if (a &amp;gt; b) a else b 마지막 코드인 val max = if (a &amp;gt; b) a else b가 tenary operator와 비슷해보인다.</description>
     </item>
-    
     <item>
       <title>[Maru의 Kotlin Tour - 공식 문서 편] #1 Basic Types</title>
       <link>https://callmemaru.com/posts/maru-kotlin-tour-official-doc-1-basic-types/</link>
       <pubDate>Sun, 02 Feb 2020 23:23:40 +0900</pubDate>
-      
       <guid>https://callmemaru.com/posts/maru-kotlin-tour-official-doc-1-basic-types/</guid>
       <description>해당 문서 첫 문장에 참 친근한 문장이 있다.
 In Kotlin, everything is an object
@@ -163,12 +140,10 @@ In Kotlin, everything is an object
 이 섹션에서는 numbers, characters, booleans, arrays, 그리고 strings을 다룬다.
 Numbers Kotlin에서 integer는 총 4가지, floating은 총 2가지 타입을 제공해준다. Integer Byte Short Int Long val one = 1 // Int val threeBillion = 300000000 // Long val oneLong = 1L // Long val oneByte: Byte = 1 위의 코드에서 주목해야 할 점은 threeBillioin 변수이다.</description>
     </item>
-    
     <item>
       <title>[Maru의 Kotlin Tour - 공식 문서 편] #0 Intro</title>
       <link>https://callmemaru.com/posts/maru-kotlin-tour-official-doc-0-intro/</link>
       <pubDate>Sun, 02 Feb 2020 17:30:14 +0900</pubDate>
-      
       <guid>https://callmemaru.com/posts/maru-kotlin-tour-official-doc-0-intro/</guid>
       <description>들어가기 앞서 코틀린의 정의와 Command Line Compiler를 설치하는 법을 알아보겠습니다.
 코틀린의 정의 코틀린(Kotlin)은 JVM에서 동작하는 프로그래밍 언어이다. 2011년 7월, 젯브레인사가 공개하였다.
@@ -176,34 +151,28 @@ Numbers Kotlin에서 integer는 총 4가지, floating은 총 2가지 타입을 �
 설치 방법도 여러가지 입니다. 저는 OS X를 사용하기 때문에 HomeBrew를 이용해서 설치하겠습니다.
 다른 방법들은 문서를 참고 해주세요 $ brew update $ brew install kotlin 실행 해보기 잘 설치 되었는지 확인을 위해 가볍게 hello.</description>
     </item>
-    
     <item>
       <title>[Maru의 Kotlin Tour] Prologue</title>
       <link>https://callmemaru.com/posts/maru-kotlin-tour-prologue/</link>
       <pubDate>Sun, 02 Feb 2020 17:28:36 +0900</pubDate>
-      
       <guid>https://callmemaru.com/posts/maru-kotlin-tour-prologue/</guid>
       <description>Kotlin이라는 언어를 공부 해보겠습니다.
 참고하는 자료에 따라 시리즈로 진행 할 계획입니다.
 시리즈 공식 문서 편 </description>
     </item>
-    
     <item>
       <title>Flutter State Management - Provider</title>
       <link>https://callmemaru.com/posts/flutter-statement-manager-provider/</link>
       <pubDate>Sun, 12 Jan 2020 17:33:13 +0900</pubDate>
-      
       <guid>https://callmemaru.com/posts/flutter-statement-manager-provider/</guid>
       <description>Flutter에는 State가 있다. 사용자에 의해 이벤트가 발생 했을 때 state를 이용하여 UI를 업데이트 해준다.
 예를 들자면, 우리가 Flutter Project를 처음 생성 했을 때 기본으로 있는 count 앱을 들 수 있다. 사용자가 Floating Button인 + 버튼을 누르면 화면 중앙에 있는 숫자가 1씩 증가한다. 아래 코드와 같이 state를 이용하여 _counter 변수를 업데이트하고 UI를 업데이틑 하는 것을 확인 할 수 있다.
 int _counter = 0; void _increment(){ setState( () { _counter++; }); } </description>
     </item>
-    
     <item>
       <title>[Flutter] 토이 프로젝트 후기 - (1)</title>
       <link>https://callmemaru.com/posts/flutter-toy-project-review-1/</link>
       <pubDate>Fri, 17 May 2019 10:42:36 +0900</pubDate>
-      
       <guid>https://callmemaru.com/posts/flutter-toy-project-review-1/</guid>
       <description>react-native가 출시 된 지 4년이 지났습니다.
 모바일 애플리케이션 개발에서 크로스 플랫폼 동시 개발을 가능하게 해준 react-native는 굉장히 파워풀한 기술인 거 같습니다.
@@ -213,12 +182,10 @@ int _counter = 0; void _increment(){ setState( () { _counter++; }); } </descript
 글은 1편과 2편으로 나누어 작성하겠습니다.
 📑 간단한 기획 저는 웹에서 토이 프로젝트를 할 때 보통 블로그 형식을 구현했었습니다.</description>
     </item>
-    
     <item>
       <title>[Flutter] 토이 프로젝트 후기 - (2)</title>
       <link>https://callmemaru.com/posts/flutter-toy-project-review-2/</link>
       <pubDate>Fri, 17 May 2019 10:42:36 +0900</pubDate>
-      
       <guid>https://callmemaru.com/posts/flutter-toy-project-review-2/</guid>
       <description>1편에서 이어서 2편은 프로젝트를 진행 과정을 소개하고 후기를 마무리 하겠습니다.
 🗂 Flutter Widget Flutter에서 대부분의 UI들은 Widget Class에 속해 있습니다. 예를 들어, AlertDialog 문서를 보면 AlertDialog가 어디에 속해있는지 확인 할 수 있습니다.
@@ -226,12 +193,10 @@ StatelessWidget &amp;amp; StatefulWidget React를 사용해보신 개발자 분�
 Widget이 StatelessWidget을 상속 할 때는 상태가 변하지 않아도 되는 UI로 그려집니다.
 Widget이 StatefullWidget을 상속 할 때는 상태가 변하는 UI로 그려집니다. Flutter에서 제공하는 setState 함수를 통해서 widget의 상태를 변화 시킬 수 있습니다.</description>
     </item>
-    
     <item>
       <title>[Kotlin] 범위 지정 함수</title>
       <link>https://callmemaru.com/posts/kotlin-scoping-functions/</link>
       <pubDate>Fri, 12 Apr 2019 14:02:23 +0900</pubDate>
-      
       <guid>https://callmemaru.com/posts/kotlin-scoping-functions/</guid>
       <description>Kotlin에서 사용되는 함수 중에 범위 지정 함수라는게 있습니다. 이 함수들은 비슷한 모습을 하고 있어서, 약간의 혼란을 불러 일으키는 것 같습니다. 그러므로 이번 글에서는 이 범위 지정 함수들을 정리해보겠습니다.
 apply, with, let, also, run은 전달받는 인자와 작동 방식, 결과가 매우 비슷하다. 이 5개는 범위 지정 함수라고 명칭한다.
@@ -241,12 +206,10 @@ apply, with, let, also, run은 전달받는 인자와 작동 방식, 결과가 �
 함수 타입의 receiver이다. 예시 :
 val sum: Int.(Int) -&amp;gt; Int = { other -&amp;gt; plus(other) }</description>
     </item>
-    
     <item>
       <title>블로그의 목적</title>
       <link>https://callmemaru.com/posts/purpose-of-blog/</link>
       <pubDate>Sat, 06 Apr 2019 02:02:59 +0900</pubDate>
-      
       <guid>https://callmemaru.com/posts/purpose-of-blog/</guid>
       <description>이전에 개발 블로그를 만들기 위한 두 번의 시도가 있었습니다.
 두 번 다 글을 성실하게 이어가지 못 했던 이유를 생각 해보니, 블로그의 목적을 정하지 않고 시작해서 실패 했다는 결론을 내렸습니다.
@@ -254,6 +217,5 @@ val sum: Int.(Int) -&amp;gt; Int = { other -&amp;gt; plus(other) }</description>
 목적을 정하기에 있어 임백준님의 칼럼의 도움을 많이 받았습니다. 칼럼의 내용 중 목적 설정에 도움이 된 문장을 적어보겠습니다.
 어떤 일이 일어나지 알 수 없는 미래에 대한 두려움을 해소하자.</description>
     </item>
-    
   </channel>
 </rss>

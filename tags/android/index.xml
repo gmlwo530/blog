@@ -5,17 +5,18 @@
     <link>https://callmemaru.com/tags/android/</link>
     <description>Recent content in Android on Call Me Maru</description>
     <image>
+      <title>Call Me Maru</title>
       <url>https://callmemaru.com/og_image.png</url>
       <link>https://callmemaru.com/og_image.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.125.7</generator>
     <language>ko</language>
-    <lastBuildDate>Thu, 14 May 2020 13:45:11 +0900</lastBuildDate><atom:link href="https://callmemaru.com/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 14 May 2020 13:45:11 +0900</lastBuildDate>
+    <atom:link href="https://callmemaru.com/tags/android/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Glide Error - You cannot start a load for a destroyed activity</title>
       <link>https://callmemaru.com/posts/glide-error-you-cannot-start-a-load-for-a-destroyed-activity/</link>
       <pubDate>Thu, 14 May 2020 13:45:11 +0900</pubDate>
-      
       <guid>https://callmemaru.com/posts/glide-error-you-cannot-start-a-load-for-a-destroyed-activity/</guid>
       <description>Glide 관련 된 처음보는 오류가 발생했다.
 You cannot start a load for a destroyed activity
@@ -25,6 +26,5 @@ You cannot start a load for a destroyed activity
 아래와 같이 RequestManager를 변수에 담아주고 사용하는 것이다.
 class MyAdapter extends WhichEveryOneYouUse { private final RequestManager glide; MyAdapter(RequestManager glide, .</description>
     </item>
-    
   </channel>
 </rss>

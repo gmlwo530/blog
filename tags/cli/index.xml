@@ -5,21 +5,21 @@
     <link>https://callmemaru.com/tags/cli/</link>
     <description>Recent content in CLI on Call Me Maru</description>
     <image>
+      <title>Call Me Maru</title>
       <url>https://callmemaru.com/og_image.png</url>
       <link>https://callmemaru.com/og_image.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.125.7</generator>
     <language>ko</language>
-    <lastBuildDate>Sun, 27 Jun 2021 01:00:00 +0900</lastBuildDate><atom:link href="https://callmemaru.com/tags/cli/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 27 Jun 2021 01:00:00 +0900</lastBuildDate>
+    <atom:link href="https://callmemaru.com/tags/cli/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cookiecutter - 지겨운 프로젝트 세팅은 이제 그만하자..!</title>
       <link>https://callmemaru.com/posts/introduce-cookiecutter/</link>
       <pubDate>Sun, 27 Jun 2021 01:00:00 +0900</pubDate>
-      
       <guid>https://callmemaru.com/posts/introduce-cookiecutter/</guid>
       <description>나는 새로운 프로젝트를 생성할 때마다 똑같은 상황에 부딪히곤 한다. &amp;ldquo;분명히 예전에 해봤던 세팅들인데?&amp;rdquo; 라는 생각과 동시에 기억이 흐릿해져, 결국 예전에 했던 프로젝트들을 뒤적이며 프로젝트 세팅에만 에너지를 다 쏟아 정작 비즈니스 로직은 하나도 못 짜고 내일을 기약하는 경험이 한 두번이 아니였다.
 고통에 몸 부리치던 와중.. react에서 template이라는 기능을 통해 미리 세팅해놓은 프로젝트를 터미널에서 커맨드 한 줄로 바로 생성했던 것이 기억 났다. 요즘은 django나 fastapi 프로젝트를 주로 하고 있어서, 비슷한게 없나 찾아보다 역시나 개발 세상에는 없는게 없드라.</description>
     </item>
-    
   </channel>
 </rss>

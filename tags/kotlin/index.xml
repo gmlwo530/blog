@@ -5,40 +5,37 @@
     <link>https://callmemaru.com/tags/kotlin/</link>
     <description>Recent content in Kotlin on Call Me Maru</description>
     <image>
+      <title>Call Me Maru</title>
       <url>https://callmemaru.com/og_image.png</url>
       <link>https://callmemaru.com/og_image.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.125.7</generator>
     <language>ko</language>
-    <lastBuildDate>Wed, 05 Feb 2020 00:28:44 +0900</lastBuildDate><atom:link href="https://callmemaru.com/tags/kotlin/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Feb 2020 00:28:44 +0900</lastBuildDate>
+    <atom:link href="https://callmemaru.com/tags/kotlin/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[Maru의 Kotlin Tour - 공식 문서 편] #3 Returns and Jumps</title>
       <link>https://callmemaru.com/posts/maru-kotlin-tour-official-doc-3-returns-and-jumps/</link>
       <pubDate>Wed, 05 Feb 2020 00:28:44 +0900</pubDate>
-      
       <guid>https://callmemaru.com/posts/maru-kotlin-tour-official-doc-3-returns-and-jumps/</guid>
       <description>kotlin에는 3가지 jump 표현식이 있다.
 return : 제일 가까운 enclosing function으로 부터 return 합니다. break : 제일 가까운 enclosing loop를 종료합니다. continue : 제일 가까운 enclosing loop의 다음 단계(step)를 진행합니다. Break and Continue Labels Kotlin의 어떤 표현이든 label을 붙일 수 있다. @을 붙여서 라벨을 만들 수 있는데, 아래와 같이 쓰인다.
 loop@ for (i in 1..100){ // ... } 이제, break에 label을 붙이면 아래와 같이 쓸 수 있는데
 loop@ for (i in 1.</description>
     </item>
-    
     <item>
       <title>[Maru의 Kotlin Tour - 공식 문서 편] #2 Control Flow </title>
       <link>https://callmemaru.com/posts/maru-kotlin-tour-official-doc-2-control-flow/</link>
       <pubDate>Sun, 02 Feb 2020 23:23:53 +0900</pubDate>
-      
       <guid>https://callmemaru.com/posts/maru-kotlin-tour-official-doc-2-control-flow/</guid>
       <description>If Expression if는 expression, 즉 값을 return 하므로 tenary operator(condition ? then : else)가 없다고 한다.(난 tenary operator 좋은데..)
 그럼 if 표현식을 보자
 // Traditional usage var max = a if (a &amp;lt; b) max = b // With else var max: Int if (a &amp;gt; b) { max = a } else { max = b } // As expression val max = if (a &amp;gt; b) a else b 마지막 코드인 val max = if (a &amp;gt; b) a else b가 tenary operator와 비슷해보인다.</description>
     </item>
-    
     <item>
       <title>[Maru의 Kotlin Tour - 공식 문서 편] #1 Basic Types</title>
       <link>https://callmemaru.com/posts/maru-kotlin-tour-official-doc-1-basic-types/</link>
       <pubDate>Sun, 02 Feb 2020 23:23:40 +0900</pubDate>
-      
       <guid>https://callmemaru.com/posts/maru-kotlin-tour-official-doc-1-basic-types/</guid>
       <description>해당 문서 첫 문장에 참 친근한 문장이 있다.
 In Kotlin, everything is an object
@@ -46,12 +43,10 @@ In Kotlin, everything is an object
 이 섹션에서는 numbers, characters, booleans, arrays, 그리고 strings을 다룬다.
 Numbers Kotlin에서 integer는 총 4가지, floating은 총 2가지 타입을 제공해준다. Integer Byte Short Int Long val one = 1 // Int val threeBillion = 300000000 // Long val oneLong = 1L // Long val oneByte: Byte = 1 위의 코드에서 주목해야 할 점은 threeBillioin 변수이다.</description>
     </item>
-    
     <item>
       <title>[Maru의 Kotlin Tour - 공식 문서 편] #0 Intro</title>
       <link>https://callmemaru.com/posts/maru-kotlin-tour-official-doc-0-intro/</link>
       <pubDate>Sun, 02 Feb 2020 17:30:14 +0900</pubDate>
-      
       <guid>https://callmemaru.com/posts/maru-kotlin-tour-official-doc-0-intro/</guid>
       <description>들어가기 앞서 코틀린의 정의와 Command Line Compiler를 설치하는 법을 알아보겠습니다.
 코틀린의 정의 코틀린(Kotlin)은 JVM에서 동작하는 프로그래밍 언어이다. 2011년 7월, 젯브레인사가 공개하였다.
@@ -59,12 +54,10 @@ Numbers Kotlin에서 integer는 총 4가지, floating은 총 2가지 타입을 �
 설치 방법도 여러가지 입니다. 저는 OS X를 사용하기 때문에 HomeBrew를 이용해서 설치하겠습니다.
 다른 방법들은 문서를 참고 해주세요 $ brew update $ brew install kotlin 실행 해보기 잘 설치 되었는지 확인을 위해 가볍게 hello.</description>
     </item>
-    
     <item>
       <title>[Kotlin] 범위 지정 함수</title>
       <link>https://callmemaru.com/posts/kotlin-scoping-functions/</link>
       <pubDate>Fri, 12 Apr 2019 14:02:23 +0900</pubDate>
-      
       <guid>https://callmemaru.com/posts/kotlin-scoping-functions/</guid>
       <description>Kotlin에서 사용되는 함수 중에 범위 지정 함수라는게 있습니다. 이 함수들은 비슷한 모습을 하고 있어서, 약간의 혼란을 불러 일으키는 것 같습니다. 그러므로 이번 글에서는 이 범위 지정 함수들을 정리해보겠습니다.
 apply, with, let, also, run은 전달받는 인자와 작동 방식, 결과가 매우 비슷하다. 이 5개는 범위 지정 함수라고 명칭한다.
@@ -74,6 +67,5 @@ apply, with, let, also, run은 전달받는 인자와 작동 방식, 결과가 �
 함수 타입의 receiver이다. 예시 :
 val sum: Int.(Int) -&amp;gt; Int = { other -&amp;gt; plus(other) }</description>
     </item>
-    
   </channel>
 </rss>

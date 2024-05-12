@@ -5,65 +5,58 @@
     <link>https://callmemaru.com/tags/github-actions/</link>
     <description>Recent content in GitHub Actions on Call Me Maru</description>
     <image>
+      <title>Call Me Maru</title>
       <url>https://callmemaru.com/og_image.png</url>
       <link>https://callmemaru.com/og_image.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.125.7</generator>
     <language>ko</language>
-    <lastBuildDate>Sun, 21 Nov 2021 16:47:01 +0900</lastBuildDate><atom:link href="https://callmemaru.com/tags/github-actions/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 21 Nov 2021 16:47:01 +0900</lastBuildDate>
+    <atom:link href="https://callmemaru.com/tags/github-actions/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Permission error when push to GitHub Pacakges by GitHub Actions</title>
       <link>https://callmemaru.com/posts/github-actions-pacakges-permission/</link>
       <pubDate>Sun, 21 Nov 2021 16:47:01 +0900</pubDate>
-      
       <guid>https://callmemaru.com/posts/github-actions-pacakges-permission/</guid>
       <description>이 글은 나처럼 공식 문서를 전체적으로 파악하지 않은 상태에서 GitHub Actions으로 GitHub Packages에 push 하는 사람들의 삽질을 방지하기 위한 글이다.
 어떤 테스크를 해결하기 위해 도커라이징 한 파일을 GitHub Packages에 올릴 일이 생겼다.
 매번 이미지를 빌드 할 때 마다 푸시하기 귀찮았고, 이미 GitHub Actions을 CI 용으로 쓰고 있기 때문에 GitHub Actions로 docker 이미지를 푸시 하는 것을 구현하였다.
 GitHub Actions에서 docker 레지스트리에 로그인하고 빌드한 뒤 푸시하는 예제는 공식 문서에 아주 잘 나와 있어 구현하기 편했다.</description>
     </item>
-    
     <item>
       <title>[GitHub Actions] React Deploy</title>
       <link>https://callmemaru.com/posts/github-actions-react-deploy/</link>
       <pubDate>Sat, 06 Feb 2021 14:07:16 +0900</pubDate>
-      
       <guid>https://callmemaru.com/posts/github-actions-react-deploy/</guid>
       <description>React 프로젝트를 GitHub Actions와 GitHub Page를 이용해서 배포해보자.
 나는 기존에 오픈 소스로 개발 중인 프로젝트를 사용했다.
 이 글은 GitHub Actions를 이해하고 있다는 가정하에 작성한다. 만약 GitHub Actions에 관해 공부해보고 싶다면 블로그에 정리해놓은 글 또는 공식 문서를 보자. 전체 코드 전체 코드를 먼저 보고 하나씩 의미를 알아 가보자.
 name: Deploy on: push: branches: - master jobs: deploy: runs-on: ubuntu-18.04 steps: - uses: actions/checkout@v2 - name: Setup Node uses: actions/setup-node@v2.1.2 with: node-version: &amp;#34;12.</description>
     </item>
-    
     <item>
       <title>[GitHub Action Learning] #3 Workflows에서 변수 사용하기</title>
       <link>https://callmemaru.com/posts/github-actions-learning-3/</link>
       <pubDate>Wed, 27 Jan 2021 00:10:06 +0900</pubDate>
-      
       <guid>https://callmemaru.com/posts/github-actions-learning-3/</guid>
       <description>개발을 하다보면 세팅이 불가피한 기능 또는 프로그램을 사용할 때가 있다. 예를 들어 PostgreSQL 같은 데이터베이스에 연결 할 때 HOST, PORT, USERNAME, PASSWORD 같은 환경 변수를 세팅해야 할 때가 있다. 또는 job을 이용해서 어플리케이션을 빌드한 다음에 내가 작성한 script를 돌리고 싶을 때도 있다.
 이렇게 커스텀하게 GitHub Actions를 다뤄보는 방법에 대해 알아보도록 하자.
 환경 변수 일단 각 workflows가 실행 될때 마다 GitHub Actions가 가지고 있는 기본 환경 변수가 제공 된다.
 물론 개발자가 원하는 환경 변수를 설정 할 수도 있다.</description>
     </item>
-    
     <item>
       <title>[GitHub Action Learning] #2 GitHub Actions 예제</title>
       <link>https://callmemaru.com/posts/github-actions-learning-2/</link>
       <pubDate>Tue, 19 Jan 2021 23:52:15 +0900</pubDate>
-      
       <guid>https://callmemaru.com/posts/github-actions-learning-2/</guid>
       <description>GitHub Actions는 YAML로 events, jobs, 그리고 steps를 정의한다. 그리고 YAML 파일은 레포지토리의 .github/workflows에 저장된다. 이 YAML을 직접 작성하고 Actions를 실행 시켜보자.
 만들 예제는 npm으로 bats를 설치하고 bats -v를 실행하는 간단한 액션이다.
 예제 만들기 1. 레포지토리 생성 및 YAML 파일 작성 GitHub에서 레포지토리를 새로 만들고 .github/workflows에 YAML 파일을 작성한다.
 # https://docs.github.com/en/actions/learn-github-actions/introduction-to-github-actions#create-an-example-workflow name: learn-github-actions on: [push] jobs: check-bats-version: runs-on: ubuntu-latest steps: - uses: actions/checkout@v2 - uses: actions/setup-node@v1 - run: npm install -g bats - run: bats -v 편의상 GitHub에서 바로 작성 했다.</description>
     </item>
-    
     <item>
       <title>[GitHub Action Learning] #1 GitHub Actions 소개</title>
       <link>https://callmemaru.com/posts/github-actions-learning-1/</link>
       <pubDate>Sun, 10 Jan 2021 01:58:03 +0900</pubDate>
-      
       <guid>https://callmemaru.com/posts/github-actions-learning-1/</guid>
       <description>최근에 개인 프로젝트를 여러 개 시작 했다. 배포에 대한 걱정을 좀 줄여보고자 처음으로 CI/CD를 공부해보자 마음 먹었다.
 CI/CD에 대해서 아는게 하나도 없어서, 서칭을 하다가 그저 탭으로만 마주한 GitHub Actions이 CI/CD 툴인걸 알게 되었다. 굉장히 많은 툴들이 있었는데, GitHub Actions은 GitHub에서 CI/CD에 대한 고민도 바로 해결 해주는 느낌이였다.
@@ -71,6 +64,5 @@ CI/CD에 대해서 아는게 하나도 없어서, 서칭을 하다가 그저 탭
 문서의 내용이 많으니 블로그 글은 나눠서 게시하겠다.
 CI/CD 란? CI/CD에 대한 개념은 굉장히 많은 자료가 있다.</description>
     </item>
-    
   </channel>
 </rss>

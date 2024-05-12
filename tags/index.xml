@@ -5,182 +5,146 @@
     <link>https://callmemaru.com/tags/</link>
     <description>Recent content in Tags on Call Me Maru</description>
     <image>
+      <title>Call Me Maru</title>
       <url>https://callmemaru.com/og_image.png</url>
       <link>https://callmemaru.com/og_image.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.125.7</generator>
     <language>ko</language>
-    <lastBuildDate>Sun, 21 Nov 2021 16:47:01 +0900</lastBuildDate><atom:link href="https://callmemaru.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 21 Nov 2021 16:47:01 +0900</lastBuildDate>
+    <atom:link href="https://callmemaru.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CI/CD</title>
       <link>https://callmemaru.com/tags/ci/cd/</link>
-      <pubDate>Sun, 21 Nov 2021 16:47:01 +0900</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://callmemaru.com/tags/ci/cd/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>GitHub</title>
       <link>https://callmemaru.com/tags/github/</link>
-      <pubDate>Sun, 21 Nov 2021 16:47:01 +0900</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://callmemaru.com/tags/github/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>GitHub Actions</title>
       <link>https://callmemaru.com/tags/github-actions/</link>
-      <pubDate>Sun, 21 Nov 2021 16:47:01 +0900</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://callmemaru.com/tags/github-actions/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>GitHub Packages</title>
       <link>https://callmemaru.com/tags/github-packages/</link>
-      <pubDate>Sun, 21 Nov 2021 16:47:01 +0900</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://callmemaru.com/tags/github-packages/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Permission</title>
       <link>https://callmemaru.com/tags/permission/</link>
-      <pubDate>Sun, 21 Nov 2021 16:47:01 +0900</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://callmemaru.com/tags/permission/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>CLI</title>
       <link>https://callmemaru.com/tags/cli/</link>
-      <pubDate>Sun, 27 Jun 2021 01:00:00 +0900</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://callmemaru.com/tags/cli/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Python</title>
       <link>https://callmemaru.com/tags/python/</link>
-      <pubDate>Sun, 27 Jun 2021 01:00:00 +0900</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://callmemaru.com/tags/python/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>글</title>
       <link>https://callmemaru.com/tags/%EA%B8%80/</link>
-      <pubDate>Sat, 24 Apr 2021 14:34:02 +0900</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://callmemaru.com/tags/%EA%B8%80/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>번역</title>
       <link>https://callmemaru.com/tags/%EB%B2%88%EC%97%AD/</link>
-      <pubDate>Sat, 24 Apr 2021 14:34:02 +0900</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://callmemaru.com/tags/%EB%B2%88%EC%97%AD/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>요약</title>
       <link>https://callmemaru.com/tags/%EC%9A%94%EC%95%BD/</link>
-      <pubDate>Sat, 24 Apr 2021 14:34:02 +0900</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://callmemaru.com/tags/%EC%9A%94%EC%95%BD/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Oh-My-Zsh</title>
       <link>https://callmemaru.com/tags/oh-my-zsh/</link>
-      <pubDate>Sat, 06 Mar 2021 23:00:18 +0900</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://callmemaru.com/tags/oh-my-zsh/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Shell</title>
       <link>https://callmemaru.com/tags/shell/</link>
-      <pubDate>Sat, 06 Mar 2021 23:00:18 +0900</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://callmemaru.com/tags/shell/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Zsh</title>
       <link>https://callmemaru.com/tags/zsh/</link>
-      <pubDate>Sat, 06 Mar 2021 23:00:18 +0900</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://callmemaru.com/tags/zsh/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>React</title>
       <link>https://callmemaru.com/tags/react/</link>
-      <pubDate>Sat, 06 Feb 2021 14:07:16 +0900</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://callmemaru.com/tags/react/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>회고</title>
       <link>https://callmemaru.com/tags/%ED%9A%8C%EA%B3%A0/</link>
-      <pubDate>Mon, 28 Dec 2020 21:28:42 +0900</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://callmemaru.com/tags/%ED%9A%8C%EA%B3%A0/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Android</title>
       <link>https://callmemaru.com/tags/android/</link>
-      <pubDate>Thu, 14 May 2020 13:45:11 +0900</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://callmemaru.com/tags/android/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Kotlin</title>
       <link>https://callmemaru.com/tags/kotlin/</link>
-      <pubDate>Wed, 05 Feb 2020 00:28:44 +0900</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://callmemaru.com/tags/kotlin/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Article</title>
       <link>https://callmemaru.com/tags/article/</link>
-      <pubDate>Sun, 02 Feb 2020 17:28:36 +0900</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://callmemaru.com/tags/article/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Flutter</title>
       <link>https://callmemaru.com/tags/flutter/</link>
-      <pubDate>Sun, 12 Jan 2020 17:33:13 +0900</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://callmemaru.com/tags/flutter/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

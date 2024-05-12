@@ -5,23 +5,23 @@
     <link>https://callmemaru.com/tags/github-packages/</link>
     <description>Recent content in GitHub Packages on Call Me Maru</description>
     <image>
+      <title>Call Me Maru</title>
       <url>https://callmemaru.com/og_image.png</url>
       <link>https://callmemaru.com/og_image.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.125.7</generator>
     <language>ko</language>
-    <lastBuildDate>Sun, 21 Nov 2021 16:47:01 +0900</lastBuildDate><atom:link href="https://callmemaru.com/tags/github-packages/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 21 Nov 2021 16:47:01 +0900</lastBuildDate>
+    <atom:link href="https://callmemaru.com/tags/github-packages/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Permission error when push to GitHub Pacakges by GitHub Actions</title>
       <link>https://callmemaru.com/posts/github-actions-pacakges-permission/</link>
       <pubDate>Sun, 21 Nov 2021 16:47:01 +0900</pubDate>
-      
       <guid>https://callmemaru.com/posts/github-actions-pacakges-permission/</guid>
       <description>이 글은 나처럼 공식 문서를 전체적으로 파악하지 않은 상태에서 GitHub Actions으로 GitHub Packages에 push 하는 사람들의 삽질을 방지하기 위한 글이다.
 어떤 테스크를 해결하기 위해 도커라이징 한 파일을 GitHub Packages에 올릴 일이 생겼다.
 매번 이미지를 빌드 할 때 마다 푸시하기 귀찮았고, 이미 GitHub Actions을 CI 용으로 쓰고 있기 때문에 GitHub Actions로 docker 이미지를 푸시 하는 것을 구현하였다.
 GitHub Actions에서 docker 레지스트리에 로그인하고 빌드한 뒤 푸시하는 예제는 공식 문서에 아주 잘 나와 있어 구현하기 편했다.</description>
     </item>
-    
   </channel>
 </rss>
