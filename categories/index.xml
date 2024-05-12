@@ -8,6 +8,7 @@
       <url>https://callmemaru.com/og_image.png</url>
       <link>https://callmemaru.com/og_image.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://callmemaru.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language><atom:link href="https://callmemaru.com/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

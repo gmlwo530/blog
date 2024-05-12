@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>android on Call Me Maru</title>
+    <title>Android on Call Me Maru</title>
     <link>https://callmemaru.com/tags/android/</link>
-    <description>Recent content in android on Call Me Maru</description>
+    <description>Recent content in Android on Call Me Maru</description>
     <image>
       <url>https://callmemaru.com/og_image.png</url>
       <link>https://callmemaru.com/og_image.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
     <lastBuildDate>Thu, 14 May 2020 13:45:11 +0900</lastBuildDate><atom:link href="https://callmemaru.com/tags/android/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Glide Error - You cannot start a load for a destroyed activity</title>

@@ -63,6 +63,12 @@
     <lastmod>2019-04-06T02:02:59+09:00</lastmod>
   </url><url>
     <loc>https://callmemaru.com/</loc>
+    <lastmod>2023-01-22T16:28:42+09:00</lastmod>
+  </url><url>
+    <loc>https://callmemaru.com/posts/</loc>
+    <lastmod>2023-01-22T16:28:42+09:00</lastmod>
+  </url><url>
+    <loc>https://callmemaru.com/tags/ci/cd/</loc>
     <lastmod>2021-11-21T16:47:01+09:00</lastmod>
   </url><url>
     <loc>https://callmemaru.com/tags/github/</loc>
@@ -75,9 +81,6 @@
     <lastmod>2021-11-21T16:47:01+09:00</lastmod>
   </url><url>
     <loc>https://callmemaru.com/tags/permission/</loc>
-    <lastmod>2021-11-21T16:47:01+09:00</lastmod>
-  </url><url>
-    <loc>https://callmemaru.com/posts/</loc>
     <lastmod>2021-11-21T16:47:01+09:00</lastmod>
   </url><url>
     <loc>https://callmemaru.com/tags/</loc>
@@ -128,7 +131,5 @@
     <loc>https://callmemaru.com/about/</loc>
   </url><url>
     <loc>https://callmemaru.com/categories/</loc>
-  </url><url>
-    <loc>https://callmemaru.com/tags/ci/cd/</loc>
   </url>
 </urlset>

@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>kotlin on Call Me Maru</title>
+    <title>Kotlin on Call Me Maru</title>
     <link>https://callmemaru.com/tags/kotlin/</link>
-    <description>Recent content in kotlin on Call Me Maru</description>
+    <description>Recent content in Kotlin on Call Me Maru</description>
     <image>
       <url>https://callmemaru.com/og_image.png</url>
       <link>https://callmemaru.com/og_image.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
     <lastBuildDate>Wed, 05 Feb 2020 00:28:44 +0900</lastBuildDate><atom:link href="https://callmemaru.com/tags/kotlin/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[Maru의 Kotlin Tour - 공식 문서 편] #3 Returns and Jumps</title>
