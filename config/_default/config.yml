@@ -1,7 +1,8 @@
 baseURL: "https://callmemaru.com/"
 defaultContentLanguage: ko
 title: "Call Me Maru"
-paginate: 5
+pagination:
+  pagerSize: 5
 theme: PaperMod
 
 enableRobotsTXT: true
@@ -11,7 +12,7 @@ buildExpired: false
 
 googleAnalytics: UA-113083768-3
 permalinks:
-  posts: /:section/:filename/
+  posts: /:section/:contentbasename/
 
 languages:
   ko:
