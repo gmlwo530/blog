@@ -79,3 +79,8 @@ params:
   # analytics:
   #   google:
   #     SiteVerificationTag: "XYZabc"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
