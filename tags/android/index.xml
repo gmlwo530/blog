@@ -9,7 +9,7 @@
       <url>https://callmemaru.com/og_image.png</url>
       <link>https://callmemaru.com/og_image.png</link>
     </image>
-    <generator>Hugo -- 0.125.7</generator>
+    <generator>Hugo -- 0.154.2</generator>
     <language>ko</language>
     <lastBuildDate>Thu, 14 May 2020 13:45:11 +0900</lastBuildDate>
     <atom:link href="https://callmemaru.com/tags/android/index.xml" rel="self" type="application/rss+xml" />
@@ -18,13 +18,29 @@
       <link>https://callmemaru.com/posts/glide-error-you-cannot-start-a-load-for-a-destroyed-activity/</link>
       <pubDate>Thu, 14 May 2020 13:45:11 +0900</pubDate>
       <guid>https://callmemaru.com/posts/glide-error-you-cannot-start-a-load-for-a-destroyed-activity/</guid>
-      <description>Glide 관련 된 처음보는 오류가 발생했다.
-You cannot start a load for a destroyed activity
-다행히(?) 예전에 이슈가 된 에러였다.(https://github.com/bumptech/glide/issues/803)
-이런 에러가 발생한 이유는 with() 함수가 lifecycle을 따르기 때문이다. 즉 Glide가 이미지가 로드 중 Glide.with()의 with()에 들어간 인자가 &amp;ldquo;activity 또는 fragment가 destroyed&amp;quot;되면서 영향을 받게 되고 위의 에러가 발생한 것으로 보입니다.
-스택오버플로우에서 제안하는 방법으로는
-아래와 같이 RequestManager를 변수에 담아주고 사용하는 것이다.
-class MyAdapter extends WhichEveryOneYouUse { private final RequestManager glide; MyAdapter(RequestManager glide, .</description>
+      <description>&lt;p&gt;Glide 관련 된 처음보는 오류가 발생했다.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;You cannot start a load for a destroyed activity&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;다행히(?) 예전에 이슈가 된 에러였다.(&lt;a href=&#34;https://github.com/bumptech/glide/issues/803&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/bumptech/glide/issues/803&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;이런 에러가 발생한 이유는 &lt;code&gt;with()&lt;/code&gt; 함수가 lifecycle을 따르기 때문이다. 즉 Glide가 이미지가 로드 중 &lt;code&gt;Glide.with()&lt;/code&gt;의 &lt;code&gt;with()&lt;/code&gt;에 들어간 인자가
+&amp;ldquo;activity 또는 fragment가 destroyed&amp;quot;되면서 영향을 받게 되고 위의 에러가 발생한 것으로 보입니다.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://stackoverflow.com/questions/31964737/glide-image-loading-with-application-context/32887693#32887693&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;스택오버플로우&lt;/a&gt;에서 제안하는 방법으로는&lt;/p&gt;
+&lt;p&gt;아래와 같이 &lt;code&gt;RequestManager&lt;/code&gt;를 변수에 담아주고 사용하는 것이다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;MyAdapter&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;extends&lt;/span&gt; WhichEveryOneYouUse {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;final&lt;/span&gt; RequestManager glide;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    MyAdapter(RequestManager glide, ...) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;glide&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; glide;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        ...
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; getView&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;onBindViewHolder(... &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; position) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#75715e&#34;&gt;// ... holder magic, and get current item for position&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        glide.&lt;span style=&#34;color:#a6e22e&#34;&gt;load&lt;/span&gt;... or even &lt;span style=&#34;color:#a6e22e&#34;&gt;loadImage&lt;/span&gt;(glide, item.&lt;span style=&#34;color:#a6e22e&#34;&gt;url&lt;/span&gt;, holder.&lt;span style=&#34;color:#a6e22e&#34;&gt;image&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;loadImage(Glide.&lt;span style=&#34;color:#a6e22e&#34;&gt;with&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;), url, findViewById(R.&lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;image&lt;/span&gt;));
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// or&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;list.&lt;span style=&#34;color:#a6e22e&#34;&gt;setAdapter&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; MyAdapter(Glide.&lt;span style=&#34;color:#a6e22e&#34;&gt;with&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;), data));
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Reference&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

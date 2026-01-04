@@ -9,7 +9,7 @@
       <url>https://callmemaru.com/og_image.png</url>
       <link>https://callmemaru.com/og_image.png</link>
     </image>
-    <generator>Hugo -- 0.125.7</generator>
+    <generator>Hugo -- 0.154.2</generator>
     <language>ko</language>
     <lastBuildDate>Wed, 05 Feb 2020 00:28:44 +0900</lastBuildDate>
     <atom:link href="https://callmemaru.com/tags/kotlin/index.xml" rel="self" type="application/rss+xml" />
@@ -18,54 +18,113 @@
       <link>https://callmemaru.com/posts/maru-kotlin-tour-official-doc-3-returns-and-jumps/</link>
       <pubDate>Wed, 05 Feb 2020 00:28:44 +0900</pubDate>
       <guid>https://callmemaru.com/posts/maru-kotlin-tour-official-doc-3-returns-and-jumps/</guid>
-      <description>kotlin에는 3가지 jump 표현식이 있다.
-return : 제일 가까운 enclosing function으로 부터 return 합니다. break : 제일 가까운 enclosing loop를 종료합니다. continue : 제일 가까운 enclosing loop의 다음 단계(step)를 진행합니다. Break and Continue Labels Kotlin의 어떤 표현이든 label을 붙일 수 있다. @을 붙여서 라벨을 만들 수 있는데, 아래와 같이 쓰인다.
-loop@ for (i in 1..100){ // ... } 이제, break에 label을 붙이면 아래와 같이 쓸 수 있는데
-loop@ for (i in 1.</description>
+      <description>&lt;p&gt;kotlin에는 3가지 jump 표현식이 있다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;return&lt;/code&gt; : 제일 가까운 enclosing function으로 부터 return 합니다.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;break&lt;/code&gt; : 제일 가까운 enclosing loop를 종료합니다.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;continue&lt;/code&gt; : 제일 가까운 enclosing loop의 다음 단계(step)를 진행합니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;break-and-continue-labels&#34;&gt;Break and Continue Labels&lt;/h2&gt;
+&lt;p&gt;Kotlin의 어떤 표현이든 &lt;code&gt;label&lt;/code&gt;을 붙일 수 있다. &lt;code&gt;@&lt;/code&gt;을 붙여서 라벨을 만들 수 있는데, 아래와 같이 쓰인다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;loop&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;@&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; (i &lt;span style=&#34;color:#66d9ef&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;..&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;// ...
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;이제, &lt;code&gt;break&lt;/code&gt;에 &lt;code&gt;label&lt;/code&gt;을 붙이면 아래와 같이 쓸 수 있는데&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;loop&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;@&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; (i &lt;span style=&#34;color:#66d9ef&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;..&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; (j &lt;span style=&#34;color:#66d9ef&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;..&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#f92672&#34;&gt;..&lt;/span&gt;.) &lt;span style=&#34;color:#66d9ef&#34;&gt;break&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@loop&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;위의 코드 같은 경우는 &lt;code&gt;break@loop&lt;/code&gt;에서 &lt;code&gt;loop@&lt;/code&gt;로 점프 한 후 바로 다음 코드가 실행 된다고 한다. &lt;code&gt;continue&lt;/code&gt; 같은 경우는 loop의 다음 반복자가 실행 된다고 한다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[Maru의 Kotlin Tour - 공식 문서 편] #2 Control Flow </title>
       <link>https://callmemaru.com/posts/maru-kotlin-tour-official-doc-2-control-flow/</link>
       <pubDate>Sun, 02 Feb 2020 23:23:53 +0900</pubDate>
       <guid>https://callmemaru.com/posts/maru-kotlin-tour-official-doc-2-control-flow/</guid>
-      <description>If Expression if는 expression, 즉 값을 return 하므로 tenary operator(condition ? then : else)가 없다고 한다.(난 tenary operator 좋은데..)
-그럼 if 표현식을 보자
-// Traditional usage var max = a if (a &amp;lt; b) max = b // With else var max: Int if (a &amp;gt; b) { max = a } else { max = b } // As expression val max = if (a &amp;gt; b) a else b 마지막 코드인 val max = if (a &amp;gt; b) a else b가 tenary operator와 비슷해보인다.</description>
+      <description>&lt;h2 id=&#34;if-expression&#34;&gt;If Expression&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;if&lt;/code&gt;는 expression, 즉 값을 return 하므로 &lt;code&gt;tenary operator&lt;/code&gt;(condition ? then : else)가 없다고 한다.(난 tenary operator 좋은데..)&lt;/p&gt;
+&lt;p&gt;그럼 if 표현식을 보자&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Traditional usage
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; max = a
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (a &amp;lt; b) max = b
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// With else
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; max: Int
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (a &amp;gt; b) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    max = a
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;} &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    max = b
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// As expression
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;val&lt;/span&gt; max = &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (a &amp;gt; b) a &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; b
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;마지막 코드인 &lt;code&gt;val max = if (a &amp;gt; b) a else b&lt;/code&gt;가 tenary operator와 비슷해보인다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[Maru의 Kotlin Tour - 공식 문서 편] #1 Basic Types</title>
       <link>https://callmemaru.com/posts/maru-kotlin-tour-official-doc-1-basic-types/</link>
       <pubDate>Sun, 02 Feb 2020 23:23:40 +0900</pubDate>
       <guid>https://callmemaru.com/posts/maru-kotlin-tour-official-doc-1-basic-types/</guid>
-      <description>해당 문서 첫 문장에 참 친근한 문장이 있다.
-In Kotlin, everything is an object
-그래서 모든 변수에서 member function과 properties를 부를 수 있다고 한다.
-이 섹션에서는 numbers, characters, booleans, arrays, 그리고 strings을 다룬다.
-Numbers Kotlin에서 integer는 총 4가지, floating은 총 2가지 타입을 제공해준다. Integer Byte Short Int Long val one = 1 // Int val threeBillion = 300000000 // Long val oneLong = 1L // Long val oneByte: Byte = 1 위의 코드에서 주목해야 할 점은 threeBillioin 변수이다.</description>
+      <description>&lt;p&gt;해당 문서 첫 문장에 참 친근한 문장이 있다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In Kotlin, everything is an object&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;그래서 모든 변수에서 member function과 properties를 부를 수 있다고 한다.&lt;/p&gt;
+&lt;p&gt;이 섹션에서는 numbers, characters, booleans, arrays, 그리고 strings을 다룬다.&lt;/p&gt;
+&lt;h2 id=&#34;numbers&#34;&gt;Numbers&lt;/h2&gt;
+&lt;p&gt;Kotlin에서 integer는 총 4가지, floating은 총 2가지 타입을 제공해준다.
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;h3 id=&#34;integer&#34;&gt;Integer&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Byte&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Short&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Int&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Long&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Kotlin&#34; data-lang=&#34;Kotlin&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;val&lt;/span&gt; one = &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;// Int
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;val&lt;/span&gt; threeBillion = &lt;span style=&#34;color:#ae81ff&#34;&gt;300000000&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;// Long
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;val&lt;/span&gt; oneLong = &lt;span style=&#34;color:#ae81ff&#34;&gt;1L&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;// Long
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;val&lt;/span&gt; oneByte: Byte = &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;위의 코드에서 주목해야 할 점은 &lt;code&gt;threeBillioin&lt;/code&gt; 변수이다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[Maru의 Kotlin Tour - 공식 문서 편] #0 Intro</title>
       <link>https://callmemaru.com/posts/maru-kotlin-tour-official-doc-0-intro/</link>
       <pubDate>Sun, 02 Feb 2020 17:30:14 +0900</pubDate>
       <guid>https://callmemaru.com/posts/maru-kotlin-tour-official-doc-0-intro/</guid>
-      <description>들어가기 앞서 코틀린의 정의와 Command Line Compiler를 설치하는 법을 알아보겠습니다.
-코틀린의 정의 코틀린(Kotlin)은 JVM에서 동작하는 프로그래밍 언어이다. 2011년 7월, 젯브레인사가 공개하였다.
-캇린으로 읽어야 한다. (캇린으로 읽어야 하는 것은 처음 알았습니다;;) Install Command Line Compiler Kotlin으로 작성한 파일을 실행하기 위해서는 몇 가지 방법을 Tutorial Getting Start에서 제안합니다. 저는 여기서 Working with the Command Line Compiler 방법을 선택 했습니다.
-설치 방법도 여러가지 입니다. 저는 OS X를 사용하기 때문에 HomeBrew를 이용해서 설치하겠습니다.
-다른 방법들은 문서를 참고 해주세요 $ brew update $ brew install kotlin 실행 해보기 잘 설치 되었는지 확인을 위해 가볍게 hello.</description>
+      <description>&lt;p&gt;들어가기 앞서 코틀린의 정의와 Command Line Compiler를 설치하는 법을 알아보겠습니다.&lt;/p&gt;
+&lt;h3 id=&#34;코틀린의-정의&#34;&gt;코틀린의 정의&lt;/h3&gt;
+&lt;p&gt;코틀린(Kotlin)은 JVM에서 동작하는 프로그래밍 언어이다. 2011년 7월, 젯브레인사가 공개하였다.&lt;/p&gt;
+&lt;p&gt;캇린으로 읽어야 한다. (&lt;em&gt;캇린으로 읽어야 하는 것은 처음 알았습니다;;&lt;/em&gt;)
+&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h3 id=&#34;install-command-line-compiler&#34;&gt;Install Command Line Compiler&lt;/h3&gt;
+&lt;p&gt;Kotlin으로 작성한 파일을 실행하기 위해서는 몇 가지 방법을 &lt;a href=&#34;https://kotlinlang.org/docs/tutorials/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Tutorial Getting Start&lt;/a&gt;에서 제안합니다. 저는 여기서 &lt;strong&gt;Working with the Command Line Compiler&lt;/strong&gt; 방법을 선택 했습니다.&lt;/p&gt;
+&lt;p&gt;설치 방법도 여러가지 입니다. 저는 OS X를 사용하기 때문에 HomeBrew를 이용해서 설치하겠습니다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;다른 방법들은 &lt;a href=&#34;https://kotlinlang.org/docs/tutorials/command-line.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;문서&lt;/a&gt;를 참고 해주세요&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ brew update
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ brew install kotlin
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>[Kotlin] 범위 지정 함수</title>
       <link>https://callmemaru.com/posts/kotlin-scoping-functions/</link>
       <pubDate>Fri, 12 Apr 2019 14:02:23 +0900</pubDate>
       <guid>https://callmemaru.com/posts/kotlin-scoping-functions/</guid>
-      <description>Kotlin에서 사용되는 함수 중에 범위 지정 함수라는게 있습니다. 이 함수들은 비슷한 모습을 하고 있어서, 약간의 혼란을 불러 일으키는 것 같습니다. 그러므로 이번 글에서는 이 범위 지정 함수들을 정리해보겠습니다.
-apply, with, let, also, run은 전달받는 인자와 작동 방식, 결과가 매우 비슷하다. 이 5개는 범위 지정 함수라고 명칭한다.
-이 함수들은 공통적으로 두가지 구성 요소를 가진다.
-수신 객체
-수신 객체 지정 람다
-함수 타입의 receiver이다. 예시 :
-val sum: Int.(Int) -&amp;gt; Int = { other -&amp;gt; plus(other) }</description>
+      <description>&lt;p&gt;Kotlin에서 사용되는 함수 중에 &lt;em&gt;범위 지정 함수&lt;/em&gt;라는게 있습니다. 이 함수들은 비슷한 모습을 하고 있어서, 약간의 혼란을 불러 일으키는 것 같습니다. 그러므로 이번 글에서는 이 범위 지정 함수들을 정리해보겠습니다.&lt;/p&gt;
+&lt;p&gt;apply, with, let, also, run은 전달받는 인자와 작동 방식, 결과가 매우 비슷하다. 이 5개는 &lt;strong&gt;범위 지정 함수&lt;/strong&gt;라고 명칭한다.&lt;/p&gt;
+&lt;p&gt;이 함수들은 공통적으로 두가지 구성 요소를 가진다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;수신 객체&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://kotlinlang.org/docs/reference/lambdas.html#function-literals-with-receiver&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;수신 객체 지정 람다&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;함수 타입의 receiver이다. 예시 :&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;val sum: Int.(Int) -&amp;gt; Int = { other -&amp;gt; plus(other) }&lt;/code&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

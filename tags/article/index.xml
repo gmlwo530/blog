@@ -9,7 +9,7 @@
       <url>https://callmemaru.com/og_image.png</url>
       <link>https://callmemaru.com/og_image.png</link>
     </image>
-    <generator>Hugo -- 0.125.7</generator>
+    <generator>Hugo -- 0.154.2</generator>
     <language>ko</language>
     <lastBuildDate>Sun, 02 Feb 2020 17:28:36 +0900</lastBuildDate>
     <atom:link href="https://callmemaru.com/tags/article/index.xml" rel="self" type="application/rss+xml" />
@@ -18,9 +18,12 @@
       <link>https://callmemaru.com/posts/maru-kotlin-tour-prologue/</link>
       <pubDate>Sun, 02 Feb 2020 17:28:36 +0900</pubDate>
       <guid>https://callmemaru.com/posts/maru-kotlin-tour-prologue/</guid>
-      <description>Kotlin이라는 언어를 공부 해보겠습니다.
-참고하는 자료에 따라 시리즈로 진행 할 계획입니다.
-시리즈 공식 문서 편 </description>
+      <description>&lt;p&gt;Kotlin이라는 언어를 공부 해보겠습니다.&lt;/p&gt;
+&lt;p&gt;참고하는 자료에 따라 시리즈로 진행 할 계획입니다.&lt;/p&gt;
+&lt;h4 id=&#34;시리즈&#34;&gt;시리즈&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;공식 문서 편&lt;/li&gt;
+&lt;/ol&gt;</description>
     </item>
   </channel>
 </rss>

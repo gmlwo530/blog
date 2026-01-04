@@ -9,7 +9,7 @@
       <url>https://callmemaru.com/og_image.png</url>
       <link>https://callmemaru.com/og_image.png</link>
     </image>
-    <generator>Hugo -- 0.125.7</generator>
+    <generator>Hugo -- 0.154.2</generator>
     <language>ko</language>
     <lastBuildDate>Sun, 12 Jan 2020 17:33:13 +0900</lastBuildDate>
     <atom:link href="https://callmemaru.com/tags/flutter/index.xml" rel="self" type="application/rss+xml" />
@@ -18,33 +18,52 @@
       <link>https://callmemaru.com/posts/flutter-statement-manager-provider/</link>
       <pubDate>Sun, 12 Jan 2020 17:33:13 +0900</pubDate>
       <guid>https://callmemaru.com/posts/flutter-statement-manager-provider/</guid>
-      <description>Flutter에는 State가 있다. 사용자에 의해 이벤트가 발생 했을 때 state를 이용하여 UI를 업데이트 해준다.
-예를 들자면, 우리가 Flutter Project를 처음 생성 했을 때 기본으로 있는 count 앱을 들 수 있다. 사용자가 Floating Button인 + 버튼을 누르면 화면 중앙에 있는 숫자가 1씩 증가한다. 아래 코드와 같이 state를 이용하여 _counter 변수를 업데이트하고 UI를 업데이틑 하는 것을 확인 할 수 있다.
-int _counter = 0; void _increment(){ setState( () { _counter++; }); } </description>
+      <description>&lt;p&gt;Flutter에는 State가 있다. 사용자에 의해 이벤트가 발생 했을 때 state를 이용하여 UI를 업데이트 해준다.&lt;/p&gt;
+&lt;p&gt;예를 들자면, 우리가 Flutter Project를 처음 생성 했을 때 기본으로 있는 count 앱을 들 수 있다.
+사용자가 Floating Button인 + 버튼을 누르면 화면 중앙에 있는 숫자가 1씩 증가한다.
+아래 코드와 같이 state를 이용하여 &lt;code&gt;_counter&lt;/code&gt; 변수를 업데이트하고 UI를 업데이틑 하는 것을 확인 할 수 있다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-dart&#34; data-lang=&#34;dart&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; _counter &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; _increment(){
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  setState( () {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    _counter&lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  });
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>[Flutter] 토이 프로젝트 후기 - (1)</title>
       <link>https://callmemaru.com/posts/flutter-toy-project-review-1/</link>
       <pubDate>Fri, 17 May 2019 10:42:36 +0900</pubDate>
       <guid>https://callmemaru.com/posts/flutter-toy-project-review-1/</guid>
-      <description>react-native가 출시 된 지 4년이 지났습니다.
-모바일 애플리케이션 개발에서 크로스 플랫폼 동시 개발을 가능하게 해준 react-native는 굉장히 파워풀한 기술인 거 같습니다.
-그렇게 2년이라는 시간이 지나 react-native와 마찬가지로 iOS와 Android를 동시에 개발할 수 있는 프레임워크인 flutter가 처음 등장했습니다.
-구글이 만든 프레임워크고 밀어 주려고 하는 기술인 거 같아, 경험해 볼 겸 간단한 앱을 만들기로 했습니다.
-이번 글에서는 flutter로 앱을 만들면서 느꼈던 점들을 공유해보겠습니다.
-글은 1편과 2편으로 나누어 작성하겠습니다.
-📑 간단한 기획 저는 웹에서 토이 프로젝트를 할 때 보통 블로그 형식을 구현했었습니다.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://facebook.github.io/react-native/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;react-native&lt;/a&gt;가 출시 된 지 &lt;a href=&#34;https://en.wikipedia.org/wiki/React_Native&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;4년&lt;/a&gt;이 지났습니다.&lt;/p&gt;
+&lt;p&gt;모바일 애플리케이션 개발에서 &lt;em&gt;크로스 플랫폼 동시 개발&lt;/em&gt;을 가능하게 해준 react-native는 굉장히 파워풀한 기술인 거 같습니다.&lt;/p&gt;
+&lt;p&gt;그렇게 2년이라는 시간이 지나 react-native와 마찬가지로 iOS와 Android를 동시에 개발할 수 있는 프레임워크인 &lt;a href=&#34;https://flutter.dev/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;flutter&lt;/a&gt;가 처음 등장했습니다.&lt;/p&gt;
+&lt;p&gt;구글이 만든 프레임워크고 밀어 주려고 하는 기술인 거 같아, 경험해 볼 겸 간단한 앱을 만들기로 했습니다.&lt;/p&gt;
+&lt;p&gt;이번 글에서는 flutter로 앱을 만들면서 느꼈던 점들을 공유해보겠습니다.&lt;/p&gt;
+&lt;p&gt;글은 1편과 2편으로 나누어 작성하겠습니다.&lt;/p&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;-간단한-기획&#34;&gt;📑 간단한 기획&lt;/h2&gt;
+&lt;p&gt;저는 웹에서 토이 프로젝트를 할 때 보통 블로그 형식을 구현했었습니다. 그래서 Flutter로 간단한 메모 앱을 만들어 보기로 했습니다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[Flutter] 토이 프로젝트 후기 - (2)</title>
       <link>https://callmemaru.com/posts/flutter-toy-project-review-2/</link>
       <pubDate>Fri, 17 May 2019 10:42:36 +0900</pubDate>
       <guid>https://callmemaru.com/posts/flutter-toy-project-review-2/</guid>
-      <description>1편에서 이어서 2편은 프로젝트를 진행 과정을 소개하고 후기를 마무리 하겠습니다.
-🗂 Flutter Widget Flutter에서 대부분의 UI들은 Widget Class에 속해 있습니다. 예를 들어, AlertDialog 문서를 보면 AlertDialog가 어디에 속해있는지 확인 할 수 있습니다.
-StatelessWidget &amp;amp; StatefulWidget React를 사용해보신 개발자 분들에게는 친숙한 개념일 수도 있습니다. Flutter의 모든 UI 즉 Widget은 상태(state)를 가집니다.
-Widget이 StatelessWidget을 상속 할 때는 상태가 변하지 않아도 되는 UI로 그려집니다.
-Widget이 StatefullWidget을 상속 할 때는 상태가 변하는 UI로 그려집니다. Flutter에서 제공하는 setState 함수를 통해서 widget의 상태를 변화 시킬 수 있습니다.</description>
+      <description>&lt;p&gt;1편에서 이어서 2편은 프로젝트를 진행 과정을 소개하고 후기를 마무리 하겠습니다.&lt;/p&gt;
+&lt;h2 id=&#34;-flutter&#34;&gt;🗂 Flutter&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Widget&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Flutter에서 대부분의 UI들은 Widget Class에 속해 있습니다.
+예를 들어, &lt;a href=&#34;https://api.flutter.dev/flutter/material/AlertDialog-class.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;AlertDialog&lt;/a&gt; 문서를 보면 AlertDialog가 어디에 속해있는지 확인 할 수 있습니다.&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;strong&gt;StatelessWidget &amp;amp; StatefulWidget&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;React를 사용해보신 개발자 분들에게는 친숙한 개념일 수도 있습니다. Flutter의 모든 UI 즉 Widget은 상태(state)를 가집니다.&lt;/p&gt;
+&lt;p&gt;Widget이 StatelessWidget을 상속 할 때는 상태가 변하지 않아도 되는 UI로 그려집니다.&lt;/p&gt;
+&lt;p&gt;Widget이 StatefullWidget을 상속 할 때는 상태가 변하는 UI로 그려집니다. Flutter에서 제공하는 &lt;code&gt;setState&lt;/code&gt; 함수를 통해서 widget의 상태를 변화 시킬 수 있습니다. (최근에 알게 되었는데 setState 말고도 widget의 상태를 관리해주는 방법들이 제공된다고 합니다. 특히 &lt;a href=&#34;https://github.com/google/flutter-provide&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;provider&lt;/a&gt;라는 프레임워크가 2019 Google I/O에서 언급이 되었는데, 굉장히 잘 만들었으니 꼭 사용하라고 언급 되었습니다.)&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
