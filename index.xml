@@ -9,10 +9,43 @@
       <url>https://callmemaru.com/og_image.png</url>
       <link>https://callmemaru.com/og_image.png</link>
     </image>
-    <generator>Hugo -- 0.154.2</generator>
+    <generator>Hugo -- 0.154.5</generator>
     <language>ko</language>
-    <lastBuildDate>Mon, 22 Dec 2025 00:04:36 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 22 Dec 2025 00:04:56 +0900</lastBuildDate>
     <atom:link href="https://callmemaru.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2022 회고</title>
+      <link>https://callmemaru.com/posts/2022-retrospective/</link>
+      <pubDate>Mon, 22 Dec 2025 00:04:56 +0900</pubDate>
+      <guid>https://callmemaru.com/posts/2022-retrospective/</guid>
+      <description>&lt;p&gt;21년부터 지금까지 개발자로 보내는 시간의 대부분은 회사 일이였다. 아마도 회사가 계속 성장하고 개발팀과 서비스의 규모가 커지면서 신경 써야 할 부분들이 기하급수적으로 늘어나서 그랬을 것 같다.&lt;/p&gt;
+&lt;h3 id=&#34;1월&#34;&gt;1월&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;서비스가 커가는 것을 느낀다. 점점 타 기업에서 협업 요청이 들어오기 시작 했다&lt;/li&gt;
+&lt;li&gt;서버 개발자를 1명 더 채용 하기 시작 했다.&lt;/li&gt;
+&lt;li&gt;현재는 스토어 서비스라고 불리는 바로 픽업 서비스 MVP 제작을 시작 했다. 사이드 프로젝트에서 잠깐 써봤던 React로 만들기 시작 했는데, 지금 생각 해보면 무슨 자신감으로 숙련도도 없는 툴로 2주만에 서비스를 만들겠다고 했는지 모르겠다.(어찌저찌 만들긴 했다. 지금도 노력하고 있지만 이때는 맨땅에 헤딩하기에 익숙한 시기였던 것 같다)
+&lt;ul&gt;
+&lt;li&gt;대표님이랑 둘이 서비스를 런칭 했었는데, 26년 지금 관점에서 보면 참 용감한 의사 결정들과 과정들이 많았다. 겁 없는 시절에 할 수 있던 일이였던 것 같다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2월&#34;&gt;2월&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;신규 서비스(바로 픽업)을 만들면서 심심하면 다운 되는 서버도 계속 대응하는 작업의 반복이였다. 남일 같지 않은 &lt;a href=&#34;https://tech.inflab.com/202201-event-postmortem/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;타 회사 경험담&lt;/a&gt;을 스크랩한 기록이 있다.&lt;/li&gt;
+&lt;li&gt;이 시점에서 개발팀원은 나를 빼고 3명이였고, 1명을 신규 채용 하려고 했던 시기 였다. 개발자 연차로는 5년차이지만 나름 팀의 리드였고 부담감에 다양한 자료와 책 그리고 행사들을 찾아보고 공유 했던 기록들이 있다.&lt;/li&gt;
+&lt;li&gt;이때 당시 팀원들은 내가 공유 하는 자료들에 리액션이 별로 없었던 것 같다. 지금 보니 좀 쓸쓸해 보이는 공유 메시지가 많은데 지금 팀원들이 공유 해주면 잘 리액션 해줘야겠다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3월&#34;&gt;3월&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;테니스를 열심히 친다. 이 시기에 필드를 처음 나갔는데, 확실히 밖에서 경기를 하는 것이 더 재밌더라&lt;/li&gt;
+&lt;li&gt;데일리샷 팀원들과 만취 해서 찍은 사진이 있다. 살면서 손에 꼽을 정도로 만취 했던 경험인데.. 이때 이후로 어른 답게 술을 먹으려고 노력한 기억이 떠오른다.&lt;/li&gt;
+&lt;li&gt;어떤 회사에 지원서를 썼었다. 이직 준비는 아닌 것 같아 찾아보니 나에 대한 평가가 궁금해서 지원 했다는 나의 생각을 팀원에게 공유한 기록이 있다. 지금 보면 나 뿐만 아니라 4~5년 차에 시장에서 나에 대한 평가를 확인 하고 싶은 니즈가 누구에게나 있는 것 같다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;https://callmemaru.com/2022/2022-retrospective-images/no-bye.png#center&#34;
+         alt=&#34;이쁘게 말해줘서 감동&#34;/&gt; &lt;figcaption&gt;
+            &lt;p&gt;이쁘게 말해줘서 감동&lt;/p&gt;</description>
+    </item>
     <item>
       <title>2021 Retrospective</title>
       <link>https://callmemaru.com/posts/2021-retrospective/</link>
