@@ -1,5 +1,5 @@
 ---
-title: "2021 Retrospective"
+title: "2021 회고"
 date: 2025-12-22T00:04:36+09:00
 weight: 1
 aliases: []
