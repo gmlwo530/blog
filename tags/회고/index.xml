@@ -9,10 +9,33 @@
       <url>https://callmemaru.com/og_image.png</url>
       <link>https://callmemaru.com/og_image.png</link>
     </image>
-    <generator>Hugo -- 0.154.5</generator>
+    <generator>Hugo -- 0.155.1</generator>
     <language>ko</language>
-    <lastBuildDate>Mon, 22 Dec 2025 00:07:54 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 22 Dec 2025 00:07:58 +0900</lastBuildDate>
     <atom:link href="https://callmemaru.com/tags/%ED%9A%8C%EA%B3%A0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2025 회고</title>
+      <link>https://callmemaru.com/posts/2025-retrospective/</link>
+      <pubDate>Mon, 22 Dec 2025 00:07:58 +0900</pubDate>
+      <guid>https://callmemaru.com/posts/2025-retrospective/</guid>
+      <description>&lt;h3 id=&#34;1월&#34;&gt;1월&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;AI 코드 리뷰 도입을 고민 하기 시작 했다. 25년에는 AI를 통해 생산성을 향상 시키는 방향을 많이 고민 해보고 싶었다.&lt;/li&gt;
+&lt;li&gt;3년 전에 사용 했던 datadog을 재도입 하는 것을 고려 했다. 좋은 툴이지만 과거에 비용 문제가 있었고, 3년이 지난 시점에 비용 세이브 할 수 있는 방향을 제안 받았다. PoC를 진행 하기로 했다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2월&#34;&gt;2월&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;신규 서비스가 오픈 했다. 24년부터 반년에 한 번 씩 신규 서비스가 오픈 하는 것 같다. 개발 속도도 좀 더 빨라지는 것으로 보면 역량이 향상 된다는 증거인 것 같다.&lt;/li&gt;
+&lt;li&gt;22년부터 앱 내에 이벤트(인기 상품 오픈 등)이 있으면 서버가 불안정해졌다. 이번 년도에는 부하를 많이 일으키는 상품 리스트 쪽을 반드시 개선 해야겠다는 생각을 했다.&lt;/li&gt;
+&lt;li&gt;데일리샷 프로덕트팀에서 팀 활동으로 1박 2일 해커톤을 진행 했다. 개발을 하는 참가자는 아니였고 기획하고 운영 하는 포지션이였다. 2018, 19년에 개인적으로 해커톤을 만든적이 있었는데 옛날 생각이 났다.&lt;/li&gt;
+&lt;li&gt;대부분의 팀원들이 회사 일에서만 개발과 디자인을 하다가 해커톤에서 만들고 싶은 제품을 만들다 보니 리프레쉬를 할 수 있는 시간이였다.&lt;/li&gt;
+&lt;li&gt;아무리 바빠도 리프레쉬 할 수 있는 시간을 가진다는 것은 중요한 것 같다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;https://callmemaru.com/2025/2025-retrospective-images/hackathon.PNG#center&#34;
+         alt=&#34;1등을 위한 상패&#34;/&gt; &lt;figcaption&gt;
+            &lt;p&gt;1등을 위한 상패&lt;/p&gt;</description>
+    </item>
     <item>
       <title>2024 회고</title>
       <link>https://callmemaru.com/posts/2024-retrospective/</link>
@@ -180,7 +203,7 @@
             &lt;p&gt;이쁘게 말해줘서 감동&lt;/p&gt;</description>
     </item>
     <item>
-      <title>2021 Retrospective</title>
+      <title>2021 회고</title>
       <link>https://callmemaru.com/posts/2021-retrospective/</link>
       <pubDate>Mon, 22 Dec 2025 00:04:36 +0900</pubDate>
       <guid>https://callmemaru.com/posts/2021-retrospective/</guid>

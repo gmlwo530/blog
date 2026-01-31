@@ -9,10 +9,33 @@
       <url>https://callmemaru.com/og_image.png</url>
       <link>https://callmemaru.com/og_image.png</link>
     </image>
-    <generator>Hugo -- 0.154.5</generator>
+    <generator>Hugo -- 0.155.1</generator>
     <language>ko</language>
-    <lastBuildDate>Mon, 22 Dec 2025 00:07:54 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 22 Dec 2025 00:07:58 +0900</lastBuildDate>
     <atom:link href="https://callmemaru.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2025 회고</title>
+      <link>https://callmemaru.com/posts/2025-retrospective/</link>
+      <pubDate>Mon, 22 Dec 2025 00:07:58 +0900</pubDate>
+      <guid>https://callmemaru.com/posts/2025-retrospective/</guid>
+      <description>&lt;h3 id=&#34;1월&#34;&gt;1월&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;AI 코드 리뷰 도입을 고민 하기 시작 했다. 25년에는 AI를 통해 생산성을 향상 시키는 방향을 많이 고민 해보고 싶었다.&lt;/li&gt;
+&lt;li&gt;3년 전에 사용 했던 datadog을 재도입 하는 것을 고려 했다. 좋은 툴이지만 과거에 비용 문제가 있었고, 3년이 지난 시점에 비용 세이브 할 수 있는 방향을 제안 받았다. PoC를 진행 하기로 했다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2월&#34;&gt;2월&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;신규 서비스가 오픈 했다. 24년부터 반년에 한 번 씩 신규 서비스가 오픈 하는 것 같다. 개발 속도도 좀 더 빨라지는 것으로 보면 역량이 향상 된다는 증거인 것 같다.&lt;/li&gt;
+&lt;li&gt;22년부터 앱 내에 이벤트(인기 상품 오픈 등)이 있으면 서버가 불안정해졌다. 이번 년도에는 부하를 많이 일으키는 상품 리스트 쪽을 반드시 개선 해야겠다는 생각을 했다.&lt;/li&gt;
+&lt;li&gt;데일리샷 프로덕트팀에서 팀 활동으로 1박 2일 해커톤을 진행 했다. 개발을 하는 참가자는 아니였고 기획하고 운영 하는 포지션이였다. 2018, 19년에 개인적으로 해커톤을 만든적이 있었는데 옛날 생각이 났다.&lt;/li&gt;
+&lt;li&gt;대부분의 팀원들이 회사 일에서만 개발과 디자인을 하다가 해커톤에서 만들고 싶은 제품을 만들다 보니 리프레쉬를 할 수 있는 시간이였다.&lt;/li&gt;
+&lt;li&gt;아무리 바빠도 리프레쉬 할 수 있는 시간을 가진다는 것은 중요한 것 같다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;https://callmemaru.com/2025/2025-retrospective-images/hackathon.PNG#center&#34;
+         alt=&#34;1등을 위한 상패&#34;/&gt; &lt;figcaption&gt;
+            &lt;p&gt;1등을 위한 상패&lt;/p&gt;</description>
+    </item>
     <item>
       <title>2024 회고</title>
       <link>https://callmemaru.com/posts/2024-retrospective/</link>
@@ -180,7 +203,7 @@
             &lt;p&gt;이쁘게 말해줘서 감동&lt;/p&gt;</description>
     </item>
     <item>
-      <title>2021 Retrospective</title>
+      <title>2021 회고</title>
       <link>https://callmemaru.com/posts/2021-retrospective/</link>
       <pubDate>Mon, 22 Dec 2025 00:04:36 +0900</pubDate>
       <guid>https://callmemaru.com/posts/2021-retrospective/</guid>
@@ -263,7 +286,7 @@
 &lt;h1 id=&#34;전체-코드&#34;&gt;전체 코드&lt;/h1&gt;
 &lt;p&gt;전체 코드를 먼저 보고 하나씩 의미를 알아 가보자.&lt;/p&gt;
 &lt;!-- TODO: 완성 코드 수정 --&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Deploy&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Deploy&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;on&lt;/span&gt;:
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;push&lt;/span&gt;:
@@ -307,7 +330,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#f92672&#34;&gt;github_token&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;${{ secrets.GITHUB_TOKEN }}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#f92672&#34;&gt;publish_dir&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;./build&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;workflow-이름-및-이벤트-정의&#34;&gt;workflow 이름 및 이벤트 정의&lt;/h1&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Deploy&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Deploy&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;on&lt;/span&gt;:
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;push&lt;/span&gt;:
@@ -345,7 +368,7 @@
         &lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# https://docs.github.com/en/actions/learn-github-actions/introduction-to-github-actions#create-an-example-workflow&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# https://docs.github.com/en/actions/learn-github-actions/introduction-to-github-actions#create-an-example-workflow&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;learn-github-actions&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;on&lt;/span&gt;: [&lt;span style=&#34;color:#ae81ff&#34;&gt;push]&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;jobs&lt;/span&gt;:
@@ -390,7 +413,7 @@
 &amp;ldquo;activity 또는 fragment가 destroyed&amp;quot;되면서 영향을 받게 되고 위의 에러가 발생한 것으로 보입니다.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://stackoverflow.com/questions/31964737/glide-image-loading-with-application-context/32887693#32887693&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;스택오버플로우&lt;/a&gt;에서 제안하는 방법으로는&lt;/p&gt;
 &lt;p&gt;아래와 같이 &lt;code&gt;RequestManager&lt;/code&gt;를 변수에 담아주고 사용하는 것이다.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;MyAdapter&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;extends&lt;/span&gt; WhichEveryOneYouUse {
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;MyAdapter&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;extends&lt;/span&gt; WhichEveryOneYouUse {
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;final&lt;/span&gt; RequestManager glide;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    MyAdapter(RequestManager glide, ...) {
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;glide&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; glide;
@@ -401,7 +424,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        glide.&lt;span style=&#34;color:#a6e22e&#34;&gt;load&lt;/span&gt;... or even &lt;span style=&#34;color:#a6e22e&#34;&gt;loadImage&lt;/span&gt;(glide, item.&lt;span style=&#34;color:#a6e22e&#34;&gt;url&lt;/span&gt;, holder.&lt;span style=&#34;color:#a6e22e&#34;&gt;image&lt;/span&gt;);
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;loadImage(Glide.&lt;span style=&#34;color:#a6e22e&#34;&gt;with&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;), url, findViewById(R.&lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;image&lt;/span&gt;));
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;loadImage(Glide.&lt;span style=&#34;color:#a6e22e&#34;&gt;with&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;), url, findViewById(R.&lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;image&lt;/span&gt;));
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// or&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;list.&lt;span style=&#34;color:#a6e22e&#34;&gt;setAdapter&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; MyAdapter(Glide.&lt;span style=&#34;color:#a6e22e&#34;&gt;with&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;), data));
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
@@ -420,11 +443,11 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;break-and-continue-labels&#34;&gt;Break and Continue Labels&lt;/h2&gt;
 &lt;p&gt;Kotlin의 어떤 표현이든 &lt;code&gt;label&lt;/code&gt;을 붙일 수 있다. &lt;code&gt;@&lt;/code&gt;을 붙여서 라벨을 만들 수 있는데, 아래와 같이 쓰인다.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;loop&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;@&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; (i &lt;span style=&#34;color:#66d9ef&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;..&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;){
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;loop&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;@&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; (i &lt;span style=&#34;color:#66d9ef&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;..&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;){
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;// ...
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;이제, &lt;code&gt;break&lt;/code&gt;에 &lt;code&gt;label&lt;/code&gt;을 붙이면 아래와 같이 쓸 수 있는데&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;loop&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;@&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; (i &lt;span style=&#34;color:#66d9ef&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;..&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;){
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;loop&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;@&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; (i &lt;span style=&#34;color:#66d9ef&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;..&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;){
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; (j &lt;span style=&#34;color:#66d9ef&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;..&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;){
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#f92672&#34;&gt;..&lt;/span&gt;.) &lt;span style=&#34;color:#66d9ef&#34;&gt;break&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@loop&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }
@@ -439,7 +462,7 @@
       <description>&lt;h2 id=&#34;if-expression&#34;&gt;If Expression&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;if&lt;/code&gt;는 expression, 즉 값을 return 하므로 &lt;code&gt;tenary operator&lt;/code&gt;(condition ? then : else)가 없다고 한다.(난 tenary operator 좋은데..)&lt;/p&gt;
 &lt;p&gt;그럼 if 표현식을 보자&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Traditional usage
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Traditional usage
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; max = a
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (a &amp;lt; b) max = b
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
@@ -477,7 +500,7 @@
 &lt;li&gt;&lt;code&gt;Int&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;Long&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Kotlin&#34; data-lang=&#34;Kotlin&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;val&lt;/span&gt; one = &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;// Int
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-Kotlin&#34; data-lang=&#34;Kotlin&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;val&lt;/span&gt; one = &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;// Int
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;val&lt;/span&gt; threeBillion = &lt;span style=&#34;color:#ae81ff&#34;&gt;300000000&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;// Long
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;val&lt;/span&gt; oneLong = &lt;span style=&#34;color:#ae81ff&#34;&gt;1L&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;// Long
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;val&lt;/span&gt; oneByte: Byte = &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
@@ -499,7 +522,7 @@
 &lt;ul&gt;
 &lt;li&gt;다른 방법들은 &lt;a href=&#34;https://kotlinlang.org/docs/tutorials/command-line.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;문서&lt;/a&gt;를 참고 해주세요&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ brew update
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ brew update
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ brew install kotlin
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;</description>
     </item>
@@ -524,7 +547,7 @@
 &lt;p&gt;예를 들자면, 우리가 Flutter Project를 처음 생성 했을 때 기본으로 있는 count 앱을 들 수 있다.
 사용자가 Floating Button인 + 버튼을 누르면 화면 중앙에 있는 숫자가 1씩 증가한다.
 아래 코드와 같이 state를 이용하여 &lt;code&gt;_counter&lt;/code&gt; 변수를 업데이트하고 UI를 업데이틑 하는 것을 확인 할 수 있다.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-dart&#34; data-lang=&#34;dart&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; _counter &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-dart&#34; data-lang=&#34;dart&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; _counter &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; _increment(){
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  setState( () {

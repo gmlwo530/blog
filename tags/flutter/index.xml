@@ -9,7 +9,7 @@
       <url>https://callmemaru.com/og_image.png</url>
       <link>https://callmemaru.com/og_image.png</link>
     </image>
-    <generator>Hugo -- 0.154.5</generator>
+    <generator>Hugo -- 0.155.1</generator>
     <language>ko</language>
     <lastBuildDate>Sun, 12 Jan 2020 17:33:13 +0900</lastBuildDate>
     <atom:link href="https://callmemaru.com/tags/flutter/index.xml" rel="self" type="application/rss+xml" />
@@ -22,7 +22,7 @@
 &lt;p&gt;예를 들자면, 우리가 Flutter Project를 처음 생성 했을 때 기본으로 있는 count 앱을 들 수 있다.
 사용자가 Floating Button인 + 버튼을 누르면 화면 중앙에 있는 숫자가 1씩 증가한다.
 아래 코드와 같이 state를 이용하여 &lt;code&gt;_counter&lt;/code&gt; 변수를 업데이트하고 UI를 업데이틑 하는 것을 확인 할 수 있다.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-dart&#34; data-lang=&#34;dart&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; _counter &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-dart&#34; data-lang=&#34;dart&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; _counter &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; _increment(){
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  setState( () {
